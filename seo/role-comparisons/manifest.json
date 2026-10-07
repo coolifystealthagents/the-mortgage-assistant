@@ -1,0 +1,13 @@
+{
+  "site": "The Mortgage Assistant",
+  "status": "local_verified",
+  "launchArticle": "mortgage-operations-assistant-vs-loan-processor",
+  "preference": "fractional_vs_va",
+  "topics": [
+    {
+      "slug": "mortgage-operations-assistant-vs-loan-processor",
+      "title": "Mortgage operations assistant vs loan processor",
+      "state": "local_verified"
+    }
+  ]
+}
