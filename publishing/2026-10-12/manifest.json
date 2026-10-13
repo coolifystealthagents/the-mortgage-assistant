@@ -1,0 +1,185 @@
+{
+  "site": "TheMortgageAssistant",
+  "canonicalDomain": "https://themortgageassistant.com",
+  "repository": "coolifystealthagents/the-mortgage-assistant",
+  "branch": "main",
+  "baseSha": "f2aa19c5611dd272ee6f858761ea25fe1a8f5e27",
+  "publicationDate": "2026-10-12",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17
+  },
+  "registryPaths": [
+    "lib/october12BlogPosts.ts",
+    "lib/october12ResearchPosts.ts",
+    "lib/content.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sidebarPaths": [
+    "app/blog/[slug]/page.tsx",
+    "components/ResearchSidebar.tsx"
+  ],
+  "items": [
+    {
+      "section": "Blog",
+      "slug": "borrower-document-version-replacement-log",
+      "title": "Track Borrower Document Version Replacements",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/borrower-document-version-replacement-log.svg",
+      "route": "/blog/borrower-document-version-replacement-log"
+    },
+    {
+      "section": "Blog",
+      "slug": "underwriter-condition-language-custody",
+      "title": "Preserve Underwriter Condition Language in Handoffs",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/underwriter-condition-language-custody.svg",
+      "route": "/blog/underwriter-condition-language-custody"
+    },
+    {
+      "section": "Blog",
+      "slug": "borrower-question-accountable-routing",
+      "title": "Route Borrower Questions to Accountable Loan Staff",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/borrower-question-accountable-routing.svg",
+      "route": "/blog/borrower-question-accountable-routing"
+    },
+    {
+      "section": "Blog",
+      "slug": "loan-estimate-closing-disclosure-version-check",
+      "title": "Reconcile Loan Estimate and Closing Disclosure Versions",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/loan-estimate-closing-disclosure-version-check.svg",
+      "route": "/blog/loan-estimate-closing-disclosure-version-check"
+    },
+    {
+      "section": "Blog",
+      "slug": "wire-instruction-change-verification",
+      "title": "Escalate Wire Instruction Changes Through a Verified Channel",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/wire-instruction-change-verification.svg",
+      "route": "/blog/wire-instruction-change-verification"
+    },
+    {
+      "section": "Blog",
+      "slug": "appraisal-receipt-review-handoff",
+      "title": "Build an Appraisal Receipt and Review Handoff",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/appraisal-receipt-review-handoff.svg",
+      "route": "/blog/appraisal-receipt-review-handoff"
+    },
+    {
+      "section": "Blog",
+      "slug": "insurance-evidence-expiration-watch",
+      "title": "Watch Insurance Evidence Expiration Without Guessing Coverage",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/insurance-evidence-expiration-watch.svg",
+      "route": "/blog/insurance-evidence-expiration-watch"
+    },
+    {
+      "section": "Blog",
+      "slug": "title-exception-resolution-ownership",
+      "title": "Assign Ownership for Title Exception Follow Up",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/title-exception-resolution-ownership.svg",
+      "route": "/blog/title-exception-resolution-ownership"
+    },
+    {
+      "section": "Blog",
+      "slug": "rate-lock-expiration-escalation",
+      "title": "Coordinate Rate Lock Expiration Escalations",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/rate-lock-expiration-escalation.svg",
+      "route": "/blog/rate-lock-expiration-escalation"
+    },
+    {
+      "section": "Blog",
+      "slug": "closing-package-delivery-chain",
+      "title": "Verify the Closing Package Delivery Chain",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/closing-package-delivery-chain.svg",
+      "route": "/blog/closing-package-delivery-chain"
+    },
+    {
+      "section": "Blog",
+      "slug": "loan-pipeline-outage-reconciliation",
+      "title": "Reconcile Loan Pipeline Milestones After an Outage",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/loan-pipeline-outage-reconciliation.svg",
+      "route": "/blog/loan-pipeline-outage-reconciliation"
+    },
+    {
+      "section": "Blog",
+      "slug": "withdrawn-loan-file-retention-handoff",
+      "title": "Close Withdrawn Loan Files With Retention Controls",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/withdrawn-loan-file-retention-handoff.svg",
+      "route": "/blog/withdrawn-loan-file-retention-handoff"
+    },
+    {
+      "section": "Research",
+      "slug": "borrower-document-lineage-completeness-study",
+      "title": "Borrower Document Version Lineage Completeness",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/borrower-document-lineage-completeness-study.svg",
+      "route": "/research/borrower-document-lineage-completeness-study"
+    },
+    {
+      "section": "Research",
+      "slug": "condition-status-cross-system-agreement-study",
+      "title": "Condition Status Agreement Across Loan Handoff Systems",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/condition-status-cross-system-agreement-study.svg",
+      "route": "/research/condition-status-cross-system-agreement-study"
+    },
+    {
+      "section": "Research",
+      "slug": "closing-disclosure-version-reconciliation-latency-study",
+      "title": "Closing Disclosure Version Reconciliation Latency",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/closing-disclosure-version-reconciliation-latency-study.svg",
+      "route": "/research/closing-disclosure-version-reconciliation-latency-study"
+    },
+    {
+      "section": "Research",
+      "slug": "wire-change-verification-adherence-study",
+      "title": "Adherence to Independent Verification for Wire Changes",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/wire-change-verification-adherence-study.svg",
+      "route": "/research/wire-change-verification-adherence-study"
+    },
+    {
+      "section": "Research",
+      "slug": "mortgage-milestone-timestamp-reliability-study",
+      "title": "Mortgage Milestone Timestamp Reliability Across Systems",
+      "publicationDate": "2026-10-12",
+      "sourcePath": "lib/october12ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-12/mortgage-milestone-timestamp-reliability-study.svg",
+      "route": "/research/mortgage-milestone-timestamp-reliability-study"
+    }
+  ]
+}
