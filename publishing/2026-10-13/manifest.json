@@ -1,0 +1,185 @@
+{
+  "site": "TheMortgageAssistant",
+  "canonicalDomain": "https://themortgageassistant.com",
+  "repository": "coolifystealthagents/the-mortgage-assistant",
+  "branch": "main",
+  "baseSha": "c52d2aed316365176214afe2a72f65282a096b14",
+  "publicationDate": "2026-10-13",
+  "counts": {
+    "blog": 12,
+    "research": 5,
+    "total": 17
+  },
+  "registryPaths": [
+    "lib/october13BlogPosts.ts",
+    "lib/october13ResearchPosts.ts",
+    "lib/content.ts"
+  ],
+  "routePaths": [
+    "app/blog/[slug]/page.tsx",
+    "app/research/[slug]/page.tsx"
+  ],
+  "indexPaths": [
+    "app/blog/page.tsx",
+    "app/research/page.tsx"
+  ],
+  "sidebarPaths": [
+    "app/blog/[slug]/page.tsx",
+    "components/ResearchSidebar.tsx"
+  ],
+  "items": [
+    {
+      "section": "Blog",
+      "slug": "borrower-identity-field-consistency-review",
+      "title": "Review Borrower Identity Fields Before File Handoff",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/borrower-identity-field-consistency-review.svg",
+      "route": "/blog/borrower-identity-field-consistency-review"
+    },
+    {
+      "section": "Blog",
+      "slug": "income-worksheet-source-custody",
+      "title": "Keep Income Worksheets Linked to Their Source Records",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/income-worksheet-source-custody.svg",
+      "route": "/blog/income-worksheet-source-custody"
+    },
+    {
+      "section": "Blog",
+      "slug": "gift-fund-evidence-chain",
+      "title": "Build a Traceable Gift Fund Evidence Chain",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/gift-fund-evidence-chain.svg",
+      "route": "/blog/gift-fund-evidence-chain"
+    },
+    {
+      "section": "Blog",
+      "slug": "purchase-contract-amendment-intake",
+      "title": "Control Purchase Contract Amendment Intake",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/purchase-contract-amendment-intake.svg",
+      "route": "/blog/purchase-contract-amendment-intake"
+    },
+    {
+      "section": "Blog",
+      "slug": "occupancy-statement-conflict-escalation",
+      "title": "Escalate Conflicting Occupancy Statements Without Inference",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/occupancy-statement-conflict-escalation.svg",
+      "route": "/blog/occupancy-statement-conflict-escalation"
+    },
+    {
+      "section": "Blog",
+      "slug": "condo-project-document-packet",
+      "title": "Assemble Condo Project Documents for Accountable Review",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/condo-project-document-packet.svg",
+      "route": "/blog/condo-project-document-packet"
+    },
+    {
+      "section": "Blog",
+      "slug": "tax-transcript-request-status-log",
+      "title": "Maintain a Tax Transcript Request Status Log",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/tax-transcript-request-status-log.svg",
+      "route": "/blog/tax-transcript-request-status-log"
+    },
+    {
+      "section": "Blog",
+      "slug": "appraisal-reconsideration-evidence-log",
+      "title": "Preserve Evidence for Appraisal Reconsideration Handoffs",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/appraisal-reconsideration-evidence-log.svg",
+      "route": "/blog/appraisal-reconsideration-evidence-log"
+    },
+    {
+      "section": "Blog",
+      "slug": "closing-calendar-time-zone-reconciliation",
+      "title": "Reconcile Closing Calendar Times Across Time Zones",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/closing-calendar-time-zone-reconciliation.svg",
+      "route": "/blog/closing-calendar-time-zone-reconciliation"
+    },
+    {
+      "section": "Blog",
+      "slug": "post-closing-trailing-document-queue",
+      "title": "Run a Controlled Post-Closing Trailing Document Queue",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/post-closing-trailing-document-queue.svg",
+      "route": "/blog/post-closing-trailing-document-queue"
+    },
+    {
+      "section": "Blog",
+      "slug": "duplicate-borrower-outreach-suppression",
+      "title": "Stop Duplicate Borrower Outreach Across Channels",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/duplicate-borrower-outreach-suppression.svg",
+      "route": "/blog/duplicate-borrower-outreach-suppression"
+    },
+    {
+      "section": "Blog",
+      "slug": "mortgage-system-least-privilege-review",
+      "title": "Review Mortgage System Access With Least Privilege",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13BlogPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/mortgage-system-least-privilege-review.svg",
+      "route": "/blog/mortgage-system-least-privilege-review"
+    },
+    {
+      "section": "Research",
+      "slug": "borrower-outreach-response-lag-study",
+      "title": "Borrower Outreach Response Lag by Contact Path",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/borrower-outreach-response-lag-study.svg",
+      "route": "/research/borrower-outreach-response-lag-study"
+    },
+    {
+      "section": "Research",
+      "slug": "income-packet-review-repeatability-study",
+      "title": "Income Packet Completeness Review Repeatability",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/income-packet-review-repeatability-study.svg",
+      "route": "/research/income-packet-review-repeatability-study"
+    },
+    {
+      "section": "Research",
+      "slug": "contract-amendment-propagation-study",
+      "title": "Purchase Contract Amendment Propagation Across Systems",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/contract-amendment-propagation-study.svg",
+      "route": "/research/contract-amendment-propagation-study"
+    },
+    {
+      "section": "Research",
+      "slug": "closing-confirmation-integrity-study",
+      "title": "Closing Appointment Confirmation Integrity",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/closing-confirmation-integrity-study.svg",
+      "route": "/research/closing-confirmation-integrity-study"
+    },
+    {
+      "section": "Research",
+      "slug": "access-removal-timeliness-study",
+      "title": "Mortgage System Access Removal Timeliness",
+      "publicationDate": "2026-10-13",
+      "sourcePath": "lib/october13ResearchPosts.ts",
+      "thumbnailPath": "public/thumbnails/october-13/access-removal-timeliness-study.svg",
+      "route": "/research/access-removal-timeliness-study"
+    }
+  ]
+}
