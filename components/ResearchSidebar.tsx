@@ -1,6 +1,18 @@
-import Link from 'next/link';
+import { EditorialSidebar } from '@/components/editorial/EditorialSidebar';
 import type { ResearchPost } from '@/lib/types';
 
 export function ResearchSidebar({ posts }: { posts: ResearchPost[] }) {
-  return <aside className="sidebar"><p className="eyebrow">Related research</p><h3>Continue the evidence review.</h3>{posts.map((post) => <p key={post.slug}><Link href={`/research/${post.slug}`}>{post.title}</Link></p>)}<Link className="button" href="/research">View all research</Link></aside>;
+  return (
+    <EditorialSidebar
+      relatedLabel="Related research"
+      related={posts.map((post) => ({
+        href: `/research/${post.slug}`,
+        label: post.title,
+        kicker: post.cluster,
+      }))}
+      ctaTitle="Put the evidence into a working brief."
+      ctaBody="Bring one recurring workflow. We will help identify its preparation, review, and escalation boundaries."
+      ctaId="cta-research-sidebar-schedulecall"
+    />
+  );
 }

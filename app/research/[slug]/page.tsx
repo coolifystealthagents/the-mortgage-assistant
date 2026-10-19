@@ -2,14 +2,161 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ArticleToc } from '@/components/editorial/ArticleToc';
+import { headingId } from '@/components/editorial/headingId';
 import { ResearchSidebar } from '@/components/ResearchSidebar';
 import { researchPosts, researchBySlug } from '@/lib/content';
 import { site } from '@/lib/site';
+import styles from '@/app/blog/editorial.module.css';
 
-export function generateStaticParams() { return researchPosts.map(({ slug }) => ({ slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const post = researchBySlug(slug); return post ? { title: post.title, description: post.summary, alternates: { canonical: `/research/${post.slug}` } } : {}; }
+const origin = `https://${site.domain}`;
+
+function serviceForCluster(cluster: string) {
+  const normalized = cluster.toLowerCase();
+  if (normalized.includes('borrower')) return { href: '/services/borrower-follow-up', label: 'borrower follow up support' };
+  if (normalized.includes('closing')) return { href: '/services/closing-coordination', label: 'closing coordination support' };
+  if (normalized.includes('pipeline') || normalized.includes('access')) return { href: '/services/crm-pipeline-support', label: 'CRM and pipeline support' };
+  if (normalized.includes('role')) return { href: '/services', label: 'specialist mortgage support roles' };
+  return { href: '/services/loan-file-coordination', label: 'loan file coordination support' };
+}
+
+export function generateStaticParams() {
+  return researchPosts.map(({ slug }) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = researchBySlug(slug);
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.summary,
+    authors: [{ name: `${site.name} Editorial Team` }],
+    alternates: { canonical: `/research/${post.slug}` },
+    openGraph: {
+      type: 'article',
+      title: post.title,
+      description: post.summary,
+      url: `/research/${post.slug}`,
+      publishedTime: post.publishedAt,
+      images: post.thumbnail ? [{ url: post.thumbnail, alt: `Research brief cover for “${post.title}”` }] : undefined,
+    },
+  };
+}
 
 export default async function ResearchPostPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params; const post = researchBySlug(slug); if (!post) notFound(); const related = researchPosts.filter((item) => item.slug !== post.slug).slice(0, 3);
-  return <main><header className="page-hero"><p className="eyebrow">Home / Research / {post.cluster}</p><h1>{post.title}</h1><p>{post.summary}</p><p className="meta">{site.name} Editorial Team · Published {post.publishedAt}</p></header><section className="content-wrap article-layout"><article className="prose">{post.thumbnail && <Image src={post.thumbnail} alt={post.title} width={1200} height={630} priority />}<p className="research-finding">{post.finding}</p>{post.sections?.map((section) => <section key={section.heading} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}<div className="sources"><h2>Sources</h2><ol>{post.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>)}</ol></div><Link id="cta-research-final-bookcall" className="button primary" href="/contact-us">Discuss your workflow in a free call</Link></article><ResearchSidebar posts={related} /></section></main>;
+  const { slug } = await params;
+  const post = researchBySlug(slug);
+  if (!post) notFound();
+
+  const sameCluster = researchPosts.filter((item) => item.slug !== post.slug && item.cluster === post.cluster);
+  const related = (sameCluster.length > 0
+    ? sameCluster
+    : researchPosts.filter((item) => item.slug !== post.slug)
+  ).slice(0, 3);
+  const service = serviceForCluster(post.cluster);
+  const findingHeading = 'Key finding';
+  const reviewHeading = 'Put the brief to work';
+  const sourcesHeading = 'Sources and further reading';
+  const ctaHeading = 'Review the workflow behind the evidence';
+  const tocItems = [
+    { label: findingHeading },
+    ...(post.sections ?? []).map((section) => ({ label: section.heading })),
+    { label: reviewHeading },
+    { label: sourcesHeading },
+    { label: ctaHeading },
+  ];
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.summary,
+    datePublished: post.publishedAt,
+    mainEntityOfPage: `${origin}/research/${post.slug}`,
+    author: { '@type': 'Organization', name: `${site.name} Editorial Team` },
+    publisher: { '@type': 'Organization', name: site.name },
+    citation: post.sources.map((source) => source.url),
+    ...(post.thumbnail ? { image: `${origin}${post.thumbnail}` } : {}),
+  };
+
+  return (
+    <main className={styles.page} id="article-top">
+      <div className={styles.progress} aria-hidden="true" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
+
+      <header className={styles.hero}>
+        <div className={styles.heroInner}>
+          <p className={styles.kicker}><Link href="/research">Evidence desk</Link> / {post.cluster}</p>
+          <h1>{post.title}</h1>
+          <p className={styles.deck}>{post.summary}</p>
+          <p className={styles.byline}>
+            <span>By {site.name} Editorial Team</span>
+            <span>Published <time dateTime={post.publishedAt}>{post.publishedAt}</time></span>
+          </p>
+        </div>
+      </header>
+
+      <div className={styles.articleShell}>
+        <ArticleToc items={tocItems} />
+
+        <article className={styles.article}>
+          {post.thumbnail && (
+            <Image
+              className={styles.cover}
+              src={post.thumbnail}
+              alt={`Research brief cover for “${post.title}”`}
+              width={1200}
+              height={630}
+              priority
+            />
+          )}
+
+          <section className={styles.articleSection} id={headingId(findingHeading)}>
+            <h2>{findingHeading}</h2>
+            <p className={styles.finding}>{post.finding}</p>
+          </section>
+
+          {(post.sections ?? []).map((section) => (
+            <section className={styles.articleSection} key={section.heading} id={headingId(section.heading)}>
+              <h2>{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+            </section>
+          ))}
+
+          <section className={styles.articleSection} id={headingId(reviewHeading)}>
+            <h2>{reviewHeading}</h2>
+            <p>Use the finding as a review prompt, not as a substitute for policy or accountable judgment. Compare the cited source material with your current record, decision owner, and escalation path.</p>
+            <p className={styles.contextNote}>
+              For implementation context, review the scope and handoffs in <Link className={styles.inlineLink} href={service.href}>{service.label}</Link>.
+            </p>
+            {related[0] && (
+              <p className={styles.contextNote}>
+                Compare this evidence with <Link className={styles.inlineLink} href={`/research/${related[0].slug}`}>{related[0].title}</Link> to test a related workflow boundary.
+              </p>
+            )}
+          </section>
+
+          <section className={styles.articleSection} id={headingId(sourcesHeading)}>
+            <h2>{sourcesHeading}</h2>
+            <p>These are the public sources associated with this brief. Open each source to review its scope and current guidance directly.</p>
+            <ol className={styles.sourceList}>
+              {post.sources.map((source) => (
+                <li key={source.url}><a href={source.url} rel="noopener noreferrer">{source.label}</a></li>
+              ))}
+            </ol>
+          </section>
+
+          <section className={styles.finalCta} id={headingId(ctaHeading)}>
+            <p className={styles.railLabel}>Evidence into operations</p>
+            <h2>{ctaHeading}</h2>
+            <p>Bring one recurring mortgage workflow and its current handoff. We will help identify the preparation, review, and escalation boundaries.</p>
+            <Link id="cta-research-final-bookcall" className={styles.button} href="/contact-us">Discuss the workflow in a free call</Link>
+          </section>
+        </article>
+
+        <ResearchSidebar posts={related} />
+      </div>
+    </main>
+  );
 }
