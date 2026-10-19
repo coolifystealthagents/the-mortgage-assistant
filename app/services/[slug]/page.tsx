@@ -13,7 +13,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = serviceBySlug(slug);
-  return service ? { title: service.name, description: service.short } : {};
+  return service ? { title: service.name, description: service.short, alternates: { canonical: `/services/${service.slug}` } } : {};
 }
 
 const sectionLinks = [

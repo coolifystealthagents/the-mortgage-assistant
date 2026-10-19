@@ -68,3 +68,21 @@ test('original mortgage illustration has accessible text alternatives', async ()
   assert.match(svg, /<title id="title">[^<]+<\/title>/);
   assert.match(svg, /<desc id="desc">[^<]+<\/desc>/);
 });
+
+test('static and service routes own their canonicals and publish no invented email', async () => {
+  const [about, services, detail, privacy, terms] = await Promise.all([
+    read('app/about/page.tsx'),
+    read('app/services/page.tsx'),
+    read('app/services/[slug]/page.tsx'),
+    read('app/privacy/page.tsx'),
+    read('app/terms/page.tsx'),
+  ]);
+  assert.match(about, /canonical: '\/about'/);
+  assert.match(services, /canonical: '\/services'/);
+  assert.match(detail, /canonical: `\/services\/\$\{service\.slug\}`/);
+  assert.match(privacy, /canonical:'\/privacy'/);
+  assert.match(terms, /canonical:'\/terms'/);
+  assert.doesNotMatch(privacy, /hello@/);
+  assert.match(privacy, /contact form/);
+  assert.match(about, /Stealth Agents company/);
+});

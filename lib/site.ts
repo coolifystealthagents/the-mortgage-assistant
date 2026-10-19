@@ -93,7 +93,7 @@ const services: Service[] = [
       { question: 'Can the assistant coordinate with title or settlement?', answer: 'They can exchange approved administrative details and record confirmations, subject to client policy. Legal, disclosure, funding, and decision questions are routed to the appropriate owner.' },
     ],
     relatedRoles: ['loan-file-coordination', 'borrower-follow-up', 'real-estate-partner-support'],
-    relatedContent: [{ title: 'Closing package delivery chain', href: '/blog/closing-package-delivery-chain' }, { title: 'Closing calendar reconciliation research', href: '/research/closing-calendar-time-zone-reconciliation' }],
+    relatedContent: [{ title: 'Closing package delivery chain', href: '/blog/closing-package-delivery-chain' }, { title: 'Closing calendar reconciliation guide', href: '/blog/closing-calendar-time-zone-reconciliation' }],
   },
   {
     slug: 'real-estate-partner-support',

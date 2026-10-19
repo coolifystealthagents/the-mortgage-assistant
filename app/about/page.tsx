@@ -7,6 +7,7 @@ import '@/components/marketing/marketing.css';
 export const metadata: Metadata = {
   title: 'About our mortgage operations support',
   description: `How ${site.name} designs responsible remote support for mortgage brokers, lenders, and loan teams.`,
+  alternates: { canonical: '/about' },
 };
 
 const values = [
@@ -49,6 +50,11 @@ export default function AboutPage() {
     <section className="mortgage-about-expertise" aria-labelledby="expertise-title">
       <header><p className="mortgage-folio">Mortgage-specific role design</p><h2 id="expertise-title">Context is not a substitute for control. It makes control usable.</h2><p className="mortgage-deck">We look for the practical details a generic task list misses: system ownership, borrower privacy, communication permissions, source evidence, milestone authority, and the point where administrative support becomes regulated judgment.</p></header>
       <div className="mortgage-workflow-map">{workflow.map(([title, copy]) => <article key={title}><h3>{title}</h3><p>{copy}</p></article>)}</div>
+    </section>
+
+    <section className="mortgage-about-expectations" aria-labelledby="company-relationship-title">
+      <div><p className="mortgage-folio">Our company relationship</p><h2 id="company-relationship-title">Mortgage focus, backed by Stealth Agents.</h2></div>
+      <div><p>{site.name} is a Stealth Agents company focused on mortgage operations support. That relationship connects a mortgage-specific role-design approach with Stealth Agents&apos; broader remote staffing experience.</p><p>The same accountability boundary applies: we help define and staff administrative workflows, while your organization retains supervision, system access decisions, privacy and compliance obligations, and every licensed or regulated decision.</p><a className="mortgage-text-link" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">Learn about Stealth Agents <ArrowIcon /></a></div>
     </section>
 
     <section id="expectations" className="mortgage-about-expectations" aria-labelledby="expectations-title">

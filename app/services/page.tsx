@@ -7,6 +7,7 @@ import '@/components/marketing/marketing.css';
 export const metadata: Metadata = {
   title: 'Mortgage operations support services',
   description: 'Compare six specialist remote support roles for mortgage file, borrower, pipeline, closing, partner, and marketing workflows.',
+  alternates: { canonical: '/services' },
 };
 
 export default function ServicesPage() {
