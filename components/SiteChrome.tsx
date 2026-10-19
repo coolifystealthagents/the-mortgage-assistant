@@ -1,22 +1,86 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { site } from '@/lib/site';
-import { nav } from '@/lib/content';
-import { LeadForm } from './LeadForm';
 import { ArrowIcon } from './Icons';
+import { site } from '@/lib/site';
+
+const insightLinks = [
+  { href: '/blog', label: 'Blog', description: 'Practical mortgage operations guides' },
+  { href: '/research', label: 'Research', description: 'Source-led operating briefs' },
+];
+
+function isCurrent(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
 
 export function Header() {
-  return <header className="site-header"><Link className="brand" href="/"><Image src="/logo.svg" alt="" width={42} height={42} /><span>{site.name}</span></Link><nav aria-label="Primary navigation">{nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</nav><Link id="cta-global-header-bookcall" className="button compact" href="/contact-us">Book a free call <ArrowIcon /></Link></header>;
+  const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => setMobileOpen(false), [pathname]);
+
+  return (
+    <>
+      <div className="utility-strip">
+        <span>Specialist support for mortgage operations</span>
+        <a href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">A Stealth Agents Company</a>
+      </div>
+      <header className="site-header">
+        <Link className="brand" href="/" aria-label={`${site.name} home`}>
+          <Image src="/logo.svg" alt="" width={42} height={42} priority />
+          <span>{site.name}</span>
+        </Link>
+        <button
+          className="nav-toggle"
+          type="button"
+          aria-expanded={mobileOpen}
+          aria-controls="primary-navigation"
+          onClick={() => setMobileOpen((open) => !open)}
+        >
+          <span aria-hidden="true" className="nav-toggle-lines"><i /><i /><i /></span>
+          <span>{mobileOpen ? 'Close' : 'Menu'}</span>
+        </button>
+        <nav id="primary-navigation" className={mobileOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary navigation">
+          <Link className={isCurrent(pathname, '/services') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/services') ? 'page' : undefined} href="/services">Services</Link>
+          <Link className={isCurrent(pathname, '/about') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/about') ? 'page' : undefined} href="/about">About</Link>
+          <details className="nav-dropdown">
+            <summary className={isCurrent(pathname, '/blog') || isCurrent(pathname, '/research') ? 'is-current' : undefined}>
+              Insights <span aria-hidden="true">⌄</span>
+            </summary>
+            <div className="nav-dropdown-panel">
+              {insightLinks.map((item) => (
+                <Link key={item.href} className={isCurrent(pathname, item.href) ? 'is-current' : undefined} aria-current={isCurrent(pathname, item.href) ? 'page' : undefined} href={item.href}>
+                  <strong>{item.label}</strong><small>{item.description}</small>
+                </Link>
+              ))}
+            </div>
+          </details>
+          <Link id="cta-global-header-bookcall" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Book a free call <ArrowIcon /></Link>
+        </nav>
+      </header>
+    </>
+  );
 }
+
 export function Footer() {
-  return <footer><div><Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link><p>Specialist remote staff for {site.audience}.</p></div><div className="footer-links">{nav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><p className="copyright">© {new Date().getFullYear()} {site.name}</p></footer>;
-}
-export function TimedLeadModal() {
-  const [open, setOpen] = useState(false);
-  useEffect(() => { if (sessionStorage.getItem('lead-modal-seen')) return; const timer = window.setTimeout(() => { sessionStorage.setItem('lead-modal-seen', 'true'); setOpen(true); }, 8000); return () => clearTimeout(timer); }, []);
-  useEffect(() => { const key = (event: KeyboardEvent) => event.key === 'Escape' && setOpen(false); window.addEventListener('keydown', key); return () => window.removeEventListener('keydown', key); }, []);
-  if (!open) return null;
-  return <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setOpen(false)}><section className="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button className="modal-close" onClick={() => setOpen(false)} aria-label="Close form">×</button><p className="eyebrow">A calmer next step</p><h2 id="modal-title">Tell us what is taking too much of your day.</h2><p>We will help you map the right support role in a free consultation.</p><LeadForm source="timed-modal" /></section></div>;
+  return (
+    <footer className="site-footer">
+      <div className="footer-main">
+        <div>
+          <Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link>
+          <p>Specialist remote staff for {site.audience}.</p>
+          <a className="parent-mark" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">A Stealth Agents Company</a>
+        </div>
+        <nav className="footer-links" aria-label="Footer navigation">
+          <div><strong>Explore</strong><Link href="/services">Services</Link><Link href="/about">About</Link><Link href="/contact-us">Contact</Link></div>
+          <div><strong>Insights</strong><Link href="/blog">Blog</Link><Link href="/research">Research</Link></div>
+          <div><strong>Legal</strong><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div>
+        </nav>
+      </div>
+      <p className="copyright">© {new Date().getFullYear()} {site.name}. Mortgage decisions remain with licensed and authorized professionals.</p>
+    </footer>
+  );
 }

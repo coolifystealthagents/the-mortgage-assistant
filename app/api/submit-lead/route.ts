@@ -1,8 +1,6 @@
 import { NextResponse } from 'next/server';
 import { sendLeadFallbackToMattermost } from '../../../lib/lead-fallback-mattermost';
 
-const personalDomains = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','icloud.com','aol.com','proton.me','protonmail.com']);
-
 export async function POST(request: Request) {
   const form = await request.formData();
   if (form.get('website_url')) return NextResponse.json({ ok: true });
@@ -18,9 +16,6 @@ export async function POST(request: Request) {
   const referral = String(form.get('referral_source') || '').trim();
   if (!/^\S+@\S+\.\S+$/.test(email) || (full ? (!firstName || !lastName || !company || !companySize || !positions || !referral) : !legacyName)) {
     return NextResponse.json({ ok: false, message: 'Please complete every required field.' }, { status: 400 });
-  }
-  if (full && personalDomains.has(email.split('@')[1])) {
-    return NextResponse.json({ ok: false, message: 'Please use your business email address.' }, { status: 400 });
   }
   const endpoint = process.env.ACR_LEAD_ENDPOINT;
   if (endpoint) {

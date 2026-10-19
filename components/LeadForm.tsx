@@ -1,10 +1,6 @@
 'use client';
 import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
-
-
-const personalDomains = new Set(['gmail.com','yahoo.com','hotmail.com','outlook.com','icloud.com','aol.com','proton.me','protonmail.com']);
-
 export function LeadForm({ source = 'contact-page' }: { source?: string }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -17,12 +13,7 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
     setBusy(true); setError('');
     const form = event.currentTarget;
     const data = new FormData(form);
-    if (full) {
-      const domain = String(data.get('email') || '').trim().toLowerCase().split('@')[1];
-      if (!domain || personalDomains.has(domain)) {
-        setError('Please use your business email address.'); setBusy(false); return;
-      }
-    }
+    data.set('_page_url', window.location.href);
     try {
       const response = await fetch('/api/submit-lead', { method: 'POST', body: data });
       const result = await response.json();
@@ -37,8 +28,8 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
     {full ? <>
       <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" required /></label>
       <label>Last Name <span aria-hidden="true">*</span><input name="last_name" autoComplete="family-name" required /></label>
-      <label className="form-wide">Business Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" required /></label>
-      <p className="form-help form-wide">Use your company or brokerage email. Personal email providers are not accepted.</p>
+      <label className="form-wide">Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" required /></label>
+      <p className="form-help form-wide">Work or personal email addresses are welcome.</p>
       <label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
       <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" /></label>
       <label className="form-wide">Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" required /></label>
@@ -48,13 +39,13 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
       <label className="form-wide">How Did You Hear About Us? <span aria-hidden="true">*</span><select name="referral_source" defaultValue="" required><option value="" disabled>Select a source</option><option>Search engine</option><option>Referral</option><option>Professional group</option><option>Social media</option><option>Stealth Agents</option><option>Other</option></select></label>
     </> : <>
       <label>Full name<input name="name" autoComplete="name" required /></label>
-      <label>Work email<input name="email" type="email" autoComplete="email" required /></label>
+      <label>Email<input name="email" type="email" autoComplete="email" required /></label>
       <label>How did you hear about us?<select name="referral_source" defaultValue=""><option value="">Choose one</option><option>Search</option><option>Industry colleague</option><option>Professional group</option><option>Social</option><option>Other</option></select></label>
     </>}
     <label className="form-wide">Message<textarea name="message" rows={5} placeholder={full ? 'Describe the mortgage workflow, current owner, and support you need.' : 'Tell us what needs support'} /></label>
     <input type="hidden" name="source" value={source} />
     <label className="honeypot" aria-hidden="true">Website<input name="website_url" tabIndex={-1} autoComplete="off" /></label>
     {error && <p className="form-error" role="alert">{error}</p>}
-    <button className="button primary form-wide" type="submit" disabled={busy}>{busy ? 'Sending request' : full ? 'Book a Free Consultation' : 'Request your free consultation'}</button>
+    <button className="button primary form-wide" type="submit" disabled={busy}>{busy ? 'Sending request' : full ? 'Continue to Free Scheduling' : 'Request your free consultation'}</button>
   </form>;
 }
