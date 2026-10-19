@@ -1,108 +1,165 @@
-import type { SiteConfig } from './types';
+import type { Service, SiteConfig } from './types';
+
+const sharedLaunch = [
+  { title: 'Map one queue', detail: 'Choose a recurring workflow, its system of record, the accountable owner, and the point where support begins and ends.' },
+  { title: 'Write the working standard', detail: 'Document required inputs, output format, approved language, access rules, and the exceptions that require escalation.' },
+  { title: 'Pilot with review', detail: 'Run a controlled set of work while the client owner reviews outputs and answers process questions.' },
+  { title: 'Calibrate and expand', detail: 'Correct the checklist, confirm the review rhythm, and add adjacent work only when the first queue is stable.' },
+];
+
+const sharedBoundaries = [
+  'The assistant does not make underwriting, credit, eligibility, pricing, disclosure, or approval decisions.',
+  'The assistant does not give legal, tax, financial, or lending advice or represent that a loan is approved.',
+  'Licensed and regulated activity stays with the appropriately qualified client team member.',
+  'Exceptions, conflicting information, suspected fraud, complaints, and policy questions are paused and escalated.',
+];
+
+const services: Service[] = [
+  {
+    slug: 'loan-file-coordination',
+    name: 'Loan file coordination',
+    short: 'Organize document intake, open items, and review-ready file notes without moving credit judgment away from your team.',
+    outcome: 'A visible file queue with cleaner handoffs, named owners, and unresolved items surfaced for review.',
+    idealFor: ['Originators whose active files compete with borrower-facing time', 'Processing teams receiving documents across several channels', 'Brokerages that need a consistent pre-review organization step'],
+    tasks: ['Log incoming borrower and third-party documents in the approved system', 'Maintain document request and open-item checklists', 'Match received items to the client-defined checklist without judging acceptability', 'Prepare factual file summaries with source links and dates', 'Route missing, inconsistent, or unreadable material to the assigned reviewer', 'Record handoffs and next-owner status'],
+    clientInputs: ['A client-approved document checklist by workflow', 'System access based on least privilege', 'File naming, storage, and retention rules', 'An accountable processor, originator, or manager for escalations'],
+    outputs: ['Current open-item log', 'Review-ready document index', 'Source-linked factual file note', 'Exception and escalation queue'],
+    qualityControls: ['Checklist completion review', 'Source and received-date spot checks', 'No silent status changes when evidence is missing', 'Weekly review of repeat exceptions and stale items'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'Is this the same as hiring a loan processor?', answer: 'No. The scope is administrative preparation and coordination. Processing duties that require licensed activity, policy interpretation, or credit judgment remain with the client team.' },
+      { question: 'Can an assistant decide whether a document satisfies a condition?', answer: 'No. The assistant can record receipt and organize the item against a checklist. An authorized reviewer decides whether it is acceptable or clears a condition.' },
+      { question: 'Where should the pilot begin?', answer: 'A defined intake or open-items queue is usually a practical starting point because the source, owner, and completion evidence can be made explicit.' },
+    ],
+    relatedRoles: ['borrower-follow-up', 'crm-pipeline-support', 'closing-coordination'],
+    relatedContent: [{ title: 'Mortgage operations assistant vs loan processor', href: '/blog/mortgage-operations-assistant-vs-loan-processor' }, { title: 'Browse mortgage operations research', href: '/research' }],
+  },
+  {
+    slug: 'borrower-follow-up',
+    name: 'Borrower follow-up support',
+    short: 'Run approved reminders, document responses, and route borrower questions to the person qualified to answer.',
+    outcome: 'Routine outreach is recorded and unanswered questions reach a named owner instead of remaining in private inboxes.',
+    idealFor: ['Teams with repeat document reminders and milestone check-ins', 'Originators who need communication history captured in one place', 'Operations leaders building a consistent escalation path'],
+    tasks: ['Send client-approved email or text templates', 'Schedule reminders within permitted cadence and channel rules', 'Record contact attempts and borrower responses', 'Route questions about terms, qualification, disclosures, or decisions', 'Prepare a concise follow-up status for the file owner', 'Stop outreach when consent, complaint, or sensitivity concerns appear'],
+    clientInputs: ['Approved templates and prohibited-language guidance', 'Consent, channel, timing, and opt-out rules', 'A current request list and borrower contact record', 'Named owners for loan, complaint, and privacy questions'],
+    outputs: ['Dated outreach log', 'Response and no-response status', 'Question escalation with borrower wording preserved', 'Next-action queue for the accountable owner'],
+    qualityControls: ['Template and recipient check before send', 'Communication logged in the designated record', 'Opt-outs and complaints escalated immediately', 'Sample review for tone, accuracy, and overstatement'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'Can the assistant answer borrower questions?', answer: 'The assistant can answer only routine administrative questions covered by approved guidance. Questions about terms, qualification, credit, disclosures, or advice go to the licensed or accountable team member.' },
+      { question: 'Can the assistant promise a closing date?', answer: 'No. They can repeat an approved milestone or appointment and clearly attribute it to the source, but cannot guarantee an outcome or timing.' },
+      { question: 'How is communication kept consistent?', answer: 'The client supplies approved templates, channel rules, and escalation triggers. A reviewer samples messages and updates guidance when exceptions recur.' },
+    ],
+    relatedRoles: ['loan-file-coordination', 'real-estate-partner-support', 'crm-pipeline-support'],
+    relatedContent: [{ title: 'Borrower question accountable routing', href: '/blog/borrower-question-accountable-routing' }, { title: 'Explore borrower experience articles', href: '/blog' }],
+  },
+  {
+    slug: 'crm-pipeline-support',
+    name: 'CRM and pipeline support',
+    short: 'Keep approved fields, task ownership, and milestone records current so the team can find the next action.',
+    outcome: 'A more dependable operating view of active work, with stale records and mismatched statuses flagged rather than guessed at.',
+    idealFor: ['Teams that reconcile LOS, CRM, calendar, and inbox information', 'Managers preparing recurring pipeline reviews', 'Originators with inconsistent task ownership or stale follow-up records'],
+    tasks: ['Update approved non-decision fields from named sources', 'Assign or confirm tasks under documented routing rules', 'Prepare pipeline views for team review', 'Flag records with missing owners, overdue actions, or conflicting dates', 'Document corrections and their source', 'Archive or close administrative tasks only under a written rule'],
+    clientInputs: ['Field dictionary and source-of-truth map', 'Permitted status and task-update rules', 'User access and data-handling requirements', 'Owners for data conflicts, inactive files, and system issues'],
+    outputs: ['Current pipeline review sheet', 'Stale and conflicting-record queue', 'Task ownership report', 'Change log for material administrative updates'],
+    qualityControls: ['Field-level source checks', 'Reconciliation between designated systems', 'No inferred milestone or disposition', 'Access and inactive-user review by the client'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'Will the assistant choose loan statuses?', answer: 'Only when a written client rule maps objective source evidence to an administrative status. Any status involving interpretation or a credit decision must be set by the accountable team.' },
+      { question: 'Can this include reporting?', answer: 'Yes. The assistant can prepare factual pipeline views and exception lists. Management interpretation, forecasting assumptions, and decisions remain with client leaders.' },
+      { question: 'Do we need to replace our CRM?', answer: 'No. The role is designed around the systems you designate. The initial mapping identifies which system owns each field and where conflicts go.' },
+    ],
+    relatedRoles: ['loan-file-coordination', 'borrower-follow-up', 'real-estate-partner-support'],
+    relatedContent: [{ title: 'Mortgage milestone timestamp reliability', href: '/research/mortgage-milestone-timestamp-reliability-study' }, { title: 'Read pipeline systems guidance', href: '/blog' }],
+  },
+  {
+    slug: 'closing-coordination',
+    name: 'Closing coordination support',
+    short: 'Track approved milestones, appointment details, and administrative handoffs around the closing calendar.',
+    outcome: 'Participants can see confirmed logistics, unresolved dependencies, and the owner of each next step.',
+    idealFor: ['Teams managing a dense calendar of purchase or refinance closings', 'Operations groups coordinating title, settlement, and internal handoffs', 'Loan teams that need a disciplined pre-closing checklist'],
+    tasks: ['Maintain a closing logistics checklist', 'Record dates and appointment details from approved sources', 'Send approved administrative reminders', 'Confirm receipt of routine scheduling information', 'Flag conflicting dates, missing confirmations, and changed instructions', 'Track post-closing administrative handoffs'],
+    clientInputs: ['Client-approved milestone and logistics checklist', 'Named source for dates and instructions', 'Contact and communication rules for each participant', 'Escalation path for wire changes, delays, and document questions'],
+    outputs: ['Closing readiness logistics view', 'Confirmation and reminder log', 'Conflict and missing-item queue', 'Documented handoff to the post-closing owner'],
+    qualityControls: ['Source attribution for every critical date', 'Independent escalation of changed wire instructions', 'No assumption that silence means confirmation', 'Final checklist review by the accountable client owner'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'Can the assistant approve a file as clear to close?', answer: 'No. Clear-to-close and other approval decisions belong to authorized client personnel. The assistant can maintain the logistics checklist after an approved status is recorded.' },
+      { question: 'How are wire instruction changes handled?', answer: 'The assistant pauses the workflow and follows the client security escalation procedure. They do not validate or act on changed instructions independently.' },
+      { question: 'Can the assistant coordinate with title or settlement?', answer: 'They can exchange approved administrative details and record confirmations, subject to client policy. Legal, disclosure, funding, and decision questions are routed to the appropriate owner.' },
+    ],
+    relatedRoles: ['loan-file-coordination', 'borrower-follow-up', 'real-estate-partner-support'],
+    relatedContent: [{ title: 'Closing package delivery chain', href: '/blog/closing-package-delivery-chain' }, { title: 'Closing calendar reconciliation research', href: '/research/closing-calendar-time-zone-reconciliation' }],
+  },
+  {
+    slug: 'real-estate-partner-support',
+    name: 'Real estate partner support',
+    short: 'Prepare approved status communication and maintain referral-partner follow-through without disclosing protected details.',
+    outcome: 'Partner touchpoints are timely, factual, and traceable while borrower privacy and decision boundaries remain intact.',
+    idealFor: ['Originators with recurring referral-partner communication', 'Purchase teams coordinating transaction milestones', 'Brokerages that want partner requests recorded and routed'],
+    tasks: ['Prepare approved milestone updates from the system of record', 'Maintain partner contact preferences and activity records', 'Schedule permitted check-ins and educational touchpoints', 'Document and route partner requests', 'Coordinate event or meeting logistics', 'Flag requests that involve borrower data, decisions, or commitments'],
+    clientInputs: ['Approved update language and disclosure limits', 'Partner contact and communication preferences', 'Authoritative milestone source', 'Escalation owner for transaction and borrower-specific questions'],
+    outputs: ['Partner communication log', 'Approved status-update queue', 'Request and response-owner tracker', 'Contact record requiring client review when data conflicts'],
+    qualityControls: ['Borrower privacy check before communication', 'Milestone source and date recorded', 'No unapproved promise, interpretation, or disclosure', 'Periodic contact preference and template review'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'What information can be shared with a partner?', answer: 'Only information the client has approved for that recipient and context. The client defines privacy and authorization rules, and uncertain requests are escalated.' },
+      { question: 'Can the assistant discuss qualification or approval?', answer: 'No. They do not discuss a borrower’s credit, eligibility, loan terms, or approval. Those conversations stay with authorized client personnel.' },
+      { question: 'Is this a sales role?', answer: 'The scope described here is administrative communication and coordination. Any solicitation activity must be separately evaluated and governed by the client’s licensing and compliance requirements.' },
+    ],
+    relatedRoles: ['borrower-follow-up', 'crm-pipeline-support', 'mortgage-marketing-support'],
+    relatedContent: [{ title: 'Purchase contract amendment intake', href: '/blog/purchase-contract-amendment-intake' }, { title: 'Browse role design guidance', href: '/blog' }],
+  },
+  {
+    slug: 'mortgage-marketing-support',
+    name: 'Mortgage marketing support',
+    short: 'Organize content production, approvals, and campaign records while your team owns compliance and publication decisions.',
+    outcome: 'A controlled content queue with source material, review status, and final approvals easy to trace.',
+    idealFor: ['Mortgage teams with approved educational content that needs repurposing', 'Leaders managing recurring newsletters or partner updates', 'Marketing teams that need a visible compliance-review queue'],
+    tasks: ['Maintain an editorial calendar and production queue', 'Format approved source material for designated channels', 'Prepare drafts from client-supplied claims and references', 'Route every asset through the required review path', 'Maintain version, approval, and publication records', 'Compile factual engagement reports without inventing attribution'],
+    clientInputs: ['Brand and fair-lending communication guidance', 'Approved claims, source material, and required disclosures', 'Channel access and publishing permissions', 'Named marketing and compliance reviewers'],
+    outputs: ['Editorial and campaign calendar', 'Review-ready draft package', 'Version and approval log', 'Factual channel activity summary'],
+    qualityControls: ['Source check for every factual claim', 'Required compliance review before publication', 'Version control across channels', 'Accessibility, link, and disclosure checklist'],
+    boundaries: sharedBoundaries,
+    launchSteps: sharedLaunch,
+    faq: [
+      { question: 'Does the assistant approve mortgage advertising?', answer: 'No. The client’s authorized marketing and compliance reviewers approve content, claims, disclosures, targeting, and publication.' },
+      { question: 'Can the assistant create rate or product claims?', answer: 'The assistant should not invent or independently substantiate those claims. They can format current, client-approved information and route it for required review.' },
+      { question: 'Can this role publish directly?', answer: 'Only if the client creates a documented permission and approval workflow. Many teams keep final publishing with an internal owner, especially for regulated content.' },
+    ],
+    relatedRoles: ['real-estate-partner-support', 'crm-pipeline-support', 'borrower-follow-up'],
+    relatedContent: [{ title: 'Explore mortgage operations articles', href: '/blog' }, { title: 'Review workflow research', href: '/research' }],
+  },
+];
+
 export const site: SiteConfig = {
-  "name": "The Mortgage Assistant",
-  "domain": "themortgageassistant.com",
-  "siteId": "the-mortgage-assistant",
-  "niche": "mortgage teams",
-  "audience": "mortgage brokers, lenders, and loan teams",
-  "design": "editorial",
-  "eyebrow": "Mortgage operations, thoughtfully supported",
-  "hero": "Keep every file moving",
-  "heroAccent": "without losing the thread.",
-  "heroBody": "Specialist remote assistants help mortgage teams organize borrower follow up, file preparation, pipeline records, and closing coordination while accountable professionals keep every decision.",
-  "manifesto": "Calm files. Clear handoffs. More room for borrower relationships.",
-  "primary": "#7a2f2a",
-  "secondary": "#d6b18b",
-  "accent": "#e4c56d",
-  "canvas": "#f7f1e8",
-  "ink": "#241916",
-  "displayFont": "Bodoni MT",
-  "bodyFont": "Avenir Next",
-  "heroImage": "/hero.png",
-  "heroAlt": "Scale house, blank mortgage paperwork, and a key arranged on a warm studio desk",
-  "services": [
-    {
-      "slug": "loan-file-coordination",
-      "name": "Loan file coordination",
-      "short": "Keep document requests, status notes, and review queues organized.",
-      "tasks": [
-        "Prepare document request checklists",
-        "Maintain file status records",
-        "Flag missing borrower materials",
-        "Package review-ready file notes"
-      ]
-    },
-    {
-      "slug": "borrower-follow-up",
-      "name": "Borrower follow up",
-      "short": "Keep routine borrower communication clear, timely, and documented.",
-      "tasks": [
-        "Send approved reminders",
-        "Record response status",
-        "Route borrower questions",
-        "Prepare follow up summaries"
-      ]
-    },
-    {
-      "slug": "crm-pipeline-support",
-      "name": "CRM and pipeline support",
-      "short": "Maintain accurate records so the team can see the next action.",
-      "tasks": [
-        "Update approved CRM fields",
-        "Check task ownership",
-        "Prepare pipeline summaries",
-        "Flag stale records"
-      ]
-    },
-    {
-      "slug": "closing-coordination",
-      "name": "Closing coordination support",
-      "short": "Organize dates, documents, and handoffs around the closing workflow.",
-      "tasks": [
-        "Maintain milestone records",
-        "Prepare closing checklists",
-        "Coordinate approved reminders",
-        "Escalate schedule conflicts"
-      ]
-    },
-    {
-      "slug": "real-estate-partner-support",
-      "name": "Partner communication support",
-      "short": "Support consistent communication with referral and transaction partners.",
-      "tasks": [
-        "Prepare status updates",
-        "Maintain contact records",
-        "Coordinate approved touchpoints",
-        "Document partner requests"
-      ]
-    },
-    {
-      "slug": "mortgage-marketing-support",
-      "name": "Mortgage marketing support",
-      "short": "Prepare compliant content operations for review by your team.",
-      "tasks": [
-        "Organize content calendars",
-        "Prepare approved assets",
-        "Maintain campaign records",
-        "Route content for compliance review"
-      ]
-    }
-  ],
-  "categories": [
-    "Loan operations",
-    "Borrower experience",
-    "Pipeline systems",
-    "Role design"
-  ],
-  "principles": [
-    "Top 1 percent selectivity",
-    "Clear role boundaries",
-    "Reviewable workflows"
-  ],
-  "sources": [
-    {
-      "label": "Consumer Financial Protection Bureau",
-      "url": "https://www.consumerfinance.gov/owning-a-home/"
-    }
-  ]
+  name: 'The Mortgage Assistant',
+  domain: 'themortgageassistant.com',
+  siteId: 'the-mortgage-assistant',
+  niche: 'mortgage teams',
+  audience: 'mortgage brokers, lenders, and loan teams',
+  design: 'editorial',
+  eyebrow: 'The operations desk for mortgage teams',
+  hero: 'Keep the file moving.',
+  heroAccent: 'Keep the decision yours.',
+  heroBody: 'Specialist remote staff support the document, communication, pipeline, and closing work around a mortgage file. Your licensed team keeps every credit decision, approval, and regulated responsibility.',
+  manifesto: 'Clear queues. Traceable handoffs. More time for borrowers and decisions.',
+  primary: '#6f2528',
+  secondary: '#b9a68a',
+  accent: '#9a7a3a',
+  canvas: '#f3eee3',
+  ink: '#211a17',
+  displayFont: 'Iowan Old Style',
+  bodyFont: 'Arial',
+  heroImage: '/images/mortgage/operations-ledger.svg',
+  heroAlt: 'Illustrated mortgage operations ledger with a property file, document checklist, and routed handoffs',
+  services,
+  categories: ['Loan operations', 'Borrower experience', 'Pipeline systems', 'Role design'],
+  principles: ['Mortgage-specific workflow context', 'Explicit decision boundaries', 'Reviewable work from source to handoff'],
+  sources: [{ label: 'Consumer Financial Protection Bureau', url: 'https://www.consumerfinance.gov/owning-a-home/' }],
 };
