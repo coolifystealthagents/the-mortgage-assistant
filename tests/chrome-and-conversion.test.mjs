@@ -17,12 +17,21 @@ test('shared chrome has a sticky responsive four-item primary navigation', () =>
   assert.ok(primaryNav);
   assert.match(primaryNav, />Services<\/Link>/);
   assert.match(primaryNav, />About<\/Link>/);
-  assert.match(primaryNav, /<details className="nav-dropdown">[\s\S]*?<summary[\s\S]*?Insights/);
+  assert.match(primaryNav, /<details[^>]*className="nav-dropdown"[^>]*>[\s\S]*?<summary[\s\S]*?Insights/);
   assert.match(primaryNav, /Book a free call/);
   assert.match(chrome, /aria-expanded=\{mobileOpen\}/);
   assert.match(chrome, /aria-controls="primary-navigation"/);
   assert.match(css, /\.site-header\{position:sticky/);
   assert.match(css, /@media\(max-width:900px\)[\s\S]*?\.nav-toggle\{display:flex/);
+});
+
+test('navigation Escape handling closes the active menu and restores trigger focus', () => {
+  assert.match(chrome, /event\.key !== 'Escape'/);
+  assert.match(chrome, /insightsRef\.current/);
+  assert.match(chrome, /details\.open = false/);
+  assert.match(chrome, /querySelector<HTMLElement>\('summary'\)\?\.focus\(\)/);
+  assert.match(chrome, /setMobileOpen\(false\)/);
+  assert.match(chrome, /mobileToggleRef\.current\?\.focus\(\)/);
 });
 
 test('parent-company disclosure is visible, linked, and uses no unverified logo asset', () => {
@@ -50,7 +59,8 @@ test('personal email is accepted while required fields, tracking, honeypot, and 
   for (const field of ['first_name', 'last_name', 'email', 'company', 'company_size', 'positions_to_fill', 'referral_source']) {
     assert.match(form, new RegExp(`name="${field}"[^>]*required|required[^>]*name="${field}"`));
   }
-  assert.match(form, /name="website_url"/);
+  assert.match(form, /<label className="honeypot" aria-hidden="true">/);
+  assert.match(form, /name="website_url" tabIndex=\{-1\} autoComplete="off"/);
   assert.match(form, /window\.acrTracker\?\.trackLead/);
   assert.match(form, /data\.set\('_page_url', window\.location\.href\)/);
   assert.match(route, /if \(form\.get\('website_url'\)\)/);

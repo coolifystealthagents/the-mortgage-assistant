@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ArrowIcon } from './Icons';
 import { site } from '@/lib/site';
 
@@ -19,8 +19,34 @@ function isCurrent(pathname: string, href: string) {
 export function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const mobileToggleRef = useRef<HTMLButtonElement>(null);
+  const insightsRef = useRef<HTMLDetailsElement>(null);
 
-  useEffect(() => setMobileOpen(false), [pathname]);
+  useEffect(() => {
+    setMobileOpen(false);
+    if (insightsRef.current) insightsRef.current.open = false;
+  }, [pathname]);
+
+  useEffect(() => {
+    function closeActiveMenu(event: KeyboardEvent) {
+      if (event.key !== 'Escape') return;
+
+      const details = insightsRef.current;
+      if (details?.open) {
+        details.open = false;
+        details.querySelector<HTMLElement>('summary')?.focus();
+        return;
+      }
+
+      if (mobileOpen) {
+        setMobileOpen(false);
+        mobileToggleRef.current?.focus();
+      }
+    }
+
+    document.addEventListener('keydown', closeActiveMenu);
+    return () => document.removeEventListener('keydown', closeActiveMenu);
+  }, [mobileOpen]);
 
   return (
     <>
@@ -34,6 +60,7 @@ export function Header() {
           <span>{site.name}</span>
         </Link>
         <button
+          ref={mobileToggleRef}
           className="nav-toggle"
           type="button"
           aria-expanded={mobileOpen}
@@ -46,7 +73,7 @@ export function Header() {
         <nav id="primary-navigation" className={mobileOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary navigation">
           <Link className={isCurrent(pathname, '/services') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/services') ? 'page' : undefined} href="/services">Services</Link>
           <Link className={isCurrent(pathname, '/about') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/about') ? 'page' : undefined} href="/about">About</Link>
-          <details className="nav-dropdown">
+          <details ref={insightsRef} className="nav-dropdown">
             <summary className={isCurrent(pathname, '/blog') || isCurrent(pathname, '/research') ? 'is-current' : undefined}>
               Insights <span aria-hidden="true">⌄</span>
             </summary>
