@@ -14,189 +14,189 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "Do two reviewers assign the same triage class and owner to the same request? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
-          "The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens a condition log, records application and disclosure date and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Requests received during a defined month, including duplicates, withdrawn requests, and requests returned for authority.",
-          "The unit is one request at first triage. A clear unit prevents linked events from being counted as independent successes. Record opening cases, additions, withdrawals, resolutions, and unresolved end-of-window cases."
+          "The \"population and unit of analysis\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record owner and next action and loan and borrower identifier, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The mortgage operations manager can then sample an application checklist and compare rate locks nearing expiry without review against the work that remains open.",
+          "Ask what would let a new reviewer continue the \"population and unit of analysis\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Predefine the start, stop, pause rule, and missing-evidence treatment. Measure agreement on triage class, agreement on owner, duplicates found at triage, days from receipt to triage.",
-          "A count needs its denominator and window before it becomes a measure. Publish definitions with the result."
+          "The \"definitions and measures\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and owner and next action, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The compliance reviewer can then sample a condition log and compare files returned for missing documents against the work that remains open.",
+          "The application checklist is useful for the \"definitions and measures\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and rate-lock expiration and terms, keeps the source attached, and marks a case involving income or asset document conflicts with the owner who accepted it. Review rate locks nearing expiry without review during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Evidence and data dictionary",
         "paragraphs": [
-          "Each case needs the request record, the requester authority check, the existing-work search, the triage class definitions, the triage note. Record the source, observation time, field, and reviewer.",
-          "Keep missing, unavailable, and confirmed negative as separate codes. A blank and a verified no are different states."
+          "Within mortgage application and underwriting support, the \"evidence and data dictionary\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with rate-lock expiration and terms, add owner and next action, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the compliance reviewer should be able to reconstruct the next step without asking the preparer.",
+          "Treat the \"evidence and data dictionary\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves income or asset document conflicts. Record rate locks nearing expiry without review with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
-          "Collect on a fixed cadence and preserve the version observed. A later export can overwrite a value that was present during the review."
+          "The \"sampling and collection\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record condition and supporting document and rate-lock expiration and terms, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The mortgage operations manager can then sample a condition log and compare applications with complete disclosures against the work that remains open.",
+          "The condition log is useful for the \"sampling and collection\" control only if another person can audit it. The mortgage support specialist records loan and borrower identifier and rate-lock expiration and terms, keeps the source attached, and marks a case involving rate lock expires before closing with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Reviewer independence",
         "paragraphs": [
-          "Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
-          "Agreement is not accuracy. Two reviewers can agree on the same incomplete file. Follow agreement with a completeness check."
+          "Treat the \"reviewer independence\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a disclosure timing record, but the mortgage operations manager keeps the decision when the item involves income or asset document conflicts. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "The rate-lock record is useful for the \"reviewer independence\" control only if another person can audit it. The mortgage support specialist records application and disclosure date and condition and supporting document, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review rate locks nearing expiry without review during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the mortgage application and document support record is thin. It can support a triage class guide, a requester verification step, a duplicate search rule.",
-          "It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not judge whether the requested work was appropriate or whether the owner's priority was correct."
+          "A useful test for the \"what the evidence can support\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records owner and next action and loan and borrower identifier, then checks one high-value case and one exception during the weekly review. When the item involves income or asset document conflicts, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Limitations and error",
         "paragraphs": [
-          "Tone and urgency language may bias the class. Class definitions may overlap and force a coin flip. A duplicate may be a legitimate follow-up rather than an error.",
-          "Report the window, volume, mix, and exclusions beside the result. A single period may not represent another."
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens an application checklist, records owner and next action and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The \"limitations and error\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and condition and supporting document, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The underwriter can then sample a rate-lock record and compare files returned for missing documents against the work that remains open."
         ]
       },
       {
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
-          "Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
-          "Name the plausible alternatives: volume, system change, policy change, or client mix. Do not choose the most convenient explanation."
+          "Ask what would let a new reviewer continue the \"sensitivity and alternatives\" work without a conversation. The answer is usually a disclosure timing record with the source, version, owner, and next action. If the item involves borrower identity or authorization is unclear, the mortgage support specialist pauses the item, records the gap, and routes one question to the loan officer; do not close the item just to keep the queue moving.",
+          "Before scaling the \"sensitivity and alternatives\" workflow, make a disclosure timing record readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
-          "Internal control guidance and records management guidance frame the documentation question, not a result. The cited public sources frame method and context; they do not provide a result for this sample."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"privacy, access, and retention\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in an application checklist. If the item involves disclosure timing is at risk, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "The \"privacy, access, and retention\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and application and disclosure date, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The loan officer can then sample a disclosure timing record and compare conditions cleared by owner against the work that remains open."
         ]
       },
       {
         "heading": "Operational use and reporting",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
-          "Test one change on a later window. If the measure does not move, the cause is likely upstream in the source or the rule."
+          "Ask what would let a new reviewer continue the \"operational use and reporting\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Governance and stopping",
         "paragraphs": [
-          "Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
-          "Record what would reopen the conclusion: a system change, a new policy, a different mix, or a material volume shift. The brief is complete when another reviewer can repeat it."
+          "In practice, the mortgage support specialist handles the \"governance and stopping\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"governance and stopping\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves borrower identity or authorization is unclear, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "A calibration case",
         "paragraphs": [
-          "Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
-          "The calibration is not a search for consensus. It tests whether the evidence standard can be applied the same way twice. If reviewers need different documents, the record is ambiguous."
+          "In practice, the mortgage support specialist handles the \"a calibration case\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "The condition log is useful for the \"a calibration case\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and loan and borrower identifier, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review conditions cleared by owner during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Effort and practical constraints",
         "paragraphs": [
-          "With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
-          "If the review takes much longer, treat the record structure as the first finding. A process that cannot be sampled without reconstructing private email is a control problem."
+          "In practice, the mortgage support specialist handles the \"effort and practical constraints\" work by preparing a disclosure timing record and naming the decision boundary. Include the source and retrieval date, loan and borrower identifier, and the next action owner. When the item involves rate lock expires before closing, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "Within mortgage application and underwriting support, the \"effort and practical constraints\" control is only repeatable when the mortgage support specialist can show an application checklist behind each decision. Start with application and disclosure date, add owner and next action, and attach the source and date before the item moves. If the item involves borrower identity or authorization is unclear, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Reporting package",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
-          "Keep a short version log. When a definition or sample rule changes, record the date and affected cases so two reports are not mistaken for comparable."
+          "The control that matters for the \"reporting package\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and application and disclosure date, labels a case involving borrower identity or authorization is unclear, and leaves the decision with the mortgage operations manager. During the weekly review, compare applications with complete disclosures with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "Interpreting a small sample",
         "paragraphs": [
-          "A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
-          "If the sample cannot support a comparison, say so and describe what a larger review would need. The next step can still be a targeted fix."
+          "Treat the \"interpreting a small sample\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a rate-lock record, but the mortgage operations manager keeps the decision when the item involves borrower identity or authorization is unclear. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a disclosure timing record, records application and disclosure date and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Reopening conditions",
         "paragraphs": [
-          "Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
-          "Name the next review date and the owner who will decide whether the finding still applies. A protocol without reopening conditions becomes an old opinion."
+          "Ask what would let a new reviewer continue the \"reopening conditions\" work without a conversation. The answer is usually a condition log with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving.",
+          "Before scaling the \"reopening conditions\" workflow, make a disclosure timing record readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current mortgage application and document support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed."
+          "In practice, the mortgage support specialist handles the \"a worked example of the record\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, condition and supporting document, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Common failure modes",
         "paragraphs": [
-          "The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
-          "Each failure has a cheap test: can a second reviewer find the source, the owner, and the next action in a few minutes? If not, the item is not ready."
+          "The application checklist is useful for the \"common failure modes\" control only if another person can audit it. The mortgage support specialist records loan and borrower identifier and application and disclosure date, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review conditions cleared by owner during the weekly check and test one recent correction against the original evidence.",
+          "The condition log is useful for the \"common failure modes\" control only if another person can audit it. The mortgage support specialist records rate-lock expiration and terms and condition and supporting document, keeps the source attached, and marks a case involving rate lock expires before closing with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the mortgage application and document support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
-          "Keep that limit in the finding. A reviewer who knows what was not tested is less likely to overstate the result."
+          "Within mortgage application and underwriting support, the \"what the result does not prove\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with condition and supporting document, add owner and next action, and attach the source and date before the item moves. If the item involves rate lock expires before closing, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the underwriter should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "A short review agenda",
         "paragraphs": [
-          "Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
-          "The agenda is not ceremony. It makes the same gaps visible each cycle so the team stops rediscovering them at the deadline."
+          "Treat the \"a short review agenda\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a disclosure timing record, but the mortgage operations manager keeps the decision when the item involves income or asset document conflicts. Record applications with complete disclosures with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "The \"a short review agenda\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record application and disclosure date and rate-lock expiration and terms, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The loan officer can then sample an application checklist and compare files returned for missing documents against the work that remains open."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation."
+          "Before scaling the \"data quality checks\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, owner and next action, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "Ask what would let a new reviewer continue the \"data quality checks\" work without a conversation. The answer is usually a condition log with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the underwriter; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "A note on sampling",
         "paragraphs": [
-          "Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
-          "Record why the sample was chosen. A reader who knows the rule can judge whether the finding applies to their own queue."
+          "The control that matters for the \"a note on sampling\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures condition and supporting document and loan and borrower identifier, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare applications with complete disclosures with the unresolved items and note which fix changed the result.",
+          "Ask what would let a new reviewer continue the \"a note on sampling\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the underwriter; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "A note on evidence ownership",
         "paragraphs": [
-          "Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
-          "When ownership is unclear, record the gap and route it. Do not assign a source to a team name that cannot answer a question about it."
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens a rate-lock record, records condition and supporting document and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "For the \"a note on evidence ownership\" section, define the stopping condition before the mortgage support specialist starts the task. The rate-lock record should show owner and next action, application and disclosure date, and the evidence that let the mortgage operations manager accept the result. If the item involves borrower identity or authorization is unclear, document the reason and route the decision to the compliance reviewer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation."
+          "Within mortgage application and underwriting support, the \"what would change the answer\" control is only repeatable when the mortgage support specialist can show a condition log behind each decision. Start with loan and borrower identifier, add condition and supporting document, and attach the source and date before the item moves. If the item involves borrower identity or authorization is unclear, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the compliance reviewer should be able to reconstruct the next step without asking the preparer.",
+          "The control that matters for the \"what would change the answer\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures application and disclosure date and loan and borrower identifier, labels a case involving borrower identity or authorization is unclear, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "Why this matters for The Mortgage Assistant",
         "paragraphs": [
           "The Mortgage Assistant supports mortgage teams with mortgage application and document support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
-          "The findings here describe the record, not a ranking of providers or staff. the mortgage operations manager remains the decision maker for any commercial or service change."
+          "For the \"why this matters for The Mortgage Assistant\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show rate-lock expiration and terms, application and disclosure date, and the evidence that let the mortgage operations manager accept the result. If the item involves rate lock expires before closing, document the reason and route the decision to the compliance reviewer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Writing the conclusion",
         "paragraphs": [
-          "State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
-          "Avoid rankings and predictions. The useful conclusion is a specific record gap and a testable fix, not a general judgment about a team or vendor."
+          "The \"writing the conclusion\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record application and disclosure date and condition and supporting document, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The underwriter can then sample a rate-lock record and compare applications with complete disclosures against the work that remains open.",
+          "Treat the \"writing the conclusion\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a rate-lock record, but the mortgage operations manager keeps the decision when the item involves income or asset document conflicts. Record files returned for missing documents with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
@@ -208,8 +208,8 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Governance and handoff",
         "paragraphs": [
-          "Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list."
+          "The control that matters for the \"governance and handoff\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and owner and next action, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result.",
+          "In practice, the mortgage support specialist handles the \"governance and handoff\" work by preparing a disclosure timing record and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves rate lock expires before closing, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
@@ -253,189 +253,189 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "How much available time goes to planned work, exceptions, rework, and waiting? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
-          "The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
+          "Within mortgage application and underwriting support, the \"research question and scope\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with application and disclosure date, add condition and supporting document, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "One team's handled items during a defined four-week window, including overtime and items carried in from the prior period.",
-          "The unit is one handled item with a time record. A clear unit prevents linked events from being counted as independent successes. Record opening cases, additions, withdrawals, resolutions, and unresolved end-of-window cases."
+          "Within mortgage application and underwriting support, the \"population and unit of analysis\" control is only repeatable when the mortgage support specialist can show a disclosure timing record behind each decision. Start with condition and supporting document, add rate-lock expiration and terms, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer.",
+          "The condition log is useful for the \"population and unit of analysis\" control only if another person can audit it. The mortgage support specialist records owner and next action and loan and borrower identifier, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Predefine the start, stop, pause rule, and missing-evidence treatment. Measure share of hours by category, rework hours, overtime hours, backlog at the end of the window.",
-          "A count needs its denominator and window before it becomes a measure. Publish definitions with the result."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"definitions and measures\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves income or asset document conflicts, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "The condition log is useful for the \"definitions and measures\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and rate-lock expiration and terms, keeps the source attached, and marks a case involving income or asset document conflicts with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Evidence and data dictionary",
         "paragraphs": [
-          "Each case needs the time record, the work type, the exception code, the rework reason, the availability calendar. Record the source, observation time, field, and reviewer.",
-          "Keep missing, unavailable, and confirmed negative as separate codes. A blank and a verified no are different states."
+          "For the \"evidence and data dictionary\" section, define the stopping condition before the mortgage support specialist starts the task. The rate-lock record should show application and disclosure date, condition and supporting document, and the evidence that let the mortgage operations manager accept the result. If the item involves borrower identity or authorization is unclear, document the reason and route the decision to the mortgage operations manager; a reopened item needs a new dated action, not a copied closure note.",
+          "A useful test for the \"evidence and data dictionary\" control is whether a condition log still makes sense after a week away. The mortgage support specialist records loan and borrower identifier and owner and next action, then checks one high-value case and one exception during the weekly review. When the item involves income or asset document conflicts, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
-          "Collect on a fixed cadence and preserve the version observed. A later export can overwrite a value that was present during the review."
+          "The control that matters for the \"sampling and collection\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures condition and supporting document and rate-lock expiration and terms, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare conditions cleared by owner with the unresolved items and note which fix changed the result.",
+          "A useful test for the \"sampling and collection\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records loan and borrower identifier and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves income or asset document conflicts, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Reviewer independence",
         "paragraphs": [
-          "Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
-          "Agreement is not accuracy. Two reviewers can agree on the same incomplete file. Follow agreement with a completeness check."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"reviewer independence\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves borrower identity or authorization is unclear, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "Treat the \"reviewer independence\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record applications with complete disclosures with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the mortgage application and document support record is thin. It can support a work-type capacity model, a rework reason code, a weekly capacity review.",
-          "It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not rank individual productivity or prove that more staff would fix the backlog."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"what the evidence can support\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in an application checklist. If the item involves rate lock expires before closing, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Limitations and error",
         "paragraphs": [
-          "Self-reported time may be rounded or estimated. Waiting time may be excluded because no one owns the clock. A four-week window may miss a seasonal peak.",
-          "Report the window, volume, mix, and exclusions beside the result. A single period may not represent another."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens an application checklist, records application and disclosure date and loan and borrower identifier, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"limitations and error\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves borrower identity or authorization is unclear, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
-          "Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
-          "Name the plausible alternatives: volume, system change, policy change, or client mix. Do not choose the most convenient explanation."
+          "The control that matters for the \"sensitivity and alternatives\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures loan and borrower identifier and application and disclosure date, labels a case involving income or asset document conflicts, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result.",
+          "A useful test for the \"sensitivity and alternatives\" control is whether a rate-lock record still makes sense after a week away. The mortgage support specialist records rate-lock expiration and terms and loan and borrower identifier, then checks one high-value case and one exception during the weekly review. When the item involves income or asset document conflicts, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
-          "Operational research and internal control guidance frame the method; the cited sources do not provide a result for this team. The cited public sources frame method and context; they do not provide a result for this sample."
+          "The control that matters for the \"privacy, access, and retention\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures condition and supporting document and rate-lock expiration and terms, labels a case involving income or asset document conflicts, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"privacy, access, and retention\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves borrower identity or authorization is unclear, route it to the underwriter and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Operational use and reporting",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
-          "Test one change on a later window. If the measure does not move, the cause is likely upstream in the source or the rule."
+          "A useful test for the \"operational use and reporting\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records condition and supporting document and rate-lock expiration and terms, then checks one high-value case and one exception during the weekly review. When the item involves rate lock expires before closing, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Governance and stopping",
         "paragraphs": [
-          "Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
-          "Record what would reopen the conclusion: a system change, a new policy, a different mix, or a material volume shift. The brief is complete when another reviewer can repeat it."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a rate-lock record, records condition and supporting document and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The \"governance and stopping\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record application and disclosure date and condition and supporting document, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The mortgage operations manager can then sample a rate-lock record and compare conditions cleared by owner against the work that remains open."
         ]
       },
       {
         "heading": "A calibration case",
         "paragraphs": [
-          "Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
-          "The calibration is not a search for consensus. It tests whether the evidence standard can be applied the same way twice. If reviewers need different documents, the record is ambiguous."
+          "The control that matters for the \"a calibration case\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures loan and borrower identifier and application and disclosure date, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result.",
+          "Ask what would let a new reviewer continue the \"a calibration case\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves borrower identity or authorization is unclear, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Effort and practical constraints",
         "paragraphs": [
-          "With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
-          "If the review takes much longer, treat the record structure as the first finding. A process that cannot be sampled without reconstructing private email is a control problem."
+          "In practice, the mortgage support specialist handles the \"effort and practical constraints\" work by preparing a disclosure timing record and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "The condition log is useful for the \"effort and practical constraints\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and owner and next action, keeps the source attached, and marks a case involving income or asset document conflicts with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Reporting package",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
-          "Keep a short version log. When a definition or sample rule changes, record the date and affected cases so two reports are not mistaken for comparable."
+          "Before scaling the \"reporting package\" workflow, make a rate-lock record readable to someone outside the original team. It should show the request, the source, loan and borrower identifier, the mortgage operations manager, and the next date in one place. The mortgage operations manager reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Interpreting a small sample",
         "paragraphs": [
-          "A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
-          "If the sample cannot support a comparison, say so and describe what a larger review would need. The next step can still be a targeted fix."
+          "For the \"interpreting a small sample\" section, define the stopping condition before the mortgage support specialist starts the task. The disclosure timing record should show owner and next action, loan and borrower identifier, and the evidence that let the mortgage operations manager accept the result. If the item involves disclosure timing is at risk, document the reason and route the decision to the loan officer; a reopened item needs a new dated action, not a copied closure note.",
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens a rate-lock record, records owner and next action and loan and borrower identifier, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Reopening conditions",
         "paragraphs": [
-          "Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
-          "Name the next review date and the owner who will decide whether the finding still applies. A protocol without reopening conditions becomes an old opinion."
+          "Within mortgage application and underwriting support, the \"reopening conditions\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with rate-lock expiration and terms, add loan and borrower identifier, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer.",
+          "In practice, the mortgage support specialist handles the \"reopening conditions\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, owner and next action, and the next action owner. When the item involves income or asset document conflicts, the item goes to the loan officer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current mortgage application and document support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed."
+          "The application checklist is useful for the \"a worked example of the record\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and loan and borrower identifier, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Common failure modes",
         "paragraphs": [
-          "The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
-          "Each failure has a cheap test: can a second reviewer find the source, the owner, and the next action in a few minutes? If not, the item is not ready."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a condition log, records condition and supporting document and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "Before scaling the \"common failure modes\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, owner and next action, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the mortgage application and document support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
-          "Keep that limit in the finding. A reviewer who knows what was not tested is less likely to overstate the result."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens a rate-lock record, records loan and borrower identifier and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "A short review agenda",
         "paragraphs": [
-          "Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
-          "The agenda is not ceremony. It makes the same gaps visible each cycle so the team stops rediscovering them at the deadline."
+          "Before scaling the \"a short review agenda\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The loan officer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "The control that matters for the \"a short review agenda\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures owner and next action and rate-lock expiration and terms, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare conditions cleared by owner with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation."
+          "A useful test for the \"data quality checks\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records rate-lock expiration and terms and owner and next action, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "For the \"data quality checks\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show condition and supporting document, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves income or asset document conflicts, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "A note on sampling",
         "paragraphs": [
-          "Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
-          "Record why the sample was chosen. A reader who knows the rule can judge whether the finding applies to their own queue."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens an application checklist, records rate-lock expiration and terms and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The application checklist is useful for the \"a note on sampling\" control only if another person can audit it. The mortgage support specialist records owner and next action and rate-lock expiration and terms, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "A note on evidence ownership",
         "paragraphs": [
-          "Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
-          "When ownership is unclear, record the gap and route it. Do not assign a source to a team name that cannot answer a question about it."
+          "A useful test for the \"a note on evidence ownership\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records rate-lock expiration and terms and application and disclosure date, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "The condition log is useful for the \"a note on evidence ownership\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and rate-lock expiration and terms, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"what would change the answer\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves borrower identity or authorization is unclear, route it to the underwriter and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "Within mortgage application and underwriting support, the \"what would change the answer\" control is only repeatable when the mortgage support specialist can show a condition log behind each decision. Start with loan and borrower identifier, add application and disclosure date, and attach the source and date before the item moves. If the item involves rate lock expires before closing, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Why this matters for The Mortgage Assistant",
         "paragraphs": [
           "The Mortgage Assistant supports mortgage teams with mortgage application and document support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
-          "The findings here describe the record, not a ranking of providers or staff. the mortgage operations manager remains the decision maker for any commercial or service change."
+          "The \"why this matters for The Mortgage Assistant\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record owner and next action and application and disclosure date, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The loan officer can then sample a rate-lock record and compare rate locks nearing expiry without review against the work that remains open."
         ]
       },
       {
         "heading": "Writing the conclusion",
         "paragraphs": [
-          "State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
-          "Avoid rankings and predictions. The useful conclusion is a specific record gap and a testable fix, not a general judgment about a team or vendor."
+          "Treat the \"writing the conclusion\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare an application checklist, but the mortgage operations manager keeps the decision when the item involves disclosure timing is at risk. Record files returned for missing documents with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Ask what would let a new reviewer continue the \"writing the conclusion\" work without a conversation. The answer is usually a disclosure timing record with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving."
         ]
       },
       {
@@ -447,8 +447,8 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Governance and handoff",
         "paragraphs": [
-          "Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list."
+          "The \"governance and handoff\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record application and disclosure date and condition and supporting document, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The compliance reviewer can then sample a disclosure timing record and compare rate locks nearing expiry without review against the work that remains open.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"governance and handoff\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves income or asset document conflicts, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
@@ -482,7 +482,7 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
   {
     "slug": "completeness-return",
     "title": "Why Do Files Come Back Incomplete in mortgage application and document support?",
-    "summary": "A protocol measuring which required fields are missing at first review and what causes the return.",
+    "summary": "The control that matters for the \"sources\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and loan and borrower identifier, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result.",
     "cluster": "Application intake",
     "publishedAt": "2026-10-26",
     "finding": "Which required fields are missing at first review, and what causes the file to be returned? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
@@ -492,189 +492,189 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "Which required fields are missing at first review, and what causes the file to be returned? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
-          "The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
+          "The control that matters for the \"research question and scope\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and application and disclosure date, labels a case involving borrower identity or authorization is unclear, and leaves the decision with the mortgage operations manager. During the weekly review, compare applications with complete disclosures with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Files submitted during a defined month, including resubmissions and files later withdrawn.",
-          "The unit is one file at its first completeness review. A clear unit prevents linked events from being counted as independent successes. Record opening cases, additions, withdrawals, resolutions, and unresolved end-of-window cases."
+          "The control that matters for the \"population and unit of analysis\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures application and disclosure date and owner and next action, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result.",
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens an application checklist, records owner and next action and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Predefine the start, stop, pause rule, and missing-evidence treatment. Measure first-pass completeness rate, missing-field frequency, days from return to resubmission, waivers granted.",
-          "A count needs its denominator and window before it becomes a measure. Publish definitions with the result."
+          "The \"definitions and measures\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and application and disclosure date, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The compliance reviewer can then sample a condition log and compare applications with complete disclosures against the work that remains open.",
+          "Before scaling the \"definitions and measures\" workflow, make a rate-lock record readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The loan officer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Evidence and data dictionary",
         "paragraphs": [
-          "Each case needs the required-field checklist, the file version, the missing field, the return note, the resubmission record. Record the source, observation time, field, and reviewer.",
-          "Keep missing, unavailable, and confirmed negative as separate codes. A blank and a verified no are different states."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"evidence and data dictionary\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves rate lock expires before closing, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "Within mortgage application and underwriting support, the \"evidence and data dictionary\" control is only repeatable when the mortgage support specialist can show a condition log behind each decision. Start with loan and borrower identifier, add application and disclosure date, and attach the source and date before the item moves. If the item involves rate lock expires before closing, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
-          "Collect on a fixed cadence and preserve the version observed. A later export can overwrite a value that was present during the review."
+          "Before scaling the \"sampling and collection\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, owner and next action, the mortgage operations manager, and the next date in one place. The loan officer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "In practice, the mortgage support specialist handles the \"sampling and collection\" work by preparing a disclosure timing record and naming the decision boundary. Include the source and retrieval date, condition and supporting document, and the next action owner. When the item involves borrower identity or authorization is unclear, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Reviewer independence",
         "paragraphs": [
-          "Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
-          "Agreement is not accuracy. Two reviewers can agree on the same incomplete file. Follow agreement with a completeness check."
+          "Treat the \"reviewer independence\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "In practice, the mortgage support specialist handles the \"reviewer independence\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, application and disclosure date, and the next action owner. When the item involves income or asset document conflicts, the item goes to the mortgage operations manager with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the mortgage application and document support record is thin. It can support a required-field list by work type, a return-message template, a waiver log.",
-          "It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not judge the quality of the underlying client file or the outcome of the work."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens an application checklist, records application and disclosure date and loan and borrower identifier, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Limitations and error",
         "paragraphs": [
-          "The checklist may change during the window. A late file may be excluded even though it carries the same defect. A reviewer may accept a weak file to keep the queue moving.",
-          "Report the window, volume, mix, and exclusions beside the result. A single period may not represent another."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens an application checklist, records rate-lock expiration and terms and loan and borrower identifier, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "Treat the \"limitations and error\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a disclosure timing record, but the mortgage operations manager keeps the decision when the item involves borrower identity or authorization is unclear. Record files returned for missing documents with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
-          "Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
-          "Name the plausible alternatives: volume, system change, policy change, or client mix. Do not choose the most convenient explanation."
+          "Before scaling the \"sensitivity and alternatives\" workflow, make a disclosure timing record readable to someone outside the original team. It should show the request, the source, application and disclosure date, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"sensitivity and alternatives\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves disclosure timing is at risk, route it to the underwriter and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
-          "Records management and internal control guidance frame the completeness standard. The cited public sources frame method and context; they do not provide a result for this sample."
+          "In practice, the mortgage support specialist handles the \"privacy, access, and retention\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, condition and supporting document, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "Within mortgage application and underwriting support, the \"privacy, access, and retention\" control is only repeatable when the mortgage support specialist can show a disclosure timing record behind each decision. Start with condition and supporting document, add owner and next action, and attach the source and date before the item moves. If the item involves rate lock expires before closing, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Operational use and reporting",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
-          "Test one change on a later window. If the measure does not move, the cause is likely upstream in the source or the rule."
+          "Ask what would let a new reviewer continue the \"operational use and reporting\" work without a conversation. The answer is usually a condition log with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the loan officer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Governance and stopping",
         "paragraphs": [
-          "Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
-          "Record what would reopen the conclusion: a system change, a new policy, a different mix, or a material volume shift. The brief is complete when another reviewer can repeat it."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a disclosure timing record, records rate-lock expiration and terms and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "For the \"governance and stopping\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show owner and next action, loan and borrower identifier, and the evidence that let the mortgage operations manager accept the result. If the item involves income or asset document conflicts, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "A calibration case",
         "paragraphs": [
-          "Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
-          "The calibration is not a search for consensus. It tests whether the evidence standard can be applied the same way twice. If reviewers need different documents, the record is ambiguous."
+          "Ask what would let a new reviewer continue the \"a calibration case\" work without a conversation. The answer is usually a disclosure timing record with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving.",
+          "In practice, the mortgage support specialist handles the \"a calibration case\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, application and disclosure date, and the next action owner. When the item involves disclosure timing is at risk, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Effort and practical constraints",
         "paragraphs": [
-          "With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
-          "If the review takes much longer, treat the record structure as the first finding. A process that cannot be sampled without reconstructing private email is a control problem."
+          "Before scaling the \"effort and practical constraints\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, owner and next action, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "Before scaling the \"effort and practical constraints\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, loan and borrower identifier, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Reporting package",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
-          "Keep a short version log. When a definition or sample rule changes, record the date and affected cases so two reports are not mistaken for comparable."
+          "Ask what would let a new reviewer continue the \"reporting package\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Interpreting a small sample",
         "paragraphs": [
-          "A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
-          "If the sample cannot support a comparison, say so and describe what a larger review would need. The next step can still be a targeted fix."
+          "The control that matters for the \"interpreting a small sample\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and loan and borrower identifier, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare conditions cleared by owner with the unresolved items and note which fix changed the result.",
+          "In practice, the mortgage support specialist handles the \"interpreting a small sample\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, application and disclosure date, and the next action owner. When the item involves borrower identity or authorization is unclear, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Reopening conditions",
         "paragraphs": [
-          "Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
-          "Name the next review date and the owner who will decide whether the finding still applies. A protocol without reopening conditions becomes an old opinion."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"reopening conditions\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves disclosure timing is at risk, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "A useful test for the \"reopening conditions\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records application and disclosure date and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current mortgage application and document support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed."
+          "Ask what would let a new reviewer continue the \"a worked example of the record\" work without a conversation. The answer is usually an application checklist with the source, version, owner, and next action. If the item involves borrower identity or authorization is unclear, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Common failure modes",
         "paragraphs": [
-          "The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
-          "Each failure has a cheap test: can a second reviewer find the source, the owner, and the next action in a few minutes? If not, the item is not ready."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a condition log, records application and disclosure date and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "A useful test for the \"common failure modes\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records application and disclosure date and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the mortgage application and document support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
-          "Keep that limit in the finding. A reviewer who knows what was not tested is less likely to overstate the result."
+          "Ask what would let a new reviewer continue the \"what the result does not prove\" work without a conversation. The answer is usually a rate-lock record with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "A short review agenda",
         "paragraphs": [
-          "Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
-          "The agenda is not ceremony. It makes the same gaps visible each cycle so the team stops rediscovering them at the deadline."
+          "The control that matters for the \"a short review agenda\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and owner and next action, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare conditions cleared by owner with the unresolved items and note which fix changed the result.",
+          "In practice, the mortgage support specialist handles the \"a short review agenda\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, loan and borrower identifier, and the next action owner. When the item involves rate lock expires before closing, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation."
+          "Treat the \"data quality checks\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a rate-lock record, but the mortgage operations manager keeps the decision when the item involves disclosure timing is at risk. Record rate locks nearing expiry without review with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Treat the \"data quality checks\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves disclosure timing is at risk. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "A note on sampling",
         "paragraphs": [
-          "Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
-          "Record why the sample was chosen. A reader who knows the rule can judge whether the finding applies to their own queue."
+          "In practice, the mortgage support specialist handles the \"a note on sampling\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves rate lock expires before closing, the item goes to the mortgage operations manager with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "The disclosure timing record is useful for the \"a note on sampling\" control only if another person can audit it. The mortgage support specialist records loan and borrower identifier and rate-lock expiration and terms, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "A note on evidence ownership",
         "paragraphs": [
-          "Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
-          "When ownership is unclear, record the gap and route it. Do not assign a source to a team name that cannot answer a question about it."
+          "Within mortgage application and underwriting support, the \"a note on evidence ownership\" control is only repeatable when the mortgage support specialist can show a disclosure timing record behind each decision. Start with loan and borrower identifier, add owner and next action, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer.",
+          "The control that matters for the \"a note on evidence ownership\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures owner and next action and loan and borrower identifier, labels a case involving income or asset document conflicts, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation."
+          "A useful test for the \"what would change the answer\" control is whether a rate-lock record still makes sense after a week away. The mortgage support specialist records rate-lock expiration and terms and owner and next action, then checks one high-value case and one exception during the weekly review. When the item involves rate lock expires before closing, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"what would change the answer\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves disclosure timing is at risk, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Why this matters for The Mortgage Assistant",
         "paragraphs": [
           "The Mortgage Assistant supports mortgage teams with mortgage application and document support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
-          "The findings here describe the record, not a ranking of providers or staff. the mortgage operations manager remains the decision maker for any commercial or service change."
+          "Ask what would let a new reviewer continue the \"why this matters for The Mortgage Assistant\" work without a conversation. The answer is usually a rate-lock record with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Writing the conclusion",
         "paragraphs": [
-          "State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
-          "Avoid rankings and predictions. The useful conclusion is a specific record gap and a testable fix, not a general judgment about a team or vendor."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a rate-lock record, records rate-lock expiration and terms and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens a disclosure timing record, records rate-lock expiration and terms and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
@@ -686,8 +686,8 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Governance and handoff",
         "paragraphs": [
-          "Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list."
+          "A useful test for the \"governance and handoff\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records application and disclosure date and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves rate lock expires before closing, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "The disclosure timing record is useful for the \"governance and handoff\" control only if another person can audit it. The mortgage support specialist records application and disclosure date and rate-lock expiration and terms, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
@@ -731,189 +731,189 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "What share of sampled approvals were made at the level required by the threshold in force at the time? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
-          "The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
+          "A useful test for the \"research question and scope\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records application and disclosure date and owner and next action, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Requests approved during a defined quarter, including split requests, emergency approvals, and approvals later reversed.",
-          "The unit is one approval event. A clear unit prevents linked events from being counted as independent successes. Record opening cases, additions, withdrawals, resolutions, and unresolved end-of-window cases."
+          "A useful test for the \"population and unit of analysis\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records application and disclosure date and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "For the \"population and unit of analysis\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show owner and next action, condition and supporting document, and the evidence that let the mortgage operations manager accept the result. If the item involves income or asset document conflicts, document the reason and route the decision to the compliance reviewer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Predefine the start, stop, pause rule, and missing-evidence treatment. Measure correct-level rate, split or linked request count, approval cycle time, decisions without a recorded justification.",
-          "A count needs its denominator and window before it becomes a measure. Publish definitions with the result."
+          "Within mortgage application and underwriting support, the \"definitions and measures\" control is only repeatable when the mortgage support specialist can show a disclosure timing record behind each decision. Start with application and disclosure date, add owner and next action, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer.",
+          "Ask what would let a new reviewer continue the \"definitions and measures\" work without a conversation. The answer is usually a condition log with the source, version, owner, and next action. If the item involves rate lock expires before closing, the mortgage support specialist pauses the item, records the gap, and routes one question to the loan officer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Evidence and data dictionary",
         "paragraphs": [
-          "Each case needs the request value, the threshold version, the approver role, the decision date, the justification. Record the source, observation time, field, and reviewer.",
-          "Keep missing, unavailable, and confirmed negative as separate codes. A blank and a verified no are different states."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens a condition log, records condition and supporting document and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "For the \"evidence and data dictionary\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show rate-lock expiration and terms, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves rate lock expires before closing, document the reason and route the decision to the mortgage operations manager; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
-          "Collect on a fixed cadence and preserve the version observed. A later export can overwrite a value that was present during the review."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"sampling and collection\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in an application checklist. If the item involves rate lock expires before closing, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"sampling and collection\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves rate lock expires before closing, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Reviewer independence",
         "paragraphs": [
-          "Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
-          "Agreement is not accuracy. Two reviewers can agree on the same incomplete file. Follow agreement with a completeness check."
+          "The \"reviewer independence\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record condition and supporting document and loan and borrower identifier, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The compliance reviewer can then sample a rate-lock record and compare applications with complete disclosures against the work that remains open.",
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens a rate-lock record, records rate-lock expiration and terms and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the mortgage application and document support record is thin. It can support a threshold schedule with an effective date, an approval log, a split-request check.",
-          "It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not provide a legal, financial, or audit conclusion about any individual approval."
+          "For the \"what the evidence can support\" section, define the stopping condition before the mortgage support specialist starts the task. The disclosure timing record should show condition and supporting document, loan and borrower identifier, and the evidence that let the mortgage operations manager accept the result. If the item involves disclosure timing is at risk, document the reason and route the decision to the compliance reviewer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Limitations and error",
         "paragraphs": [
-          "The value may change after approval. An emergency exception may legitimately bypass the level. An approver may act outside the recorded role.",
-          "Report the window, volume, mix, and exclusions beside the result. A single period may not represent another."
+          "In practice, the mortgage support specialist handles the \"limitations and error\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, condition and supporting document, and the next action owner. When the item involves borrower identity or authorization is unclear, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens an application checklist, records rate-lock expiration and terms and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
-          "Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
-          "Name the plausible alternatives: volume, system change, policy change, or client mix. Do not choose the most convenient explanation."
+          "For the \"sensitivity and alternatives\" section, define the stopping condition before the mortgage support specialist starts the task. The application checklist should show owner and next action, condition and supporting document, and the evidence that let the mortgage operations manager accept the result. If the item involves income or asset document conflicts, document the reason and route the decision to the mortgage operations manager; a reopened item needs a new dated action, not a copied closure note.",
+          "Within mortgage application and underwriting support, the \"sensitivity and alternatives\" control is only repeatable when the mortgage support specialist can show a condition log behind each decision. Start with condition and supporting document, add loan and borrower identifier, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
-          "Internal control guidance frames the approval question; local policy governs the actual threshold. The cited public sources frame method and context; they do not provide a result for this sample."
+          "Treat the \"privacy, access, and retention\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves income or asset document conflicts. Record rate locks nearing expiry without review with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Ask what would let a new reviewer continue the \"privacy, access, and retention\" work without a conversation. The answer is usually a rate-lock record with the source, version, owner, and next action. If the item involves income or asset document conflicts, the mortgage support specialist pauses the item, records the gap, and routes one question to the underwriter; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Operational use and reporting",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
-          "Test one change on a later window. If the measure does not move, the cause is likely upstream in the source or the rule."
+          "Before scaling the \"operational use and reporting\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, owner and next action, the mortgage operations manager, and the next date in one place. The mortgage operations manager reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Governance and stopping",
         "paragraphs": [
-          "Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
-          "Record what would reopen the conclusion: a system change, a new policy, a different mix, or a material volume shift. The brief is complete when another reviewer can repeat it."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"governance and stopping\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves borrower identity or authorization is unclear, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "For the \"governance and stopping\" section, define the stopping condition before the mortgage support specialist starts the task. The disclosure timing record should show rate-lock expiration and terms, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves disclosure timing is at risk, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "A calibration case",
         "paragraphs": [
-          "Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
-          "The calibration is not a search for consensus. It tests whether the evidence standard can be applied the same way twice. If reviewers need different documents, the record is ambiguous."
+          "In practice, the mortgage support specialist handles the \"a calibration case\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, condition and supporting document, and the next action owner. When the item involves income or asset document conflicts, the item goes to the loan officer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "A useful test for the \"a calibration case\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records loan and borrower identifier and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Effort and practical constraints",
         "paragraphs": [
-          "With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
-          "If the review takes much longer, treat the record structure as the first finding. A process that cannot be sampled without reconstructing private email is a control problem."
+          "Ask what would let a new reviewer continue the \"effort and practical constraints\" work without a conversation. The answer is usually a rate-lock record with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving.",
+          "Treat the \"effort and practical constraints\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare an application checklist, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record rate locks nearing expiry without review with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "Reporting package",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
-          "Keep a short version log. When a definition or sample rule changes, record the date and affected cases so two reports are not mistaken for comparable."
+          "The condition log is useful for the \"reporting package\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and loan and borrower identifier, keeps the source attached, and marks a case involving disclosure timing is at risk with the owner who accepted it. Review conditions cleared by owner during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Interpreting a small sample",
         "paragraphs": [
-          "A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
-          "If the sample cannot support a comparison, say so and describe what a larger review would need. The next step can still be a targeted fix."
+          "For the \"interpreting a small sample\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show application and disclosure date, condition and supporting document, and the evidence that let the mortgage operations manager accept the result. If the item involves disclosure timing is at risk, document the reason and route the decision to the compliance reviewer; a reopened item needs a new dated action, not a copied closure note.",
+          "The control that matters for the \"interpreting a small sample\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures loan and borrower identifier and owner and next action, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "Reopening conditions",
         "paragraphs": [
-          "Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
-          "Name the next review date and the owner who will decide whether the finding still applies. A protocol without reopening conditions becomes an old opinion."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"reopening conditions\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves income or asset document conflicts, route it to the underwriter and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "A useful test for the \"reopening conditions\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records rate-lock expiration and terms and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves borrower identity or authorization is unclear, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current mortgage application and document support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed."
+          "Ask what would let a new reviewer continue the \"a worked example of the record\" work without a conversation. The answer is usually a disclosure timing record with the source, version, owner, and next action. If the item involves income or asset document conflicts, the mortgage support specialist pauses the item, records the gap, and routes one question to the compliance reviewer; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Common failure modes",
         "paragraphs": [
-          "The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
-          "Each failure has a cheap test: can a second reviewer find the source, the owner, and the next action in a few minutes? If not, the item is not ready."
+          "The disclosure timing record is useful for the \"common failure modes\" control only if another person can audit it. The mortgage support specialist records owner and next action and loan and borrower identifier, keeps the source attached, and marks a case involving income or asset document conflicts with the owner who accepted it. Review rate locks nearing expiry without review during the weekly check and test one recent correction against the original evidence.",
+          "A useful test for the \"common failure modes\" control is whether a condition log still makes sense after a week away. The mortgage support specialist records owner and next action and rate-lock expiration and terms, then checks one high-value case and one exception during the weekly review. When the item involves disclosure timing is at risk, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the mortgage application and document support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
-          "Keep that limit in the finding. A reviewer who knows what was not tested is less likely to overstate the result."
+          "The control that matters for the \"what the result does not prove\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures loan and borrower identifier and owner and next action, labels a case involving rate lock expires before closing, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "A short review agenda",
         "paragraphs": [
-          "Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
-          "The agenda is not ceremony. It makes the same gaps visible each cycle so the team stops rediscovering them at the deadline."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"a short review agenda\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves rate lock expires before closing, route it to the underwriter and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "For the \"a short review agenda\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show rate-lock expiration and terms, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves rate lock expires before closing, document the reason and route the decision to the loan officer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation."
+          "Treat the \"data quality checks\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare an application checklist, but the mortgage operations manager keeps the decision when the item involves borrower identity or authorization is unclear. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Before scaling the \"data quality checks\" workflow, make a condition log readable to someone outside the original team. It should show the request, the source, loan and borrower identifier, the mortgage operations manager, and the next date in one place. The underwriter reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "A note on sampling",
         "paragraphs": [
-          "Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
-          "Record why the sample was chosen. A reader who knows the rule can judge whether the finding applies to their own queue."
+          "Treat the \"a note on sampling\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a condition log, but the mortgage operations manager keeps the decision when the item involves borrower identity or authorization is unclear. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "The control that matters for the \"a note on sampling\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures loan and borrower identifier and application and disclosure date, labels a case involving income or asset document conflicts, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result."
         ]
       },
       {
         "heading": "A note on evidence ownership",
         "paragraphs": [
-          "Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
-          "When ownership is unclear, record the gap and route it. Do not assign a source to a team name that cannot answer a question about it."
+          "For the \"a note on evidence ownership\" section, define the stopping condition before the mortgage support specialist starts the task. The application checklist should show owner and next action, loan and borrower identifier, and the evidence that let the mortgage operations manager accept the result. If the item involves income or asset document conflicts, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note.",
+          "Before scaling the \"a note on evidence ownership\" workflow, make a rate-lock record readable to someone outside the original team. It should show the request, the source, condition and supporting document, the mortgage operations manager, and the next date in one place. The mortgage operations manager reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation."
+          "Before scaling the \"what would change the answer\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, condition and supporting document, the mortgage operations manager, and the next date in one place. The compliance reviewer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "The application checklist is useful for the \"what would change the answer\" control only if another person can audit it. The mortgage support specialist records application and disclosure date and loan and borrower identifier, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review conditions cleared by owner during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Why this matters for The Mortgage Assistant",
         "paragraphs": [
           "The Mortgage Assistant supports mortgage teams with mortgage application and document support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
-          "The findings here describe the record, not a ranking of providers or staff. the mortgage operations manager remains the decision maker for any commercial or service change."
+          "A useful test for the \"why this matters for The Mortgage Assistant\" control is whether an application checklist still makes sense after a week away. The mortgage support specialist records owner and next action and rate-lock expiration and terms, then checks one high-value case and one exception during the weekly review. When the item involves disclosure timing is at risk, the item stays open with a named owner and a dated next action rather than being marked complete."
         ]
       },
       {
         "heading": "Writing the conclusion",
         "paragraphs": [
-          "State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
-          "Avoid rankings and predictions. The useful conclusion is a specific record gap and a testable fix, not a general judgment about a team or vendor."
+          "Treat the \"writing the conclusion\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a disclosure timing record, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "Treat the \"writing the conclusion\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare a disclosure timing record, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record files returned for missing documents with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
@@ -925,8 +925,8 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Governance and handoff",
         "paragraphs": [
-          "Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list."
+          "Concrete example: an asset statement conflicts with the application. The mortgage support specialist opens an application checklist, records rate-lock expiration and terms and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"governance and handoff\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in an application checklist. If the item involves borrower identity or authorization is unclear, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
@@ -970,189 +970,189 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
         "heading": "Research question and scope",
         "paragraphs": [
           "After a written process change, did the affected records follow the new step? The scope is the operational record for mortgage application and document support, not the legal, financial, or clinical conclusion that may follow.",
-          "The study is deliberately narrow. It reports what the record can show in a defined population and window. It does not claim an industry rate or a causal staffing effect."
+          "Treat the \"research question and scope\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare an application checklist, but the mortgage operations manager keeps the decision when the item involves rate lock expires before closing. Record files returned for missing documents with its denominator and window, then use the weekly sample to check whether the same gap keeps returning."
         ]
       },
       {
         "heading": "Population and unit of analysis",
         "paragraphs": [
-          "Records handled in the four weeks before and four weeks after a documented change, excluding records opened under a different procedure.",
-          "The unit is one record at the changed step. A clear unit prevents linked events from being counted as independent successes. Record opening cases, additions, withdrawals, resolutions, and unresolved end-of-window cases."
+          "Before scaling the \"population and unit of analysis\" workflow, make a disclosure timing record readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The loan officer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "In practice, the mortgage support specialist handles the \"population and unit of analysis\" work by preparing an application checklist and naming the decision boundary. Include the source and retrieval date, application and disclosure date, and the next action owner. When the item involves borrower identity or authorization is unclear, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Predefine the start, stop, pause rule, and missing-evidence treatment. Measure new-step adoption rate, errors at the changed step, acknowledgment by role, rollback events.",
-          "A count needs its denominator and window before it becomes a measure. Publish definitions with the result."
+          "Within mortgage application and underwriting support, the \"definitions and measures\" control is only repeatable when the mortgage support specialist can show a condition log behind each decision. Start with application and disclosure date, add owner and next action, and attach the source and date before the item moves. If the item involves rate lock expires before closing, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"definitions and measures\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in an application checklist. If the item involves rate lock expires before closing, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Evidence and data dictionary",
         "paragraphs": [
-          "Each case needs the change note and version, the effective date, the record version, the reviewer check, the acknowledgment log. Record the source, observation time, field, and reviewer.",
-          "Keep missing, unavailable, and confirmed negative as separate codes. A blank and a verified no are different states."
+          "Before scaling the \"evidence and data dictionary\" workflow, make a condition log readable to someone outside the original team. It should show the request, the source, condition and supporting document, the mortgage operations manager, and the next date in one place. The loan officer reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens an application checklist, records owner and next action and rate-lock expiration and terms, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Select cases from a frozen population with a written rule. Include ordinary, exception, reopened, and withdrawn items.",
-          "Collect on a fixed cadence and preserve the version observed. A later export can overwrite a value that was present during the review."
+          "The \"sampling and collection\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record application and disclosure date and rate-lock expiration and terms, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The underwriter can then sample a rate-lock record and compare rate locks nearing expiry without review against the work that remains open.",
+          "The \"sampling and collection\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and rate-lock expiration and terms, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The compliance reviewer can then sample a rate-lock record and compare files returned for missing documents against the work that remains open."
         ]
       },
       {
         "heading": "Reviewer independence",
         "paragraphs": [
-          "Two reviewers classify the same cases before discussion. Compare first-pass judgments and group differences by evidence, definition, authority, or calculation.",
-          "Agreement is not accuracy. Two reviewers can agree on the same incomplete file. Follow agreement with a completeness check."
+          "The \"reviewer independence\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and rate-lock expiration and terms, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The mortgage operations manager can then sample an application checklist and compare conditions cleared by owner against the work that remains open.",
+          "For the \"reviewer independence\" section, define the stopping condition before the mortgage support specialist starts the task. The disclosure timing record should show application and disclosure date, loan and borrower identifier, and the evidence that let the mortgage operations manager accept the result. If the item involves rate lock expires before closing, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "What the evidence can support",
         "paragraphs": [
           "The record can show field presence, source currency, named ownership, and where the mortgage application and document support record is thin. It can support a change note template, an acknowledgment log, a post-change sample.",
-          "It cannot promise an outcome, a regulator's view, or a causal result. The protocol does not establish a causal effect or rank the teams that adopted the change."
+          "The rate-lock record is useful for the \"what the evidence can support\" control only if another person can audit it. The mortgage support specialist records rate-lock expiration and terms and application and disclosure date, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review files returned for missing documents during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "Limitations and error",
         "paragraphs": [
-          "Another change in the same window may explain the difference. A partial rollout can mix old and new steps. Training may differ by shift or location.",
-          "Report the window, volume, mix, and exclusions beside the result. A single period may not represent another."
+          "The \"limitations and error\" control becomes fragile when the application, disclosure, condition, and rate-lock queue is measured only by completed items. The mortgage support specialist should record loan and borrower identifier and owner and next action, keep exceptions visible, and let the mortgage operations manager decide any commitment or scope change. The mortgage operations manager can then sample a disclosure timing record and compare conditions cleared by owner against the work that remains open.",
+          "In practice, the mortgage support specialist handles the \"limitations and error\" work by preparing a rate-lock record and naming the decision boundary. Include the source and retrieval date, application and disclosure date, and the next action owner. When the item involves borrower identity or authorization is unclear, the item goes to the underwriter with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "Sensitivity and alternatives",
         "paragraphs": [
-          "Rerun the count with a different pause rule and a different treatment of unresolved cases. If the direction changes, report the finding as fragile.",
-          "Name the plausible alternatives: volume, system change, policy change, or client mix. Do not choose the most convenient explanation."
+          "The control that matters for the \"sensitivity and alternatives\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures rate-lock expiration and terms and owner and next action, labels a case involving borrower identity or authorization is unclear, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result.",
+          "For the \"sensitivity and alternatives\" section, define the stopping condition before the mortgage support specialist starts the task. The condition log should show owner and next action, condition and supporting document, and the evidence that let the mortgage operations manager accept the result. If the item involves borrower identity or authorization is unclear, document the reason and route the decision to the underwriter; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
         "heading": "Privacy, access, and retention",
         "paragraphs": [
-          "Collect the minimum fields. Use named accounts, role-based access, masked identifiers, and an approved location. Log access and set a disposal date.",
-          "Implementation and internal control guidance frame the adoption question, not a result. The cited public sources frame method and context; they do not provide a result for this sample."
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"privacy, access, and retention\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a rate-lock record. If the item involves income or asset document conflicts, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply.",
+          "Within mortgage application and underwriting support, the \"privacy, access, and retention\" control is only repeatable when the mortgage support specialist can show a disclosure timing record behind each decision. Start with owner and next action, add loan and borrower identifier, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the compliance reviewer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Operational use and reporting",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limits together. Separate observations, calculations, and owner judgments.",
-          "Test one change on a later window. If the measure does not move, the cause is likely upstream in the source or the rule."
+          "Within mortgage application and underwriting support, the \"operational use and reporting\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with loan and borrower identifier, add application and disclosure date, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the underwriter should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Governance and stopping",
         "paragraphs": [
-          "Name the protocol owner, data custodian, operational owner, and the reviewer who can pause the study. Pause on unauthorized disclosure or an unverifiable source.",
-          "Record what would reopen the conclusion: a system change, a new policy, a different mix, or a material volume shift. The brief is complete when another reviewer can repeat it."
+          "Treat the \"governance and stopping\" control as an evidence problem before treating it as a speed problem. The mortgage support specialist can prepare an application checklist, but the mortgage operations manager keeps the decision when the item involves disclosure timing is at risk. Record conditions cleared by owner with its denominator and window, then use the weekly sample to check whether the same gap keeps returning.",
+          "The application checklist is useful for the \"governance and stopping\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and rate-lock expiration and terms, keeps the source attached, and marks a case involving borrower identity or authorization is unclear with the owner who accepted it. Review rate locks nearing expiry without review during the weekly check and test one recent correction against the original evidence."
         ]
       },
       {
         "heading": "A calibration case",
         "paragraphs": [
-          "Take one ordinary case, one exception, one withdrawn case, and one unresolved end-of-window case. Two reviewers reconstruct the evidence independently before discussion.",
-          "The calibration is not a search for consensus. It tests whether the evidence standard can be applied the same way twice. If reviewers need different documents, the record is ambiguous."
+          "For the \"a calibration case\" section, define the stopping condition before the mortgage support specialist starts the task. The disclosure timing record should show rate-lock expiration and terms, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves disclosure timing is at risk, document the reason and route the decision to the mortgage operations manager; a reopened item needs a new dated action, not a copied closure note.",
+          "Within mortgage application and underwriting support, the \"a calibration case\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with owner and next action, add application and disclosure date, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the compliance reviewer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Effort and practical constraints",
         "paragraphs": [
-          "With accessible files, the review fits a short cycle: define the population, pull and mask the sample, review, reconcile. The expensive step is finding evidence across systems.",
-          "If the review takes much longer, treat the record structure as the first finding. A process that cannot be sampled without reconstructing private email is a control problem."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens an application checklist, records loan and borrower identifier and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"effort and practical constraints\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a condition log. If the item involves disclosure timing is at risk, route it to the mortgage operations manager and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Reporting package",
         "paragraphs": [
           "Publish the case flow, definitions, counts, unresolved items, disagreement summary, and limitations together. Label observations, calculations, and owner judgments.",
-          "Keep a short version log. When a definition or sample rule changes, record the date and affected cases so two reports are not mistaken for comparable."
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens a condition log, records application and disclosure date and condition and supporting document, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "Interpreting a small sample",
         "paragraphs": [
-          "A small review finds where the record breaks; it does not estimate a population rate. Report counts, fields checked, and unresolved items rather than a precise percentage.",
-          "If the sample cannot support a comparison, say so and describe what a larger review would need. The next step can still be a targeted fix."
+          "Ask what would let a new reviewer continue the \"interpreting a small sample\" work without a conversation. The answer is usually a condition log with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving.",
+          "Before scaling the \"interpreting a small sample\" workflow, make a rate-lock record readable to someone outside the original team. It should show the request, the source, application and disclosure date, the mortgage operations manager, and the next date in one place. The underwriter reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Reopening conditions",
         "paragraphs": [
-          "Record what would reopen the conclusion: a system change, a new policy, a different client mix, or a material volume shift.",
-          "Name the next review date and the owner who will decide whether the finding still applies. A protocol without reopening conditions becomes an old opinion."
+          "In practice, the mortgage support specialist handles the \"reopening conditions\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, rate-lock expiration and terms, and the next action owner. When the item involves income or asset document conflicts, the item goes to the compliance reviewer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it.",
+          "In practice, the mortgage support specialist handles the \"reopening conditions\" work by preparing a condition log and naming the decision boundary. Include the source and retrieval date, owner and next action, and the next action owner. When the item involves rate lock expires before closing, the item goes to the loan officer with the evidence already checked; the application, disclosure, condition, and rate-lock queue should show the hold, not hide it."
         ]
       },
       {
         "heading": "A worked example of the record",
         "paragraphs": [
           "An item arrives with a source that is one version behind the current mortgage application and document support record. The reviewer flags the version, keeps the item open, and asks one question. No one rebuilds the case from memory.",
-          "The corrected source arrives, the reviewer compares it with the prior value, and the owner accepts the next action. The record now shows why the delay occurred and what changed."
+          "Within mortgage application and underwriting support, the \"a worked example of the record\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with rate-lock expiration and terms, add loan and borrower identifier, and attach the source and date before the item moves. If the item involves borrower identity or authorization is unclear, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "Common failure modes",
         "paragraphs": [
-          "The first failure is treating a status as evidence. The second is closing an item because the queue is long. The third is measuring activity without checking the record.",
-          "Each failure has a cheap test: can a second reviewer find the source, the owner, and the next action in a few minutes? If not, the item is not ready."
+          "The control that matters for the \"common failure modes\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures owner and next action and loan and borrower identifier, labels a case involving disclosure timing is at risk, and leaves the decision with the mortgage operations manager. During the weekly review, compare rate locks nearing expiry without review with the unresolved items and note which fix changed the result.",
+          "Within mortgage application and underwriting support, the \"common failure modes\" control is only repeatable when the mortgage support specialist can show an application checklist behind each decision. Start with loan and borrower identifier, add condition and supporting document, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the loan officer should be able to reconstruct the next step without asking the preparer."
         ]
       },
       {
         "heading": "What the result does not prove",
         "paragraphs": [
           "The result does not prove that the mortgage application and document support work was correct, that a customer will be satisfied, or that one staffing model is better. It describes the record and the process around it.",
-          "Keep that limit in the finding. A reviewer who knows what was not tested is less likely to overstate the result."
+          "Concrete example: a disclosure is sent after the timing window. The mortgage support specialist opens a disclosure timing record, records application and disclosure date and owner and next action, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "A short review agenda",
         "paragraphs": [
-          "Start with the items whose decision date has passed, then the items tied to a current revision, then the highest value items. End with a one-page summary for the owner.",
-          "The agenda is not ceremony. It makes the same gaps visible each cycle so the team stops rediscovering them at the deadline."
+          "A useful test for the \"a short review agenda\" control is whether a rate-lock record still makes sense after a week away. The mortgage support specialist records loan and borrower identifier and application and disclosure date, then checks one high-value case and one exception during the weekly review. When the item involves disclosure timing is at risk, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "Ask what would let a new reviewer continue the \"a short review agenda\" work without a conversation. The answer is usually a disclosure timing record with the source, version, owner, and next action. If the item involves disclosure timing is at risk, the mortgage support specialist pauses the item, records the gap, and routes one question to the mortgage operations manager; do not close the item just to keep the queue moving."
         ]
       },
       {
         "heading": "Data quality checks",
         "paragraphs": [
-          "Check identifiers, timestamps, impossible sequences, duplicates, and edits made after observation. Automated checks find inconsistencies; a reviewer interprets the meaning.",
-          "Keep the raw extract and the cleaned version. If a value changes, record the change and the reason rather than overwriting the observation."
+          "Within mortgage application and underwriting support, the \"data quality checks\" control is only repeatable when the mortgage support specialist can show a rate-lock record behind each decision. Start with loan and borrower identifier, add application and disclosure date, and attach the source and date before the item moves. If the item involves disclosure timing is at risk, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the mortgage operations manager should be able to reconstruct the next step without asking the preparer.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"data quality checks\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves disclosure timing is at risk, route it to the loan officer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "A note on sampling",
         "paragraphs": [
-          "Sample by value and by change, not only by convenience. Include one item that was corrected, one that was escalated, and one that looked routine.",
-          "Record why the sample was chosen. A reader who knows the rule can judge whether the finding applies to their own queue."
+          "The control that matters for the \"a note on sampling\" section is a short, reviewable record, not a longer checklist. The mortgage support specialist captures owner and next action and condition and supporting document, labels a case involving borrower identity or authorization is unclear, and leaves the decision with the mortgage operations manager. During the weekly review, compare files returned for missing documents with the unresolved items and note which fix changed the result.",
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens an application checklist, records condition and supporting document and application and disclosure date, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
         "heading": "A note on evidence ownership",
         "paragraphs": [
-          "Name the person who can confirm each source and the person who can change the rule. A source without an owner is a link, not evidence.",
-          "When ownership is unclear, record the gap and route it. Do not assign a source to a team name that cannot answer a question about it."
+          "Before scaling the \"a note on evidence ownership\" workflow, make a condition log readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The mortgage operations manager reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work.",
+          "Before scaling the \"a note on evidence ownership\" workflow, make a condition log readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The underwriter reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "What would change the answer",
         "paragraphs": [
-          "A new system, a policy change, a different client mix, or a material shift in volume can make the result stale. Record those triggers with the finding.",
-          "Name the next review date and the owner. A protocol that is not revisited becomes an old opinion with a citation."
+          "A useful test for the \"what would change the answer\" control is whether a disclosure timing record still makes sense after a week away. The mortgage support specialist records owner and next action and condition and supporting document, then checks one high-value case and one exception during the weekly review. When the item involves rate lock expires before closing, the item stays open with a named owner and a dated next action rather than being marked complete.",
+          "The application, disclosure, condition, and rate-lock queue in mortgage application and underwriting support usually fails at the handoff, not at the first task. For the \"what would change the answer\" section, the mortgage support specialist should capture the source, the version, the accountable mortgage operations manager, and the next review date in a disclosure timing record. If the item involves borrower identity or authorization is unclear, route it to the compliance reviewer and keep the exception reason attached so a later reviewer can see why the normal path did not apply."
         ]
       },
       {
         "heading": "Why this matters for The Mortgage Assistant",
         "paragraphs": [
           "The Mortgage Assistant supports mortgage teams with mortgage application and document support. A local protocol is useful only if it names the records this team can actually see and the decisions its owners can actually make.",
-          "The findings here describe the record, not a ranking of providers or staff. the mortgage operations manager remains the decision maker for any commercial or service change."
+          "Before scaling the \"why this matters for The Mortgage Assistant\" workflow, make an application checklist readable to someone outside the original team. It should show the request, the source, rate-lock expiration and terms, the mortgage operations manager, and the next date in one place. The underwriter reviewing the application, disclosure, condition, and rate-lock queue should see exceptions, not a clean activity count that hides unresolved work."
         ]
       },
       {
         "heading": "Writing the conclusion",
         "paragraphs": [
-          "State the question, population, window, measures, and the limits before the finding. A reader should be able to see which claims are supported and which are not.",
-          "Avoid rankings and predictions. The useful conclusion is a specific record gap and a testable fix, not a general judgment about a team or vendor."
+          "The condition log is useful for the \"writing the conclusion\" control only if another person can audit it. The mortgage support specialist records condition and supporting document and loan and borrower identifier, keeps the source attached, and marks a case involving rate lock expires before closing with the owner who accepted it. Review applications with complete disclosures during the weekly check and test one recent correction against the original evidence.",
+          "Concrete example: a rate lock expires while a condition remains open. The mortgage support specialist opens a rate-lock record, records application and disclosure date and loan and borrower identifier, and asks one precise question instead of filling the blank from memory. The item leaves the application, disclosure, condition, and rate-lock queue only after the mortgage operations manager accepts the next action and the evidence link is attached."
         ]
       },
       {
@@ -1164,8 +1164,8 @@ export const october26ResearchBatch: readonly ResearchPost[] = [
       {
         "heading": "Governance and handoff",
         "paragraphs": [
-          "Leave the protocol, codebook, sample file, and open items in one place. The next reviewer should not rebuild the method from memory.",
-          "Assign one owner for the protocol and one custodian for the data. Record the disposal date and the access list."
+          "Within mortgage application and underwriting support, the \"governance and handoff\" control is only repeatable when the mortgage support specialist can show an application checklist behind each decision. Start with owner and next action, add condition and supporting document, and attach the source and date before the item moves. If the item involves income or asset document conflicts, hold the work in the application, disclosure, condition, and rate-lock queue and route the choice to the mortgage operations manager; the compliance reviewer should be able to reconstruct the next step without asking the preparer.",
+          "For the \"governance and handoff\" section, define the stopping condition before the mortgage support specialist starts the task. The application checklist should show loan and borrower identifier, owner and next action, and the evidence that let the mortgage operations manager accept the result. If the item involves borrower identity or authorization is unclear, document the reason and route the decision to the loan officer; a reopened item needs a new dated action, not a copied closure note."
         ]
       },
       {
