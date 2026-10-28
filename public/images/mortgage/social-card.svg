@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Mortgage Assistant — mortgage operations support</title>
+  <desc id="desc">A branded social card showing a mortgage operations file, checklist, and routed handoffs.</desc>
+  <rect width="1200" height="630" fill="#f3eee3"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#6f2528"/>
+  <path d="M64 74h1072M64 556h1072" stroke="#9a7a3a" stroke-width="2" opacity=".65"/>
+
+  <g transform="translate(72 76)">
+    <circle cx="38" cy="38" r="36" fill="#e4c56d"/>
+    <path d="M12 37 38 15l26 22v27H12z" fill="#fff8ea" stroke="#7a2f2a" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="31" y="35" width="27" height="31" rx="2" fill="#fffaf2" stroke="#7a2f2a" stroke-width="4"/>
+    <path d="m35 43 3 3 5-6m-8 16 3 3 5-6" fill="none" stroke="#7a2f2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M47 44h6m-6 13h6" stroke="#9a7a3a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <text x="166" y="108" fill="#211a17" font-family="Georgia, 'DejaVu Serif', serif" font-size="29" font-weight="700">The Mortgage Assistant</text>
+  <text x="72" y="215" fill="#6f2528" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="17" font-weight="700" letter-spacing="4">SPECIALIST SUPPORT FOR MORTGAGE OPERATIONS</text>
+  <text x="72" y="302" fill="#211a17" font-family="Georgia, 'DejaVu Serif', serif" font-size="56" font-weight="600">Keep the file moving.</text>
+  <text x="72" y="373" fill="#6f2528" font-family="Georgia, 'DejaVu Serif', serif" font-size="48">Keep the decision yours.</text>
+  <text x="72" y="442" fill="#4d3b35" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="22">Document intake  •  Borrower follow-up  •  Pipeline handoffs</text>
+  <text x="72" y="513" fill="#211a17" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="18" font-weight="700" letter-spacing="2">THEMORTGAGEASSISTANT.COM</text>
+
+  <g transform="translate(835 105)">
+    <rect x="0" y="0" width="296" height="368" fill="#fffaf2" stroke="#211a17" stroke-width="4"/>
+    <rect x="28" y="28" width="240" height="68" fill="#6f2528"/>
+    <text x="50" y="57" fill="#fffaf2" font-family="Georgia, 'DejaVu Serif', serif" font-size="19" letter-spacing="2">ACTIVE FILE</text>
+    <text x="50" y="80" fill="#fffaf2" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="11" letter-spacing="2">CONTROLLED WORKING COPY</text>
+    <g fill="#211a17" font-family="Arial, 'DejaVu Sans', sans-serif" font-size="13" letter-spacing="1">
+      <text x="40" y="145">DOCUMENT INTAKE</text>
+      <text x="40" y="205">BORROWER CONTACT</text>
+      <text x="40" y="265">REVIEW HANDOFF</text>
+      <text x="40" y="325">EXCEPTION OWNER</text>
+    </g>
+    <g fill="none" stroke="#7a2f2a" stroke-width="4">
+      <rect x="236" y="130" width="17" height="17"/><path d="m239 137 6 6 12-16"/>
+      <rect x="236" y="190" width="17" height="17"/><path d="m239 197 6 6 12-16"/>
+      <rect x="236" y="250" width="17" height="17"/>
+      <rect x="236" y="310" width="17" height="17"/>
+    </g>
+    <path d="M28 163h240M28 223h240M28 283h240M28 343h240" stroke="#9a7a3a" stroke-width="1.5" opacity=".65"/>
+  </g>
+</svg>

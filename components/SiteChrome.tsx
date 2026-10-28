@@ -99,7 +99,10 @@ export function Footer() {
         <div>
           <Link className="brand inverse" href="/"><Image src="/logo.svg" alt="" width={44} height={44} /><span>{site.name}</span></Link>
           <p>Specialist remote staff for {site.audience}.</p>
-          <a className="parent-mark" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">A Stealth Agents Company</a>
+          <a className="parent-mark" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/contact/stealth-agents-logo-black.png" alt="" width={149} height={50} />
+            <span>A Stealth Agents Company</span>
+          </a>
         </div>
         <nav className="footer-links" aria-label="Footer navigation">
           <div><strong>Explore</strong><Link href="/services">Services</Link><Link href="/about">About</Link><Link href="/contact-us">Contact</Link></div>

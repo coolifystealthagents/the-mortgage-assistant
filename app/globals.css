@@ -57,6 +57,7 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
 .footer-main{padding:4rem 5vw 3rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem}
 .footer-main>div>p{max-width:450px;color:#d9cbc1}
 .parent-mark{width:max-content;max-width:100%;min-height:54px;margin-top:1.5rem;padding:.5rem .75rem;display:flex;align-items:center;gap:.8rem;background:#fffaf2;color:#211816;border-left:4px solid #d4b874;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.parent-mark img{width:104px;height:auto;object-fit:contain}
 
 .footer-links{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
 .footer-links>div{display:flex;flex-direction:column;align-items:flex-start;gap:.4rem}
@@ -80,6 +81,7 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
 @media(max-width:600px){
   h1{font-size:clamp(2.75rem,14vw,4rem)}
   .site-header .brand span{max-width:190px;line-height:1.15}
-  .footer-links{grid-template-columns:1fr 1fr}.footer-main{padding-inline:5vw}
+  .footer-main{padding-inline:5vw}.footer-main>div{min-width:0}.footer-links{grid-template-columns:1fr 1fr}
+  .parent-mark{width:100%;line-height:1.35}
   .scheduling-panel{padding-top:1rem}.booking-frame{min-width:0;height:720px;box-shadow:5px 5px 0 #d4b874}
 }
