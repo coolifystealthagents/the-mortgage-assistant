@@ -48,8 +48,12 @@ test('Open Graph and Twitter metadata use a branded large raster card', () => {
   assert.match(layout, /themeColor: '#6f2528'/);
 });
 
+test('shared header uses the approved parent attribution without changing its destination', () => {
+  assert.match(chrome, /className="utility-strip"[\s\S]*href="https:\/\/stealthagents\.com"[\s\S]*>Powered by Stealth Agents<\/a>/);
+});
+
 test('official parent company identity remains a subordinate shared-footer credential', () => {
   assert.match(chrome, /className="parent-mark"[\s\S]*href="https:\/\/stealthagents\.com"/);
   assert.match(chrome, /src="\/images\/contact\/stealth-agents-logo-black\.png"/);
-  assert.match(chrome, /A Stealth Agents Company/);
+  assert.match(chrome, /className="parent-mark"[\s\S]*<span>A Stealth Agents Company<\/span>/);
 });

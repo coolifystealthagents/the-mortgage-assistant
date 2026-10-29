@@ -35,7 +35,7 @@ test('navigation Escape handling closes the active menu and restores trigger foc
 });
 
 test('parent-company disclosure is visible, linked, and uses no unverified logo asset', () => {
-  assert.match(chrome, /href="https:\/\/stealthagents\.com"[^>]*>A Stealth Agents Company<\/a>/);
+  assert.match(chrome, /href="https:\/\/stealthagents\.com"[^>]*>Powered by Stealth Agents<\/a>/);
   assert.equal(existsSync(new URL('../public/images/chrome-or-reviews/stealth-agents-logo-black.png', import.meta.url)), false);
 });
 

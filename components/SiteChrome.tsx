@@ -52,7 +52,7 @@ export function Header() {
     <>
       <div className="utility-strip">
         <span>Specialist support for mortgage operations</span>
-        <a href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">A Stealth Agents Company</a>
+        <a href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">Powered by Stealth Agents</a>
       </div>
       <header className="site-header">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
