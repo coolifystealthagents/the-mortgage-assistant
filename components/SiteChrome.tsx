@@ -50,10 +50,6 @@ export function Header() {
 
   return (
     <>
-      <div className="utility-strip">
-        <span>Specialist support for mortgage operations</span>
-        <a href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">Powered by Stealth Agents</a>
-      </div>
       <header className="site-header">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
           <Image src="/logo.svg" alt="" width={42} height={42} priority />
@@ -85,6 +81,10 @@ export function Header() {
               ))}
             </div>
           </details>
+          <a className="nav-attribution" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/contact/stealth-agents-logo-black.png" alt="" width={149} height={50} />
+            <span>Powered by Stealth Agents</span>
+          </a>
           <Link id="cta-global-header-bookcall" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Book a free call <ArrowIcon /></Link>
         </nav>
       </header>

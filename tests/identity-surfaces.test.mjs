@@ -14,6 +14,7 @@ function pngDimensions(path) {
 
 const layout = read('app/layout.tsx');
 const chrome = read('components/SiteChrome.tsx');
+const css = read('app/globals.css');
 const logo = read('public/logo.svg');
 
 const iconPath = 'app/icon.png';
@@ -48,8 +49,18 @@ test('Open Graph and Twitter metadata use a branded large raster card', () => {
   assert.match(layout, /themeColor: '#6f2528'/);
 });
 
-test('shared header uses the approved parent attribution without changing its destination', () => {
-  assert.match(chrome, /className="utility-strip"[\s\S]*href="https:\/\/stealthagents\.com"[\s\S]*>Powered by Stealth Agents<\/a>/);
+test('shared header places the approved parent attribution inside primary navigation', () => {
+  assert.doesNotMatch(chrome, /className="utility-strip"/);
+  assert.doesNotMatch(css, /\.utility-strip/);
+  const mobileHeaderCss = css.match(/@media\(max-width:1100px\)\{\n([\s\S]*?)\n\}/)?.[1] ?? '';
+  assert.match(mobileHeaderCss, /\.site-header \.primary-nav\{[^}]*max-height:calc\(100vh - 68px\)/);
+  const primaryNav = chrome.match(/<nav id="primary-navigation"[\s\S]*?<\/nav>/)?.[0] ?? '';
+  assert.ok(primaryNav);
+  assert.match(primaryNav, /className="nav-attribution"/);
+  assert.match(primaryNav, /href="https:\/\/stealthagents\.com"/);
+  assert.match(primaryNav, /src="\/images\/contact\/stealth-agents-logo-black\.png"/);
+  assert.match(primaryNav, /alt="" width=\{149\} height=\{50\}/);
+  assert.match(primaryNav, /<span>Powered by Stealth Agents<\/span>/);
 });
 
 test('official parent company identity remains a subordinate shared-footer credential', () => {

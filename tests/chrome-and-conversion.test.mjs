@@ -22,7 +22,10 @@ test('shared chrome has a sticky responsive four-item primary navigation', () =>
   assert.match(chrome, /aria-expanded=\{mobileOpen\}/);
   assert.match(chrome, /aria-controls="primary-navigation"/);
   assert.match(css, /\.site-header\{position:sticky/);
-  assert.match(css, /@media\(max-width:900px\)[\s\S]*?\.nav-toggle\{display:flex/);
+  const mobileHeaderCss = css.match(/@media\(max-width:1100px\)\{\n([\s\S]*?)\n\}/)?.[1] ?? '';
+  assert.ok(mobileHeaderCss);
+  assert.match(mobileHeaderCss, /\.nav-toggle\{display:flex/);
+  assert.match(mobileHeaderCss, /\.site-header \.primary-nav\{[^}]*max-height:calc\(100vh - 68px\)/);
 });
 
 test('navigation Escape handling closes the active menu and restores trigger focus', () => {
@@ -34,8 +37,11 @@ test('navigation Escape handling closes the active menu and restores trigger foc
   assert.match(chrome, /mobileToggleRef\.current\?\.focus\(\)/);
 });
 
-test('parent-company disclosure is visible, linked, and uses no unverified logo asset', () => {
-  assert.match(chrome, /href="https:\/\/stealthagents\.com"[^>]*>Powered by Stealth Agents<\/a>/);
+test('parent-company disclosure is a compact primary-navigation credential using the approved logo', () => {
+  assert.doesNotMatch(chrome, /className="utility-strip"/);
+  assert.match(chrome, /className="nav-attribution"[\s\S]*href="https:\/\/stealthagents\.com"/);
+  assert.match(chrome, /className="nav-attribution"[\s\S]*src="\/images\/contact\/stealth-agents-logo-black\.png"[\s\S]*Powered by Stealth Agents/);
+  assert.match(css, /\.nav-attribution\{/);
   assert.equal(existsSync(new URL('../public/images/chrome-or-reviews/stealth-agents-logo-black.png', import.meta.url)), false);
 });
 
