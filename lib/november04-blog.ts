@@ -43,7 +43,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the borrower document requests close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on track a borrower document request until the loan file is complete?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/borrower-follow-up",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-prepare-a-closing-coordination-checklist-with-source-dates",
@@ -89,7 +109,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the closing coordination checklists close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on prepare a closing coordination checklist with source dates?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/closing-coordination",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-keep-a-real-estate-partner-handoff-visible-in-the-pipeline",
@@ -135,7 +175,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the real estate partner handoffs close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on keep a real estate partner handoff visible in the pipeline?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/real-estate-partner-support",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-review-a-mortgage-marketing-claim-before-publication",
@@ -181,7 +241,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the mortgage marketing claims close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on review a mortgage marketing claim before publication?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/mortgage-marketing-support",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-record-a-pipeline-update-without-changing-the-borrower-stage",
@@ -227,7 +307,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the pipeline updates close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on record a pipeline update without changing the borrower stage?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/crm-pipeline-support",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-check-a-loan-estimate-disclosure-date-against-the-file",
@@ -273,7 +373,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the loan estimate disclosures close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on check a loan estimate disclosure date against the file?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/loan-file-coordination",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-coordinate-an-appraisal-order-with-the-borrower-and-lender",
@@ -319,7 +439,27 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the appraisal orders close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on coordinate an appraisal order with the borrower and lender?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/loan-file-coordination",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   },
   {
     "slug": "themortgageassistant-audit-a-closing-package-for-missing-signatures",
@@ -365,6 +505,26 @@ export const november04BlogPosts = [
           "The close note records what was checked, who approved it, what changed, and what would reopen the case. The operations owner should be able to read one record later and explain the close without contacting the original assistant. The Mortgage Assistant keeps the closing package audits close note with the source evidence. The Mortgage Assistant keeps the note with the loan file."
         ]
       }
-    ]
+    ],
+    "faq": [
+      {
+        "q": "What should the team check first on audit a closing package for missing signatures?",
+        "a": "Start with the source record and the named owner. The specialist records the source in the approved system before the case moves forward."
+      },
+      {
+        "q": "Which decisions stay with the accountable owner?",
+        "a": "The accountable owner keeps every decision that changes money, access, policy, or a borrower commitment. The specialist prepares the evidence and routes the exception."
+      },
+      {
+        "q": "How should results be reviewed?",
+        "a": "Review a small sample against the same definition each month and record one process change with an owner and a check date."
+      }
+    ],
+    "internalService": "/services/closing-coordination",
+    "internalSibling": "/blog/themortgageassistant-loan-file-intake-2026-11-02",
+    "source": {
+      "label": "U.S. Government Accountability Office",
+      "url": "https://www.gao.gov/"
+    }
   }
 ];
