@@ -11,49 +11,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the income change completeness record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the income change completeness record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The closing owner checks the lock expiration and the closing date before confirming."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one borrower income change from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one borrower income change from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. The closing disclosure log shows the delivery date and the borrower acknowledgement."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for income change completeness before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for income change completeness before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for income change completeness must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for income change completeness must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A pay change is recorded without the source document or the effective date. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A pay change is recorded without the source document or the effective date. A pipeline export is the starting point, not a list assembled after the result is known. A gift letter records the donor account and the transfer date."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the income change completeness report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the income change completeness report. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. The loan file keeps the borrower reference, the source document, and the operations owner with the note."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. A reviewer can rebuild the decision from the file without contacting the original assistant."
         ]
       }
     ],
@@ -88,49 +88,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the rate lock expiration timing record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the rate lock expiration timing record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one rate lock from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one rate lock from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. A post-closing condition cites the investor reference and the missing document."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for rate lock expiration timing before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for rate lock expiration timing before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. The loan file keeps the borrower reference, the source document, and the operations owner with the note."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for rate lock expiration timing must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for rate lock expiration timing must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. The closing disclosure log shows the delivery date and the borrower acknowledgement."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A closing date moves while the lock expiration stays in the original file. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A closing date moves while the lock expiration stays in the original file. A pipeline export is the starting point, not a list assembled after the result is known. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the rate lock expiration timing report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the rate lock expiration timing report. The closing disclosure log shows the delivery date and the borrower acknowledgement."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. A reviewer can rebuild the decision from the file without contacting the original assistant."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The income change note names the source, the effective date, and the underwriter review."
         ]
       }
     ],
@@ -165,49 +165,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the condo questionnaire completeness record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the condo questionnaire completeness record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. A post-closing condition cites the investor reference and the missing document."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one condo questionnaire from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one condo questionnaire from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for condo questionnaire completeness before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for condo questionnaire completeness before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. Borrower communication preferences stay visible in the record."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for condo questionnaire completeness must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for condo questionnaire completeness must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A questionnaire is ordered without the project budget or the insurance details. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A questionnaire is ordered without the project budget or the insurance details. A pipeline export is the starting point, not a list assembled after the result is known. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the condo questionnaire completeness report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the condo questionnaire completeness report. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       }
     ],
@@ -242,49 +242,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the gift letter traceability record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the gift letter traceability record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The closing owner checks the lock expiration and the closing date before confirming."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one gift fund letter from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one gift fund letter from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. A gift letter records the donor account and the transfer date."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for gift letter traceability before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for gift letter traceability before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for gift letter traceability must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for gift letter traceability must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. The closing disclosure log shows the delivery date and the borrower acknowledgement."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A gift letter names an amount but not the donor account or the transfer date. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A gift letter names an amount but not the donor account or the transfer date. A pipeline export is the starting point, not a list assembled after the result is known. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the gift letter traceability report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the gift letter traceability report. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. A rate lock record shows the expiration, the extension, and the approval date."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. A post-closing condition cites the investor reference and the missing document."
         ]
       }
     ],
@@ -319,49 +319,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the disclosure delivery timing record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the disclosure delivery timing record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The closing owner checks the lock expiration and the closing date before confirming."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one closing disclosure from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one closing disclosure from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for disclosure delivery timing before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for disclosure delivery timing before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for disclosure delivery timing must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for disclosure delivery timing must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A disclosure is prepared late and the delivery date is not recorded. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A disclosure is prepared late and the delivery date is not recorded. A pipeline export is the starting point, not a list assembled after the result is known. A rate lock record shows the expiration, the extension, and the approval date."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the disclosure delivery timing report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the disclosure delivery timing report. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. The loan file keeps the borrower reference, the source document, and the operations owner with the note."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. A gift letter records the donor account and the transfer date."
         ]
       }
     ],
@@ -396,49 +396,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the post-closing condition aging record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the post-closing condition aging record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The closing disclosure log shows the delivery date and the borrower acknowledgement."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one post-closing condition from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one post-closing condition from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for post-closing condition aging before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for post-closing condition aging before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for post-closing condition aging must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for post-closing condition aging must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A condition waits while the investor reference and the missing document are unclear. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A condition waits while the investor reference and the missing document are unclear. A pipeline export is the starting point, not a list assembled after the result is known. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the post-closing condition aging report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the post-closing condition aging report. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. The income change note names the source, the effective date, and the underwriter review."
         ]
       }
     ],
@@ -473,49 +473,49 @@ export const november05ResearchPosts = [
       {
         "heading": "Question and scope",
         "paragraphs": [
-          "This protocol studies the hazard binder verification record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below."
+          "This protocol studies the hazard binder verification record for one mortgage team. It is a local method, not an industry benchmark or a lending standard. One population and one observation window define the result. An operations lead can repeat the check from the rule below. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Population and unit",
         "paragraphs": [
-          "Follow one hazard insurance binder from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample."
+          "Follow one hazard insurance binder from the first borrower contact to the verified close. Name the opening event, the closing evidence, and the pause rule before counting. A raw tally is not a measurement when the pipeline changes size during the window. Record each exclusion so a second reviewer can rebuild the sample. A rate lock record shows the expiration, the extension, and the approval date."
         ]
       },
       {
         "heading": "Definitions and measures",
         "paragraphs": [
-          "Define the completeness test for hazard binder verification before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding."
+          "Define the completeness test for hazard binder verification before opening the pipeline. List the required fields, the acceptable source records, and the handling of a blank value. Report the eligible count, the exclusions, the sample size, and the unresolved files. A rate without a denominator and a window is not a finding. The condo questionnaire links the project budget to the insurance details."
         ]
       },
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "Which evidence counts for hazard binder verification must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend."
+          "Which evidence counts for hazard binder verification must be fixed before sampling. Each file needs the source, the observation time, the field supported, the reviewer, and the operations owner. Missing and confirmed-negative values stay separate. Collect only records the protocol can defend. Any missing disclosure evidence is marked missing until the source arrives."
         ]
       },
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A binder is collected without checking the coverage amount or the effective date. A pipeline export is the starting point, not a list assembled after the result is known."
+          "Gather routine, exception, and reopened files across the window. If a definition changes, keep the earlier observation and write down the date. Example: A binder is collected without checking the coverage amount or the effective date. A pipeline export is the starting point, not a list assembled after the result is known. Borrower communication preferences stay visible in the record."
         ]
       },
       {
         "heading": "Analysis and reporting",
         "paragraphs": [
-          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the hazard binder verification report."
+          "Separate the observation from the conclusion. Show the oldest open file and the missing fields, not only completion rate. Name the next decision and the operations owner who must make it. Put the sample size beside every rate in the hazard binder verification report. The income change note names the source, the effective date, and the underwriter review."
         ]
       },
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result."
+          "Mortgage and recordkeeping guidance frames the review but cannot answer this sample or a specific lending question. A complete file is not proof that a lending decision was correct. The method measures evidence quality, not loan quality. Put the limits beside the result. Every closed loan item carries a destination reference and a next check date."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change."
+          "Fix a review date. End with one process change, one owner, and one check date. A repeated defect should change the template, the source, or the rule before coaching. Reuse the same sample rule each time and attach the review note to the change. Every closed loan item carries a destination reference and a next check date."
         ]
       }
     ],
