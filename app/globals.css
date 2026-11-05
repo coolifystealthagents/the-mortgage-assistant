@@ -87,3 +87,7 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
   .parent-mark{width:100%;line-height:1.35}
   .scheduling-panel{padding-top:1rem}.booking-frame{min-width:0;height:720px;box-shadow:5px 5px 0 #d4b874}
 }
+@media(min-width:901px){
+  details.oct22-sticky-toc{display:none!important}
+  details.oct22-sticky-toc:first-of-type{display:block!important;position:fixed;right:max(18px,calc((100vw - 1240px)/2));top:112px;width:240px;max-height:calc(100vh - 136px);overflow:auto;z-index:30;background:#fff;border:1px solid #d7deea;border-radius:14px;padding:14px;box-shadow:0 14px 32px rgba(23,48,74,.1)}
+}
