@@ -32,7 +32,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable escrow questions exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Record a borrower escrow question with the servicer reference should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a escrow questions exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -98,7 +98,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable purchase addenda exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Check a purchase agreement addendum before the appraisal update should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a purchase addenda exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -164,7 +164,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable conditional approvals exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Track a conditional approval condition through clearance should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a conditional approvals exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -230,7 +230,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable wire fraud warnings exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Prepare a wire fraud warning for the closing disclosure should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a wire fraud warnings exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -296,7 +296,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable identity documents exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Review a borrower identity document for the loan file should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a identity documents exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -362,7 +362,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable insurance binders exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Check a homeowner insurance binder before closing should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a insurance binders exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -428,7 +428,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable appraisal reconsiderations exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Coordinate an appraisal reconsideration with the value evidence should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a appraisal reconsiderations exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
@@ -494,7 +494,7 @@ export const november07BlogPosts = [
       {
         "heading": "Exceptions that stop the case",
         "paragraphs": [
-          "Predictable estimate revisions exceptions include a missing source, two records that disagree, an expired disclosure, an unavailable owner, an unsigned form, or a request outside the agreed scope. Record the exception and the exact missing field so the next reviewer does not repeat the search. Use a short approved reason list so counts stay comparable. Keep the source, the date observed, the named owner, and the next check with the record.",
+          "Exceptions on Audit a loan estimate revision against the changed circumstance should identify the borrower document, disclosure, or partner confirmation that is missing. Pause the item when the source, the signature, or the operations reviewer cannot be verified. The operations owner confirms the exception and records the approved resolution. Keep the rejected item and its reason code with the loan file so the same condition is not reopened.",
           "If a estimate revisions exception touches a disclosure date, a pricing term, a closing date, a privacy question, or a borrower commitment, the dependent action waits for the operations owner. Do not infer approval from silence or from a prior similar file. The resolution should say what was decided and where the evidence lives. Keep the source, the date observed, the named owner, and the next check with the record."
         ]
       },
