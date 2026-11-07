@@ -4,12 +4,14 @@ import { november02BlogPosts } from './november02-blog';
 import { november03BlogPosts } from './november03-blog';
 import { november04BlogPosts } from './november04-blog';
 import { november06BlogPosts } from './november06-blog';
+import { november07BlogPosts } from './november07-blog';
 import { november05BlogPosts } from './november05-blog';
 import { november01BlogPosts } from './november01-blog';
 import { november02ResearchPosts } from './november02-research';
 import { november03ResearchPosts } from './november03-research';
 import { november04ResearchPosts } from './november04-research';
 import { november06ResearchPosts } from './november06-research';
+import { november07ResearchPosts } from './november07-research';
 import { november05ResearchPosts } from './november05-research';
 import { november01ResearchPosts } from './november01-research';
 import { october12BlogPosts } from './october12BlogPosts';
@@ -936,8 +938,8 @@ const existingResearchPosts: ResearchPost[] = [
   }
 ];
 
-export const blogPosts: BlogPost[] = [...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...october28BlogBatch, ...october27BlogBatch, ...october26BlogBatch, ...october25BlogBatch, ...october22BlogBatch, ...october13BlogPosts, ...october12BlogPosts, ...existingBlogPosts];
-export const researchPosts: ResearchPost[] = [...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...october28ResearchBatch, ...october27ResearchBatch, ...october26ResearchBatch, ...october25ResearchBatch, ...october22ResearchBatch, ...october13ResearchPosts, ...october12ResearchPosts, ...existingResearchPosts];
+export const blogPosts: BlogPost[] = [...november07BlogPosts, ...november06BlogPosts, ...november05BlogPosts, ...november04BlogPosts, ...november03BlogPosts, ...november02BlogPosts, ...october28BlogBatch, ...october27BlogBatch, ...october26BlogBatch, ...october25BlogBatch, ...october22BlogBatch, ...october13BlogPosts, ...october12BlogPosts, ...existingBlogPosts];
+export const researchPosts: ResearchPost[] = [...november07ResearchPosts, ...november06ResearchPosts, ...november05ResearchPosts, ...november04ResearchPosts, ...november03ResearchPosts, ...november02ResearchPosts, ...october28ResearchBatch, ...october27ResearchBatch, ...october26ResearchBatch, ...october25ResearchBatch, ...october22ResearchBatch, ...october13ResearchPosts, ...october12ResearchPosts, ...existingResearchPosts];
 
 export const nav = [
   { href: '/services', label: 'Services' },
