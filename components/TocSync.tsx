@@ -3,13 +3,13 @@
 import { useEffect } from 'react';
 
 const CSS = `
-.oct22-sticky-toc{position:fixed!important;top:var(--oct22-top,84px);right:12px;left:auto;z-index:45;margin:0!important;width:fit-content;max-width:calc(100% - 1rem);border:1px solid currentColor;border-radius:999px;background:#fff;color:#17202a;box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.oct22-sticky-toc{position:static!important;top:auto;right:auto;left:auto;z-index:auto;margin:0 0 1rem!important;width:auto;max-width:100%;border:1px solid currentColor;border-radius:8px;background:#fff;color:#17202a;box-shadow:none}
 .oct22-sticky-toc>summary{display:flex;align-items:center;gap:.6rem;min-height:44px;padding:.5rem .95rem;font:800 .74rem/1.2 Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;list-style:none}
 .oct22-sticky-toc>summary::-webkit-details-marker{display:none}
 .oct22-sticky-toc>summary::after{content:'+';font-size:1rem;line-height:1}
 .oct22-sticky-toc[open]>summary::after{content:'-'}
 .oct22-sticky-toc>summary span{font-weight:600;text-transform:none;letter-spacing:0;opacity:.7}
-.oct22-sticky-toc>nav{position:absolute;right:0;top:calc(100% + 6px);width:min(84vw,320px);max-height:min(60vh,420px);overflow:auto;background:#fff;color:#17202a;border:1px solid #17202a;padding:.35rem .9rem .8rem;box-shadow:0 18px 34px rgba(0,0,0,.2)}
+.oct22-sticky-toc>nav{position:static;width:auto;max-height:none;overflow:visible;background:#fff;color:#17202a;border:1px solid #17202a;border-top:0;padding:.35rem .9rem .8rem;box-shadow:none}
 .oct22-sticky-toc ol{margin:0;padding-left:1.1rem}
 .oct22-sticky-toc li{padding:.55rem 0;border-top:1px solid rgba(0,0,0,.12);font:400 .86rem/1.35 Arial,sans-serif}
 .oct22-sticky-toc li:first-child{border-top:0}
@@ -92,6 +92,10 @@ export default function TocSync() {
       else article.insertBefore(details, article.firstElementChild);
     }
     details.classList.add('oct22-sticky-toc');
+    const tocCopies = Array.from(document.querySelectorAll<HTMLDetailsElement>('details.oct22-sticky-toc'));
+    const keptToc = tocCopies[tocCopies.length - 1];
+    tocCopies.slice(0, -1).forEach((copy) => copy.remove());
+    if (keptToc && keptToc !== details) details = keptToc;
     let list = details.querySelector('ol');
     if (!list) { list = document.createElement('ol'); (details.querySelector('nav') || details).appendChild(list); }
     if (!list) return;
