@@ -35,7 +35,7 @@ export const november08ResearchPosts = [
         "heading": "Evidence standard",
         "paragraphs": [
           "Each sampled file needs the source, the time observed, the field it supports, the reviewer, and the operations owner. Borrower detail stays in the approved system, and the review note uses a reference rather than a copy. The Mortgage Assistant collects only evidence the protocol can defend, even when a faster summary is available. A complete file is not proof that a lending decision was correct, and the report says so plainly.",
-          "A usable record shows  and  without requiring a second system login. When two sources disagree, preserve both and record which one the reviewer used for the decision. The Mortgage Assistant marks an inferred value as inferred, because a later reviewer will otherwise treat it as fact. The standard is a reviewable record, not a perfect one, and the difference is stated in the report."
+          "For this review, a record is usable when it carries  and  in the approved system. If two documents conflict, keep both copies and note which one informed the decision. The Mortgage Assistant labels an estimated value as an estimate so a later reader does not mistake it for a fact. The test is whether another reviewer can follow the evidence, not whether the file looks tidy."
         ]
       },
       {
@@ -123,7 +123,7 @@ export const november08ResearchPosts = [
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "The evidence standard for closing disclosure accuracy is written before the sample is selected. A reviewer needs to know which document counts, what date attaches to it, and how a missing field is treated. The Mortgage Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought added during the write-up.",
+          "Fix the evidence rule for closing disclosure accuracy before anyone opens the pipeline export. The rule should name the document that counts, the date that travels with it, and the treatment of a blank field. The primary measure is the share of disclosures with no unexplained change from the loan estimate, always shown with its eligible count and observation window. Add the number of missing documents and the age of the oldest open file at the close of the window.",
           "Each sampled file needs the source, the time observed, the field it supports, the reviewer, and the operations owner. Borrower detail stays in the approved system, and the review note uses a reference rather than a copy. The Mortgage Assistant collects only evidence the protocol can defend, even when a faster summary is available. A complete file is not proof that a lending decision was correct, and the report says so plainly."
         ]
       },
@@ -212,8 +212,8 @@ export const november08ResearchPosts = [
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "A usable record shows  and  without requiring a second system login. When two sources disagree, preserve both and record which one the reviewer used for the decision. The Mortgage Assistant marks an inferred value as inferred, because a later reviewer will otherwise treat it as fact. The standard is a reviewable record, not a perfect one, and the difference is stated in the report.",
-          "The evidence standard for first-pass condition clearance is written before the sample is selected. A reviewer needs to know which document counts, what date attaches to it, and how a missing field is treated. The Mortgage Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought added during the write-up."
+          "For this review, a record is usable when it carries  and  in the approved system. If two documents conflict, keep both copies and note which one informed the decision. The Mortgage Assistant labels an estimated value as an estimate so a later reader does not mistake it for a fact. The test is whether another reviewer can follow the evidence, not whether the file looks tidy.",
+          "Fix the evidence rule for first-pass condition clearance before anyone opens the pipeline export. The rule should name the document that counts, the date that travels with it, and the treatment of a blank field. The primary measure is the share of conditions cleared on the first resubmission, always shown with its eligible count and observation window. Add the number of missing documents and the age of the oldest open file at the close of the window."
         ]
       },
       {
@@ -302,7 +302,7 @@ export const november08ResearchPosts = [
         "heading": "Evidence standard",
         "paragraphs": [
           "Each sampled file needs the source, the time observed, the field it supports, the reviewer, and the operations owner. Borrower detail stays in the approved system, and the review note uses a reference rather than a copy. The Mortgage Assistant collects only evidence the protocol can defend, even when a faster summary is available. A complete file is not proof that a lending decision was correct, and the report says so plainly.",
-          "A usable record shows  and  without requiring a second system login. When two sources disagree, preserve both and record which one the reviewer used for the decision. The Mortgage Assistant marks an inferred value as inferred, because a later reviewer will otherwise treat it as fact. The standard is a reviewable record, not a perfect one, and the difference is stated in the report."
+          "For this review, a record is usable when it carries  and  in the approved system. If two documents conflict, keep both copies and note which one informed the decision. The Mortgage Assistant labels an estimated value as an estimate so a later reader does not mistake it for a fact. The test is whether another reviewer can follow the evidence, not whether the file looks tidy."
         ]
       },
       {
@@ -390,7 +390,7 @@ export const november08ResearchPosts = [
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "The evidence standard for appraisal reconsideration time is written before the sample is selected. A reviewer needs to know which document counts, what date attaches to it, and how a missing field is treated. The Mortgage Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought added during the write-up.",
+          "Fix the evidence rule for appraisal reconsideration time before anyone opens the pipeline export. The rule should name the document that counts, the date that travels with it, and the treatment of a blank field. The primary measure is the median and upper-quartile days from request to documented decision, always shown with its eligible count and observation window. Add the number of missing documents and the age of the oldest open file at the close of the window.",
           "Each sampled file needs the source, the time observed, the field it supports, the reviewer, and the operations owner. Borrower detail stays in the approved system, and the review note uses a reference rather than a copy. The Mortgage Assistant collects only evidence the protocol can defend, even when a faster summary is available. A complete file is not proof that a lending decision was correct, and the report says so plainly."
         ]
       },
@@ -479,8 +479,8 @@ export const november08ResearchPosts = [
       {
         "heading": "Evidence standard",
         "paragraphs": [
-          "A usable record shows  and  without requiring a second system login. When two sources disagree, preserve both and record which one the reviewer used for the decision. The Mortgage Assistant marks an inferred value as inferred, because a later reviewer will otherwise treat it as fact. The standard is a reviewable record, not a perfect one, and the difference is stated in the report.",
-          "The evidence standard for income calculation completeness is written before the sample is selected. A reviewer needs to know which document counts, what date attaches to it, and how a missing field is treated. The Mortgage Assistant keeps a short codebook beside the extract so the rule does not live in one person's memory. The codebook is part of the method, not an afterthought added during the write-up."
+          "For this review, a record is usable when it carries  and  in the approved system. If two documents conflict, keep both copies and note which one informed the decision. The Mortgage Assistant labels an estimated value as an estimate so a later reader does not mistake it for a fact. The test is whether another reviewer can follow the evidence, not whether the file looks tidy.",
+          "Fix the evidence rule for income calculation completeness before anyone opens the pipeline export. The rule should name the document that counts, the date that travels with it, and the treatment of a blank field. The primary measure is the share of files with a complete calculation worksheet before the reviewer opens them, always shown with its eligible count and observation window. Add the number of missing documents and the age of the oldest open file at the close of the window."
         ]
       },
       {
@@ -569,7 +569,7 @@ export const november08ResearchPosts = [
         "heading": "Evidence standard",
         "paragraphs": [
           "Each sampled file needs the source, the time observed, the field it supports, the reviewer, and the operations owner. Borrower detail stays in the approved system, and the review note uses a reference rather than a copy. The Mortgage Assistant collects only evidence the protocol can defend, even when a faster summary is available. A complete file is not proof that a lending decision was correct, and the report says so plainly.",
-          "A usable record shows  and  without requiring a second system login. When two sources disagree, preserve both and record which one the reviewer used for the decision. The Mortgage Assistant marks an inferred value as inferred, because a later reviewer will otherwise treat it as fact. The standard is a reviewable record, not a perfect one, and the difference is stated in the report."
+          "For this review, a record is usable when it carries  and  in the approved system. If two documents conflict, keep both copies and note which one informed the decision. The Mortgage Assistant labels an estimated value as an estimate so a later reader does not mistake it for a fact. The test is whether another reviewer can follow the evidence, not whether the file looks tidy."
         ]
       },
       {
