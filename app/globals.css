@@ -89,5 +89,4 @@ a,button,summary,input,select,textarea{accent-color:#742e2b}
 }
 @media(min-width:901px){
   details.oct22-sticky-toc{display:none!important}
-  details.oct22-sticky-toc:first-of-type{display:block!important;position:fixed;right:max(18px,calc((100vw - 1240px)/2));top:112px;width:240px;max-height:calc(100vh - 136px);overflow:auto;z-index:30;background:#fff;border:1px solid #d7deea;border-radius:14px;padding:14px;box-shadow:0 14px 32px rgba(23,48,74,.1)}
 }
