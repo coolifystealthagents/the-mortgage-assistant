@@ -41,7 +41,7 @@ export const november08ResearchPosts = [
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate.",
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate.",
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file.",
           "For rate lock exception resolution, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes."
         ]
@@ -57,15 +57,15 @@ export const november08ResearchPosts = [
         "heading": "Limits and sources of error",
         "paragraphs": [
           "The main limit is that the rate lock exception resolution record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers.",
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement.",
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period."
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
           "The next sample should use the same codebook and the same population rule so the comparison is honest. If the rule changes, label which version applies to each file and keep both extracts. The Mortgage Assistant reviews the measure after the change and reports whether the gap narrowed. The goal is a reviewable decision, not a perfect number that nobody can reproduce.",
-          "Set a review date and hold to it, with a named owner for the measurement and the follow-up. End with one process change, one owner, and one check date rather than a list of general improvements. When a defect repeats, change the template, the source, or the rule before coaching the person. The Mortgage Assistant keeps the same sample rule each time and files the review note with the change."
+          "Put the next review on the calendar and name the person who owns both the measure and the follow-up. Close with a single process change, its owner, and a date to recheck, not a wish list. If the same defect returns, repair the form, the source, or the routing rule before retraining anyone. The Mortgage Assistant reuses the same sampling rule and stores the note beside the change record."
         ]
       }
     ],
@@ -131,7 +131,7 @@ export const november08ResearchPosts = [
         "heading": "Sampling and collection",
         "paragraphs": [
           "For closing disclosure accuracy, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes.",
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate.",
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate.",
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file."
         ]
       },
@@ -145,9 +145,9 @@ export const november08ResearchPosts = [
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied.",
           "The main limit is that the closing disclosure accuracy record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers.",
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement."
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see."
         ]
       },
       {
@@ -221,7 +221,7 @@ export const november08ResearchPosts = [
         "paragraphs": [
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file.",
           "For first-pass condition clearance, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes.",
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate."
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate."
         ]
       },
       {
@@ -234,15 +234,15 @@ export const november08ResearchPosts = [
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement.",
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period.",
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied.",
           "The main limit is that the first-pass condition clearance record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Set a review date and hold to it, with a named owner for the measurement and the follow-up. End with one process change, one owner, and one check date rather than a list of general improvements. When a defect repeats, change the template, the source, or the rule before coaching the person. The Mortgage Assistant keeps the same sample rule each time and files the review note with the change.",
+          "Put the next review on the calendar and name the person who owns both the measure and the follow-up. Close with a single process change, its owner, and a date to recheck, not a wish list. If the same defect returns, repair the form, the source, or the routing rule before retraining anyone. The Mortgage Assistant reuses the same sampling rule and stores the note beside the change record.",
           "Collection for first-pass condition clearance ends when the sample is complete and the codebook is attached. The Mortgage Assistant stores the extract, the codebook, and the finding together so a later reviewer can rerun the check. The review closes with a short note that names what moved, what did not, and what remains unknown. That note is more useful than a precise-looking rate built on an unclear denominator."
         ]
       }
@@ -308,7 +308,7 @@ export const november08ResearchPosts = [
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate.",
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate.",
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file.",
           "For borrower update timeliness, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes."
         ]
@@ -324,15 +324,15 @@ export const november08ResearchPosts = [
         "heading": "Limits and sources of error",
         "paragraphs": [
           "The main limit is that the borrower update timeliness record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers.",
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement.",
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period."
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
           "The next sample should use the same codebook and the same population rule so the comparison is honest. If the rule changes, label which version applies to each file and keep both extracts. The Mortgage Assistant reviews the measure after the change and reports whether the gap narrowed. The goal is a reviewable decision, not a perfect number that nobody can reproduce.",
-          "Set a review date and hold to it, with a named owner for the measurement and the follow-up. End with one process change, one owner, and one check date rather than a list of general improvements. When a defect repeats, change the template, the source, or the rule before coaching the person. The Mortgage Assistant keeps the same sample rule each time and files the review note with the change."
+          "Put the next review on the calendar and name the person who owns both the measure and the follow-up. Close with a single process change, its owner, and a date to recheck, not a wish list. If the same defect returns, repair the form, the source, or the routing rule before retraining anyone. The Mortgage Assistant reuses the same sampling rule and stores the note beside the change record."
         ]
       }
     ],
@@ -398,7 +398,7 @@ export const november08ResearchPosts = [
         "heading": "Sampling and collection",
         "paragraphs": [
           "For appraisal reconsideration time, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes.",
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate.",
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate.",
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file."
         ]
       },
@@ -412,9 +412,9 @@ export const november08ResearchPosts = [
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied.",
           "The main limit is that the appraisal reconsideration time record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers.",
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement."
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see."
         ]
       },
       {
@@ -488,7 +488,7 @@ export const november08ResearchPosts = [
         "paragraphs": [
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file.",
           "For income calculation completeness, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes.",
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate."
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate."
         ]
       },
       {
@@ -501,15 +501,15 @@ export const november08ResearchPosts = [
       {
         "heading": "Limits and sources of error",
         "paragraphs": [
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement.",
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period.",
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied.",
           "The main limit is that the income calculation completeness record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
-          "Set a review date and hold to it, with a named owner for the measurement and the follow-up. End with one process change, one owner, and one check date rather than a list of general improvements. When a defect repeats, change the template, the source, or the rule before coaching the person. The Mortgage Assistant keeps the same sample rule each time and files the review note with the change.",
+          "Put the next review on the calendar and name the person who owns both the measure and the follow-up. Close with a single process change, its owner, and a date to recheck, not a wish list. If the same defect returns, repair the form, the source, or the routing rule before retraining anyone. The Mortgage Assistant reuses the same sampling rule and stores the note beside the change record.",
           "Collection for income calculation completeness ends when the sample is complete and the codebook is attached. The Mortgage Assistant stores the extract, the codebook, and the finding together so a later reviewer can rerun the check. The review closes with a short note that names what moved, what did not, and what remains unknown. That note is more useful than a precise-looking rate built on an unclear denominator."
         ]
       }
@@ -575,7 +575,7 @@ export const november08ResearchPosts = [
       {
         "heading": "Sampling and collection",
         "paragraphs": [
-          "Sample across the full window, including busy days and days when coverage changed. A sample drawn only from quiet days can make a fragile control look stable. Record the date and time of each observation and the name of the reviewer who collected it. If the population is small, report the count and the instability instead of a precise-looking rate.",
+          "Draw the sample across the entire window, including days when coverage was thin and volume was high. A file list built only from calm days will make a weak control look steady. Log the observation timestamp and the initials of the person who pulled the record. When the eligible count is small, publish the raw count and note the instability rather than a tidy rate.",
           "Choose a random or systematic start rule, then take consecutive files within each stratum. Stratify by loan stage, owner, and exception type so the sample is not dominated by the easiest files. Include at least one adverse file: a missing document, a conflict, an unavailable owner, or a deadline that forced a decision. The Mortgage Assistant records every access failure instead of replacing it silently with a different file.",
           "For title exception clearance, the extract starts with the pipeline export, not a list assembled after the result is known. The Mortgage Assistant keeps the selection rule, the random seed, and the exclusion log with the sample. The reviewer should not add files after the result is visible or remove a difficult file to improve the rate. A reproducible sample lets the team rerun the check after the workflow changes."
         ]
@@ -591,15 +591,15 @@ export const november08ResearchPosts = [
         "heading": "Limits and sources of error",
         "paragraphs": [
           "The main limit is that the title exception clearance record may be incomplete, delayed, or maintained outside the team. This method cannot infer missing work from a clean summary or prove that a policy was followed when no trace exists. The Mortgage Assistant states those limits beside the result instead of burying them in a footnote. A change in systems, investor rules, product mix, or volume can make the result stale, so record those triggers.",
-          "Sampling error, reviewer judgment, and missing records all limit what the result can claim. The Mortgage Assistant reports the overlap review and any disagreement instead of assuming the coding was consistent. A local result describes one team and one window, and it should not be presented as an industry benchmark. The report names what remains unknown, because that sentence is part of an honest measurement.",
-          "A complete file is not proof that a lending decision was correct, and the method measures evidence quality rather than loan quality. The protocol cannot establish intent, and it cannot speak for files that left no record at all. The Mortgage Assistant keeps the limits in the same section as the finding so a reader cannot separate them. When the definition changes, keep the old and new rules side by side for the transition period."
+          "Three limits bound the answer: sampling error, coder judgment, and records that never reached the system. The Mortgage Assistant publishes the overlap agreement and any disputed code rather than declaring the coding clean. One team and one window produced this number, so it cannot stand in for an industry benchmark. The closing paragraph states what the review still cannot see.",
+          "A finished file does not prove the lending call was right, because this review scores documentation rather than credit quality. The design cannot read intent and cannot describe a file that left no trace in any system. The Mortgage Assistant prints the caveats directly under the finding so a reader cannot lift the number without them. If the rule changes midstream, retain the earlier and later versions and tag each file with the version applied."
         ]
       },
       {
         "heading": "Review cadence",
         "paragraphs": [
           "The next sample should use the same codebook and the same population rule so the comparison is honest. If the rule changes, label which version applies to each file and keep both extracts. The Mortgage Assistant reviews the measure after the change and reports whether the gap narrowed. The goal is a reviewable decision, not a perfect number that nobody can reproduce.",
-          "Set a review date and hold to it, with a named owner for the measurement and the follow-up. End with one process change, one owner, and one check date rather than a list of general improvements. When a defect repeats, change the template, the source, or the rule before coaching the person. The Mortgage Assistant keeps the same sample rule each time and files the review note with the change."
+          "Put the next review on the calendar and name the person who owns both the measure and the follow-up. Close with a single process change, its owner, and a date to recheck, not a wish list. If the same defect returns, repair the form, the source, or the routing rule before retraining anyone. The Mortgage Assistant reuses the same sampling rule and stores the note beside the change record."
         ]
       }
     ],
