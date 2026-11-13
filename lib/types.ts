@@ -7,7 +7,11 @@ export type Service = {
   name: string;
   short: string;
   outcome: string;
+  problem: string;
+  image: string;
+  imageAlt: string;
   idealFor: string[];
+  scenarios: { title: string; detail: string }[];
   tasks: string[];
   clientInputs: string[];
   outputs: string[];

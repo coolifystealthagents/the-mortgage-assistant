@@ -113,11 +113,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: sections;
 }
 
 .toc li {
-  counter-increment: sections;
   display: grid;
   grid-template-columns: 1.5rem 1fr;
   gap: 0.35rem;
@@ -128,10 +126,12 @@
 }
 
 .toc li::before {
-  content: counter(sections, decimal-leading-zero);
-  color: var(--brass);
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 0.72rem;
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  margin: 0.28rem 0 0 0.25rem;
+  border: 2px solid var(--brass);
+  transform: rotate(45deg);
 }
 
 .toc a,

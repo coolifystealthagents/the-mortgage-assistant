@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { readFile, stat } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -26,7 +27,7 @@ test('all six mortgage service records contain the complete role brief contract'
     const start = serviceSource.indexOf(`slug: '${slug}'`);
     const end = index + 1 < expectedSlugs.length ? serviceSource.indexOf(`slug: '${expectedSlugs[index + 1]}'`) : serviceSource.length;
     const record = serviceSource.slice(start, end);
-    for (const field of ['short', 'outcome', 'idealFor', 'tasks', 'clientInputs', 'outputs', 'qualityControls', 'boundaries', 'launchSteps', 'faq', 'relatedRoles', 'relatedContent']) {
+    for (const field of ['short', 'outcome', 'problem', 'image', 'imageAlt', 'idealFor', 'scenarios', 'tasks', 'clientInputs', 'outputs', 'qualityControls', 'boundaries', 'launchSteps', 'faq', 'relatedRoles', 'relatedContent']) {
       assert.match(record, new RegExp(`\\b${field}:`), `${slug} is missing ${field}`);
     }
     assert.ok((record.match(/question:/g) ?? []).length >= 3, `${slug} needs at least three FAQs`);
@@ -35,10 +36,10 @@ test('all six mortgage service records contain the complete role brief contract'
 
 test('service template renders every required decision-ready section and CTA', async () => {
   const page = await read('app/services/[slug]/page.tsx');
-  for (const marker of ['Ideal use cases', 'Responsibilities', 'Inputs and outputs', 'Quality controls', 'Decision boundaries', 'Launch workflow', 'Frequently asked questions', 'Related roles and field notes', 'Plan a workflow consultation']) {
+  for (const marker of ['Problem and audience', 'Ideal use cases', 'Responsibilities', 'Inputs and outputs', 'Operating scenarios', 'Quality controls', 'Decision boundaries', 'Launch workflow', 'Frequently asked questions', 'Related roles and field notes', 'Plan a workflow consultation']) {
     assert.ok(page.includes(marker), `service template is missing ${marker}`);
   }
-  for (const binding of ['service.idealFor', 'service.tasks', 'service.clientInputs', 'service.outputs', 'service.qualityControls', 'service.boundaries', 'service.launchSteps', 'service.faq', 'service.relatedRoles', 'service.relatedContent']) {
+  for (const binding of ['service.problem', 'service.image', 'service.imageAlt', 'service.idealFor', 'service.scenarios', 'service.tasks', 'service.clientInputs', 'service.outputs', 'service.qualityControls', 'service.boundaries', 'service.launchSteps', 'service.faq', 'service.relatedRoles', 'service.relatedContent']) {
     assert.ok(page.includes(binding), `service template does not render ${binding}`);
   }
 });
@@ -59,14 +60,34 @@ test('mortgage marketing system is imported, responsive, and avoids disallowed t
   assert.doesNotMatch(home, /service-number/);
 });
 
-test('original mortgage illustration has accessible text alternatives', async () => {
-  const [site, svg] = await Promise.all([read('lib/site.ts'), read('public/images/mortgage/operations-ledger.svg')]);
-  assert.match(site, /heroImage: '\/images\/mortgage\/operations-ledger\.svg'/);
+test('photographic homepage and service assets have accessible alternatives and provenance', async () => {
+  const [site, provenanceSource] = await Promise.all([read('lib/site.ts'), read('app/mortgage-image-provenance.json')]);
+  const provenance = JSON.parse(provenanceSource);
+  assert.match(site, /heroImage: '\/images\/mortgage\/heroes\/home-operations\.jpg'/);
   assert.match(site, /heroAlt: '[^']{30,}'/);
-  assert.match(svg, /role="img"/);
-  assert.match(svg, /aria-labelledby="title desc"/);
-  assert.match(svg, /<title id="title">[^<]+<\/title>/);
-  assert.match(svg, /<desc id="desc">[^<]+<\/desc>/);
+  assert.equal(provenance.generator, 'OpenAI built-in image generation tool');
+  for (const slug of expectedSlugs) {
+    const imagePath = path.join(root, 'public/images/mortgage/services', `${slug}.jpg`);
+    assert.ok((await stat(imagePath)).size > 100_000, `${slug} needs a production-size service image`);
+    const publicPath = `/images/mortgage/services/${slug}.jpg`;
+    const digest = createHash('sha256').update(await readFile(imagePath)).digest('hex');
+    assert.equal(digest, provenance.assets[publicPath].sha256);
+  }
+});
+
+test('affected marketing routes publish no unsupported review or rating schema and no decorative counters', async () => {
+  const [home, services, detail, contact, marketingCss, editorialCss] = await Promise.all([
+    read('components/Marketing.tsx'),
+    read('app/services/page.tsx'),
+    read('app/services/[slug]/page.tsx'),
+    read('app/contact-us/page.tsx'),
+    read('components/marketing/marketing.css'),
+    read('app/blog/editorial.module.css'),
+  ]);
+  const surfaces = [home, services, detail, contact].join('\n');
+  assert.doesNotMatch(surfaces, /aggregateRating|ratingValue|reviewCount|testimonial|★|★★★★★/i);
+  assert.doesNotMatch(marketingCss + editorialCss, /decimal-leading-zero|counter\(/);
+  assert.doesNotMatch(contact, /0\{index|index\s*\+\s*1/);
 });
 
 test('static and service routes own their canonicals and publish no invented email', async () => {

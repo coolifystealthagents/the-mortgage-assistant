@@ -66,7 +66,7 @@ export function HomePage() {
       </div>
       <figure className="mortgage-hero-art">
         <Image src={site.heroImage} alt={site.heroAlt} fill priority sizes="(max-width: 900px) 100vw, 48vw" />
-        <figcaption><span>Operations plate A</span>{site.manifesto}</figcaption>
+        <figcaption><span>Mortgage operations support</span>{site.manifesto}</figcaption>
       </figure>
     </section>
 

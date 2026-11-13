@@ -1,0 +1,44 @@
+{
+  "generator": "OpenAI built-in image generation tool",
+  "generatedAt": "2026-11-13",
+  "processing": "Generated PNGs converted locally to JPEG at quality 84 with macOS sips; no source image was overwritten.",
+  "constraintsSharedByAllAssets": "Photorealistic editorial business photography; no logos, watermark, readable borrower data, pricing, ratings, performance claims, approval signals, or financial promises.",
+  "assets": {
+    "/images/mortgage/heroes/home-operations.jpg": {
+      "sha256": "ccba288325b0ab5993e82c6682ce85b25e0a29cc2703878d6929e1dc00286b15",
+      "promptSummary": "Mortgage operations specialist reviewing an organized loan file at a modern desk; subject right, negative space left."
+    },
+    "/images/mortgage/heroes/services-workflow.jpg": {
+      "sha256": "35b184beed69c5d8d382d19d2f93a5bb6460688af8bc39d1eb7ebd9f1b613e52",
+      "promptSummary": "Small mortgage operations team mapping an administrative workflow around a conference table."
+    },
+    "/images/mortgage/heroes/contact-consultation.jpg": {
+      "sha256": "0c5f6e45eb5b90cbb371462b56034065af292afbe5f2c06fab1c57b2b86f8f38",
+      "promptSummary": "Mortgage operations lead and staffing advisor reviewing a workflow brief in a calm first consultation."
+    },
+    "/images/mortgage/services/loan-file-coordination.jpg": {
+      "sha256": "42cada836da3bb0012b036623fd6b924bb107ff889015c2dadd1bc6088f13870",
+      "promptSummary": "Specialist organizing a neutral tabbed loan-file intake packet beside an abstract checklist."
+    },
+    "/images/mortgage/services/borrower-follow-up.jpg": {
+      "sha256": "bf30ddf7667d40eef137e450df746dafefc3f8b0a700d48cd75352323a3db664",
+      "promptSummary": "Support professional preparing approved borrower follow-up from a communication log and calendar."
+    },
+    "/images/mortgage/services/crm-pipeline-support.jpg": {
+      "sha256": "5c57a172a0447469359bf3cb96b0c3ff246b797d77491cd81b506e443997868c",
+      "promptSummary": "Operations analyst reconciling an abstract pipeline dashboard with a printed exception list."
+    },
+    "/images/mortgage/services/closing-coordination.jpg": {
+      "sha256": "c5788fef55522a4634e44968088734ef7d1cd5677429b449b72cee2cbdc83653",
+      "promptSummary": "Coordinator cross-checking a closing calendar, logistics checklist, and appointment details."
+    },
+    "/images/mortgage/services/real-estate-partner-support.jpg": {
+      "sha256": "11585ad75bd7bca833f0e1e3650064beda005032bf1ab8774064c472065f9d6d",
+      "promptSummary": "Mortgage operations professional reviewing a factual milestone update with a real estate partner."
+    },
+    "/images/mortgage/services/mortgage-marketing-support.jpg": {
+      "sha256": "dea4dc9db093e5d9c98a023e57765bd849867e17adf2144ef5b4ade1a2bde98a",
+      "promptSummary": "Marketing operations specialist comparing source material with an approval-ready content package."
+    }
+  }
+}

@@ -67,7 +67,9 @@ test('personal email is accepted while required fields, tracking, honeypot, and 
   }
   assert.match(form, /<label className="honeypot" aria-hidden="true">/);
   assert.match(form, /name="website_url" tabIndex=\{-1\} autoComplete="off"/);
-  assert.match(form, /window\.acrTracker\?\.trackLead/);
+  assert.match(form, /ACR captures the native submit event once/);
+  assert.match(layout, /window\.ACR_TRACKER_CONFIG/);
+  assert.match(layout, /acrtracking\.stealthagents\.us\/v1\/tracker\.js/);
   assert.match(form, /data\.set\('_page_url', window\.location\.href\)/);
   assert.match(route, /if \(form\.get\('website_url'\)\)/);
   assert.match(route, /sendLeadFallbackToMattermost/);

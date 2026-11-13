@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowIcon } from '@/components/Icons';
+import { ArrowIcon, CalibrateIcon, DocumentIcon, MapIcon, ReviewIcon } from '@/components/Icons';
 import { site } from '@/lib/site';
 import { serviceBySlug } from '@/lib/content';
 import '@/components/marketing/marketing.css';
@@ -13,19 +14,32 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = serviceBySlug(slug);
-  return service ? { title: service.name, description: service.short, alternates: { canonical: `/services/${service.slug}` } } : {};
+  return service ? {
+    title: service.name,
+    description: service.short,
+    alternates: { canonical: `/services/${service.slug}` },
+    openGraph: {
+      title: `${service.name} | ${site.name}`,
+      description: service.short,
+      images: [{ url: service.image, width: 1536, height: 1024, alt: service.imageAlt }],
+    },
+  } : {};
 }
 
 const sectionLinks = [
+  ['problem', 'Problem and audience'],
   ['fit', 'Ideal use cases'],
   ['responsibilities', 'Responsibilities'],
   ['inputs-outputs', 'Inputs and outputs'],
+  ['scenarios', 'Operating scenarios'],
   ['quality', 'Quality controls'],
   ['boundaries', 'Decision boundaries'],
   ['launch', 'Launch workflow'],
   ['faq', 'Questions'],
   ['related', 'Related roles'],
 ];
+
+const launchIcons = [MapIcon, DocumentIcon, ReviewIcon, CalibrateIcon];
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -44,24 +58,42 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       acceptedAnswer: { '@type': 'Answer', text: item.answer },
     })),
   };
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.name,
+    description: service.short,
+    url: `https://${site.domain}/services/${service.slug}`,
+    provider: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` },
+    audience: { '@type': 'Audience', audienceType: site.audience },
+    image: `https://${site.domain}${service.image}`,
+  };
 
   return <main className="mortgage-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, '\\u003c') }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd).replace(/</g, '\\u003c') }} />
     <header className="mortgage-service-hero">
       <div className="mortgage-service-hero-inner">
-        <p className="mortgage-folio">Service brief / mortgage operations</p>
-        <div>
+        <div className="mortgage-service-hero-copy">
+          <p className="mortgage-folio">Mortgage operations role</p>
           <h1>{service.name}</h1>
           <p className="mortgage-deck">{service.short}</p>
           <p className="mortgage-outcome-slip"><strong>Designed outcome:</strong> {service.outcome}</p>
           <div className="mortgage-page-actions"><Link id={`cta-services-${service.slug}-hero`} className="mortgage-button" href="/contact-us">Discuss this role <ArrowIcon /></Link><Link className="mortgage-button mortgage-button-secondary" href="/services">Compare all roles <ArrowIcon /></Link></div>
         </div>
+        <figure className="mortgage-service-hero-media"><Image src={service.image} alt={service.imageAlt} fill priority sizes="(max-width: 800px) 100vw, 46vw" /><figcaption>Support prepares and coordinates. Your authorized team reviews and decides.</figcaption></figure>
       </div>
     </header>
 
     <div className="mortgage-service-layout">
       <nav className="mortgage-service-nav" aria-label="On this role brief">{sectionLinks.map(([id, label]) => <a href={`#${id}`} key={id}>{label}</a>)}</nav>
       <div className="mortgage-service-body">
+        <section id="problem" className="mortgage-service-section mortgage-service-problem">
+          <p className="mortgage-folio">Problem and audience</p><h2>The operating pressure this role addresses.</h2>
+          <p className="mortgage-problem-lead">{service.problem}</p>
+          <div className="mortgage-audience-callout"><h3>Built for teams that can name the handoff</h3><p>{service.idealFor.join('; ')}.</p></div>
+        </section>
+
         <section id="fit" className="mortgage-service-section">
           <p className="mortgage-folio">Ideal use cases</p><h2>Where this role fits.</h2>
           <p>This role is designed for a defined operational queue, not unrestricted access to every file or function. It may be useful for:</p>
@@ -83,6 +115,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
 
+        <section id="scenarios" className="mortgage-service-section">
+          <p className="mortgage-folio">Operating scenarios</p><h2>What the boundary looks like in practice.</h2>
+          <p>These examples show how the role can move administrative work forward without converting a support action into a lending decision.</p>
+          <div className="mortgage-scenario-list">{service.scenarios.map((scenario) => <article key={scenario.title}><h3>{scenario.title}</h3><p>{scenario.detail}</p></article>)}</div>
+        </section>
+
         <section id="quality" className="mortgage-service-section">
           <p className="mortgage-folio">Quality controls</p><h2>Review evidence, not activity alone.</h2>
           <p>Your client owner sets acceptance criteria and reviews an appropriate sample. These controls provide a starting frame:</p>
@@ -97,7 +135,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         <section id="launch" className="mortgage-service-section">
           <p className="mortgage-folio">Launch workflow</p><h2>Start narrow. Learn from the queue.</h2>
-          <ol className="mortgage-launch-list">{service.launchSteps.map((step) => <li key={step.title}><div><h3>{step.title}</h3><p>{step.detail}</p></div></li>)}</ol>
+          <ol className="mortgage-launch-list">{service.launchSteps.map((step, index) => { const Icon = launchIcons[index] ?? CalibrateIcon; return <li key={step.title}><span className="mortgage-launch-icon"><Icon /></span><div><h3>{step.title}</h3><p>{step.detail}</p></div></li>; })}</ol>
         </section>
 
         <section id="faq" className="mortgage-service-section mortgage-faq">
