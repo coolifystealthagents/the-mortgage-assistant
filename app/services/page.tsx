@@ -11,7 +11,7 @@ import '@/components/marketing/marketing.css';
 
 export const metadata: Metadata = {
   title: 'Mortgage operations support services',
-  description: 'Compare six clearly bounded support roles for mortgage file, borrower, pipeline, closing, partner, and marketing workflows.',
+  description: 'Compare eight clearly bounded support roles for mortgage file, borrower, pipeline, closing, partner, and marketing workflows.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: `Mortgage operations support services | ${site.name}`,
@@ -53,7 +53,7 @@ export default function ServicesPage() {
       <div className="services-visual-copy">
         <p className="mortgage-folio">Mortgage operations support</p>
         <h1 id="services-title">Choose the queue. Keep the decision.</h1>
-        <p className="mortgage-deck">Six focused support roles help mortgage brokers, lenders, and loan teams prepare records, maintain approved communication, and coordinate handoffs. Your authorized team keeps credit judgment, approvals, advice, and every regulated decision.</p>
+        <p className="mortgage-deck">Eight focused support roles help mortgage brokers, lenders, and loan teams prepare records, maintain approved communication, and coordinate handoffs. Your authorized team keeps credit judgment, approvals, advice, and every regulated decision.</p>
         <div className="mortgage-page-actions">
           <Link id="cta-services-hero-roles" className="mortgage-button" href="#role-briefs">Compare the role briefs <ArrowIcon /></Link>
           <Link id="cta-services-hero-consultation" className="mortgage-button mortgage-button-light" href="/contact-us">Discuss your workflow <ArrowIcon /></Link>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
     </section>
 
     <section id="role-briefs" className="services-role-accordions" aria-labelledby="role-briefs-title">
-      <header><p className="mortgage-folio">Compare by operating bottleneck</p><h2 id="role-briefs-title">Six roles. Six different handoff problems.</h2><p>Open a role to see its intended problem and output. Each full brief includes audience, inputs, scope, workflow, scenarios, controls, boundaries, questions, and related services.</p></header>
+      <header><p className="mortgage-folio">Compare by operating bottleneck</p><h2 id="role-briefs-title">Eight roles. Clear ownership for each handoff.</h2><p>Open a role to see its intended problem and output. Each full brief includes audience, inputs, scope, workflow, scenarios, controls, boundaries, questions, and related services.</p></header>
       <div className="services-accordion-row">
         {site.services.map((service, index) => {
           const Icon = serviceIcons[service.slug] ?? QueueIcon;

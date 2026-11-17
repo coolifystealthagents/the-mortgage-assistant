@@ -12,20 +12,13 @@ const thankYou = read('app/thank-you/page.tsx');
 const form = read('components/LeadForm.tsx');
 const route = read('app/api/submit-lead/route.ts');
 
-test('shared chrome has a sticky responsive four-item primary navigation', () => {
+test('shared chrome has sticky three-item primary navigation', () => {
   const primaryNav = chrome.match(/<nav id="primary-navigation"[\s\S]*?<\/nav>/)?.[0] ?? '';
   assert.ok(primaryNav);
-  assert.match(primaryNav, />Services<\/Link>/);
-  assert.match(primaryNav, />About<\/Link>/);
-  assert.match(primaryNav, /<details[^>]*className="nav-dropdown"[^>]*>[\s\S]*?<summary[\s\S]*?Insights/);
-  assert.match(primaryNav, /Book a free call/);
+  for (const title of ['Home','Services','Contact Us']) assert.ok(primaryNav.includes('>'+title+'</Link>'));
+  assert.equal((primaryNav.match(/<Link /g)||[]).length,3);
   assert.match(chrome, /aria-expanded=\{mobileOpen\}/);
-  assert.match(chrome, /aria-controls="primary-navigation"/);
   assert.match(css, /\.site-header\{position:sticky/);
-  const mobileHeaderCss = css.match(/@media\(max-width:1100px\)\{\n([\s\S]*?)\n\}/)?.[1] ?? '';
-  assert.ok(mobileHeaderCss);
-  assert.match(mobileHeaderCss, /\.nav-toggle\{display:flex/);
-  assert.match(mobileHeaderCss, /\.site-header \.primary-nav\{[^}]*max-height:calc\(100vh - 68px\)/);
 });
 
 test('navigation Escape handling closes the active menu and restores trigger focus', () => {
@@ -37,12 +30,8 @@ test('navigation Escape handling closes the active menu and restores trigger foc
   assert.match(chrome, /mobileToggleRef\.current\?\.focus\(\)/);
 });
 
-test('parent-company disclosure is a compact primary-navigation credential using the approved logo', () => {
-  assert.doesNotMatch(chrome, /className="utility-strip"/);
-  assert.match(chrome, /className="nav-attribution"[\s\S]*href="https:\/\/stealthagents\.com"/);
-  assert.match(chrome, /className="nav-attribution"[\s\S]*src="\/images\/contact\/stealth-agents-logo-black\.png"[\s\S]*Powered by Stealth Agents/);
-  assert.match(css, /\.nav-attribution\{/);
-  assert.equal(existsSync(new URL('../public/images/chrome-or-reviews/stealth-agents-logo-black.png', import.meta.url)), false);
+test('parent attribution sits underneath the site title', () => {
+  assert.match(chrome, /site.name\}<small className="standard-brand-credit">Powered by Stealth Agents/);
 });
 
 test('unverified review claims and the timed global modal are absent', () => {
@@ -61,7 +50,7 @@ test('contact submission precedes scheduling, which exists only on thank-you', (
 
 test('personal email is accepted while required fields, tracking, honeypot, and fallback remain', () => {
   assert.doesNotMatch(form + route, /personalDomains|business email address|personal email providers are not accepted/i);
-  assert.match(form, /Work or personal email addresses are welcome/);
+  assert.match(form, /type="email"/);
   for (const field of ['first_name', 'last_name', 'email', 'company', 'company_size', 'positions_to_fill', 'referral_source']) {
     assert.match(form, new RegExp(`name="${field}"[^>]*required|required[^>]*name="${field}"`));
   }

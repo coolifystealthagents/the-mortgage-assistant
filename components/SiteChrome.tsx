@@ -53,7 +53,7 @@ export function Header() {
       <header className="site-header">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
           <Image src="/logo.svg" alt="" width={42} height={42} priority />
-          <span>{site.name}</span>
+          <span>{site.name}<small className="standard-brand-credit">Powered by Stealth Agents</small></span>
         </Link>
         <button
           ref={mobileToggleRef}
@@ -69,10 +69,6 @@ export function Header() {
         <nav id="primary-navigation" className={mobileOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary navigation">
           <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>Home</Link>
           <Link href="/services" aria-current={isCurrent(pathname, '/services') ? 'page' : undefined}>Services</Link>
-          <a className="nav-attribution" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/contact/stealth-agents-logo-black.png" alt="" width={149} height={50} />
-            <span>Powered by Stealth Agents</span>
-          </a>
           <Link id="cta-global-header-bookcall" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Contact Us</Link>
         </nav>
       </header>

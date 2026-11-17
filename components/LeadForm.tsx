@@ -29,9 +29,9 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
       <label>First Name <span aria-hidden="true">*</span><input name="first_name" autoComplete="given-name" required /></label>
       <label>Last Name <span aria-hidden="true">*</span><input name="last_name" autoComplete="family-name" required /></label>
       <label className="form-wide">Email <span aria-hidden="true">*</span><input name="email" type="email" autoComplete="email" required /></label>
-      <p className="form-help form-wide">Work or personal email addresses are welcome.</p>
-      <label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
-      <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" /></label>
+
+      <div className="standard-phone-pair"><label>Country code<select name="phone_country" defaultValue="+1" aria-label="Phone country code"><option value="+1">US/CA +1</option><option value="+44">UK +44</option><option value="+61">AU +61</option><option value="+63">PH +63</option><option value="other">Other</option></select></label>
+      <label>Phone Number<input name="phone" type="tel" autoComplete="tel-national" inputMode="tel" /></label></div>
       <label className="form-wide">Company Name <span aria-hidden="true">*</span><input name="company" autoComplete="organization" required /></label>
       <label className="form-wide">Website / URL<input name="company_website" type="url" autoComplete="url" placeholder="https://" /></label>
       <label className="form-wide">Company Size <span aria-hidden="true">*</span><select name="company_size" defaultValue="" required><option value="" disabled>Select company size</option><option>1 to 10</option><option>11 to 50</option><option>51 to 200</option><option>201 to 500</option><option>501+</option></select></label>
@@ -42,7 +42,7 @@ export function LeadForm({ source = 'contact-page' }: { source?: string }) {
       <label>Email<input name="email" type="email" autoComplete="email" required /></label>
       <label>How did you hear about us?<select name="referral_source" defaultValue=""><option value="">Choose one</option><option>Search</option><option>Industry colleague</option><option>Professional group</option><option>Social</option><option>Other</option></select></label>
     </>}
-    <label className="form-wide">Message<textarea name="message" rows={5} placeholder={full ? 'Describe the mortgage workflow, current owner, and support you need.' : 'Tell us what needs support'} /></label>
+    <label className="form-wide">Message<textarea name="message" rows={2} placeholder={full ? 'Describe the mortgage workflow, current owner, and support you need.' : 'Tell us what needs support'} /></label>
     <input type="hidden" name="source" value={source} />
     <label className="honeypot" aria-hidden="true">Website<input name="website_url" tabIndex={-1} autoComplete="off" /></label>
     {error && <p className="form-error" role="alert">{error}</p>}

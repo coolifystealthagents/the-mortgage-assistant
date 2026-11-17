@@ -1,3 +1,4 @@
+import additionalServices from './additional-services.json';
 import type { Service, SiteConfig } from './types';
 
 const sharedLaunch = [
@@ -184,6 +185,8 @@ const services: Service[] = [
     relatedContent: [{ title: 'Explore mortgage operations articles', href: '/blog' }, { title: 'Review workflow research', href: '/research' }],
   },
 ];
+
+services.push(...additionalServices);
 
 export const site: SiteConfig = {
   name: 'The Mortgage Assistant',

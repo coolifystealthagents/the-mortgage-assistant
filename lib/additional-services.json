@@ -1,0 +1,190 @@
+[
+  {
+    "slug": "mortgage-appointment-coordination",
+    "name": "Mortgage appointment coordination",
+    "short": "Keep borrower calls, application meetings, and internal reviews organized without taking lending decisions.",
+    "outcome": "A dated, reviewable queue with a named owner for every unresolved item.",
+    "problem": "A missing invitation, wrong time zone, or unrecorded reschedule can leave borrowers waiting and licensed staff rebuilding the calendar.",
+    "image": "/optimization/mortgage-appointment-coordination.webp",
+    "imageAlt": "Calculator, folders, and glasses arranged on an administrative desk",
+    "idealFor": [
+      "Mortgage operations teams with recurring administrative follow-up",
+      "Licensed staff who need calendar and record preparation support"
+    ],
+    "scenarios": [
+      {
+        "title": "A practical starting assignment",
+        "detail": "A borrower requests a new appointment after a work shift changes. The assistant checks approved availability, sends a revised invitation, and alerts the originator to the change without discussing eligibility."
+      },
+      {
+        "title": "An exception requires a decision",
+        "detail": "When the approved checklist does not resolve an issue, preserve the source record and return the question to the assigned reviewer before changing its status."
+      }
+    ],
+    "tasks": [
+      "Receive meeting requests through the approved inbox",
+      "Confirm participant availability and time zones",
+      "Prepare calendar invitations with approved agenda and joining instructions",
+      "Record cancellations and offer permitted alternative times",
+      "Route questions about loan terms to the licensed owner"
+    ],
+    "clientInputs": [
+      "Approved workflow checklist and templates",
+      "Role-based access to the designated systems",
+      "A named reviewer and escalation timetable",
+      "Record handling and retention instructions"
+    ],
+    "outputs": [
+      "Confirmed appointment record",
+      "Daily attendance and reschedule queue",
+      "Meeting preparation brief",
+      "Unresolved scheduling exceptions"
+    ],
+    "qualityControls": [
+      "Check identifiers and dates against the source",
+      "Confirm recipient and appointment or document version",
+      "Record changes and unresolved questions",
+      "Have the owner review a sample before expanding the scope"
+    ],
+    "boundaries": [
+      "Loan terms, eligibility, underwriting, disclosures, legal interpretation, and approvals remain with licensed or authorized staff.",
+      "The assistant does not handle funds, approve wire changes, or declare a loan or document compliant."
+    ],
+    "launchSteps": [
+      {
+        "title": "Choose one queue",
+        "detail": "Select a bounded calendar or document backlog with an accountable owner."
+      },
+      {
+        "title": "Write the handoff",
+        "detail": "Agree the inputs, permitted actions, output format, and escalation time."
+      },
+      {
+        "title": "Review a pilot",
+        "detail": "Inspect the first completed records before expanding the assignment."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does this replace licensed mortgage work?",
+        "answer": "No. This service prepares and coordinates administrative records. Your authorized team retains lending, legal, and compliance decisions."
+      },
+      {
+        "question": "Can we use our current systems?",
+        "answer": "Yes. Define the permitted fields, access, and written workflow before the assistant receives an assignment."
+      },
+      {
+        "question": "How do we know an item is complete?",
+        "answer": "Agree a checklist with the reviewer. Completion records include source evidence, dates, and the next owner; unanswered questions remain visible."
+      }
+    ],
+    "relatedRoles": [
+      "loan-file-coordination",
+      "borrower-follow-up"
+    ],
+    "relatedContent": [
+      {
+        "title": "Mortgage operations guidance",
+        "href": "/blog"
+      },
+      {
+        "title": "Research and methods",
+        "href": "/research"
+      }
+    ]
+  },
+  {
+    "slug": "mortgage-post-closing-administration",
+    "name": "Post-closing document administration",
+    "short": "Track outstanding administrative records and prepare an organized post-closing handoff for authorized review.",
+    "outcome": "A dated, reviewable queue with a named owner for every unresolved item.",
+    "problem": "After a closing, missing source documents and unclear ownership can leave the operations team repeatedly searching folders and email threads.",
+    "image": "/optimization/mortgage-post-closing-administration.webp",
+    "imageAlt": "Organized binders holding administrative records",
+    "idealFor": [
+      "Mortgage operations teams with recurring administrative follow-up",
+      "Licensed staff who need calendar and record preparation support"
+    ],
+    "scenarios": [
+      {
+        "title": "A practical starting assignment",
+        "detail": "A recorded document has not arrived by the expected follow-up date. The assistant records its pending status, sends the permitted request, and alerts the reviewer; receipt is never treated as a legal or compliance determination."
+      },
+      {
+        "title": "An exception requires a decision",
+        "detail": "When the approved checklist does not resolve an issue, preserve the source record and return the question to the assigned reviewer before changing its status."
+      }
+    ],
+    "tasks": [
+      "Receive the client-approved post-closing checklist",
+      "Log documents received with source and date",
+      "Request missing administrative items using approved templates",
+      "Organize version-controlled records in the permitted repository",
+      "Flag mismatched identifiers and unresolved items to the file owner"
+    ],
+    "clientInputs": [
+      "Approved workflow checklist and templates",
+      "Role-based access to the designated systems",
+      "A named reviewer and escalation timetable",
+      "Record handling and retention instructions"
+    ],
+    "outputs": [
+      "Post-closing document index",
+      "Missing-item follow-up register",
+      "Source-linked completion record",
+      "Exception queue for the authorized reviewer"
+    ],
+    "qualityControls": [
+      "Check identifiers and dates against the source",
+      "Confirm recipient and appointment or document version",
+      "Record changes and unresolved questions",
+      "Have the owner review a sample before expanding the scope"
+    ],
+    "boundaries": [
+      "Loan terms, eligibility, underwriting, disclosures, legal interpretation, and approvals remain with licensed or authorized staff.",
+      "The assistant does not handle funds, approve wire changes, or declare a loan or document compliant."
+    ],
+    "launchSteps": [
+      {
+        "title": "Choose one queue",
+        "detail": "Select a bounded calendar or document backlog with an accountable owner."
+      },
+      {
+        "title": "Write the handoff",
+        "detail": "Agree the inputs, permitted actions, output format, and escalation time."
+      },
+      {
+        "title": "Review a pilot",
+        "detail": "Inspect the first completed records before expanding the assignment."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does this replace licensed mortgage work?",
+        "answer": "No. This service prepares and coordinates administrative records. Your authorized team retains lending, legal, and compliance decisions."
+      },
+      {
+        "question": "Can we use our current systems?",
+        "answer": "Yes. Define the permitted fields, access, and written workflow before the assistant receives an assignment."
+      },
+      {
+        "question": "How do we know an item is complete?",
+        "answer": "Agree a checklist with the reviewer. Completion records include source evidence, dates, and the next owner; unanswered questions remain visible."
+      }
+    ],
+    "relatedRoles": [
+      "loan-file-coordination",
+      "borrower-follow-up"
+    ],
+    "relatedContent": [
+      {
+        "title": "Mortgage operations guidance",
+        "href": "/blog"
+      },
+      {
+        "title": "Research and methods",
+        "href": "/research"
+      }
+    ]
+  }
+]

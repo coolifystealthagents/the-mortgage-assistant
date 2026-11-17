@@ -56,7 +56,7 @@ export function HomePage() {
         <p className="mortgage-hero-body">{site.heroBody}</p>
         <div className="mortgage-actions">
           <CTA id="cta-home-hero-consultation">Discuss your workflow</CTA>
-          <CTA id="cta-home-hero-services" secondary>Review all six roles</CTA>
+          <CTA id="cta-home-hero-services" secondary>Review all eight roles</CTA>
         </div>
         <dl className="mortgage-trust-register" aria-label="How the service is structured">
           <div><dt>Built for</dt><dd>Brokers, lenders, and loan teams</dd></div>
