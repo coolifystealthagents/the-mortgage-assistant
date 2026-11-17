@@ -27,7 +27,7 @@ const method = [
 function ServiceDesk() {
   return <div className="mortgage-service-grid">{site.services.map((service) => (
     <article className="mortgage-service-card" key={service.slug}>
-      <p className="mortgage-kicker">Specialist support role</p>
+      <Image className="mortgage-card-photo" src={service.image} alt={service.imageAlt} width={900} height={600} sizes="(max-width: 700px) 100vw, 33vw" />
       <h3>{service.name}</h3>
       <p>{service.short}</p>
       <div className="mortgage-card-output"><span>Designed outcome</span>{service.outcome}</div>

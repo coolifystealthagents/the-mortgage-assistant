@@ -67,25 +67,13 @@ export function Header() {
           <span>{mobileOpen ? 'Close' : 'Menu'}</span>
         </button>
         <nav id="primary-navigation" className={mobileOpen ? 'primary-nav is-open' : 'primary-nav'} aria-label="Primary navigation">
-          <Link className={isCurrent(pathname, '/services') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/services') ? 'page' : undefined} href="/services">Services</Link>
-          <Link className={isCurrent(pathname, '/about') ? 'is-current' : undefined} aria-current={isCurrent(pathname, '/about') ? 'page' : undefined} href="/about">About</Link>
-          <details ref={insightsRef} className="nav-dropdown">
-            <summary className={isCurrent(pathname, '/blog') || isCurrent(pathname, '/research') ? 'is-current' : undefined}>
-              Insights <span aria-hidden="true">⌄</span>
-            </summary>
-            <div className="nav-dropdown-panel">
-              {insightLinks.map((item) => (
-                <Link key={item.href} className={isCurrent(pathname, item.href) ? 'is-current' : undefined} aria-current={isCurrent(pathname, item.href) ? 'page' : undefined} href={item.href}>
-                  <strong>{item.label}</strong><small>{item.description}</small>
-                </Link>
-              ))}
-            </div>
-          </details>
+          <Link href="/" aria-current={pathname === '/' ? 'page' : undefined}>Home</Link>
+          <Link href="/services" aria-current={isCurrent(pathname, '/services') ? 'page' : undefined}>Services</Link>
           <a className="nav-attribution" href="https://stealthagents.com" target="_blank" rel="noopener noreferrer">
             <Image src="/images/contact/stealth-agents-logo-black.png" alt="" width={149} height={50} />
             <span>Powered by Stealth Agents</span>
           </a>
-          <Link id="cta-global-header-bookcall" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Book a free call <ArrowIcon /></Link>
+          <Link id="cta-global-header-bookcall" className={`button primary nav-cta${isCurrent(pathname, '/contact-us') ? ' is-current' : ''}`} aria-current={isCurrent(pathname, '/contact-us') ? 'page' : undefined} href="/contact-us">Contact Us</Link>
         </nav>
       </header>
     </>
@@ -106,7 +94,7 @@ export function Footer() {
         </div>
         <nav className="footer-links" aria-label="Footer navigation">
           <div><strong>Explore</strong><Link href="/services">Services</Link><Link href="/about">About</Link><Link href="/contact-us">Contact</Link></div>
-          <div><strong>Insights</strong><Link href="/blog">Blog</Link><Link href="/research">Research</Link></div>
+          <div><strong>Resources</strong><Link href="/blog">Blog</Link><Link href="/research">Research</Link></div>
           <div><strong>Legal</strong><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div>
         </nav>
       </div>
