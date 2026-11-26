@@ -97,7 +97,12 @@ export function HomePage() {
     </section>
 
     <section className="mortgage-boundary" aria-labelledby="boundary-title">
-      <div className="mortgage-boundary-mark" aria-hidden="true">Scope<br />control</div>
+      <figure className="mortgage-boundary-photo">
+        <picture>
+          <source type="image/webp" srcSet="/images/mortgage/responsible-file-work-480.webp 480w, /images/mortgage/responsible-file-work-960.webp 960w, /images/mortgage/responsible-file-work.webp 1440w" sizes="(max-width: 800px) 84vw, (max-width: 1200px) 38vw, 36vw" />
+          <img src="/images/mortgage/responsible-file-work.webp" alt="Operations specialist organizing a neutral file checklist beside a laptop in natural window light" width={1440} height={960} loading="lazy" decoding="async" />
+        </picture>
+      </figure>
       <div><p className="mortgage-folio">Responsible by design</p><h2 id="boundary-title">Support the process. Never blur the decision.</h2><p>Remote staff can organize records, prepare factual summaries, send approved routine communication, and surface exceptions. They do not make underwriting, credit, eligibility, pricing, disclosure, or approval decisions. They do not provide legal, tax, financial, or lending advice.</p><p>Client leadership remains responsible for permissions, supervision, policies, regulatory obligations, and every licensed or accountable decision.</p><Link className="mortgage-text-link" href="/about#expectations">Read our working expectations <ArrowIcon /></Link></div>
     </section>
 

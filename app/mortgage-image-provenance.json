@@ -20,6 +20,24 @@
       "sha256": "42cada836da3bb0012b036623fd6b924bb107ff889015c2dadd1bc6088f13870",
       "promptSummary": "Specialist organizing a neutral tabbed loan-file intake packet beside an abstract checklist."
     },
+    "/images/mortgage/responsible-file-work.webp": {
+      "sha256": "3cb93085f1a279bbb1bc746396625b915117cffedfccacdb806aa13fc2f008b9",
+      "promptSummary": "Specialist organizing a neutral tabbed loan-file intake packet beside an abstract checklist.",
+      "derivedFrom": "/images/mortgage/services/loan-file-coordination.jpg",
+      "processing": "Resized to 1440 by 960 and encoded as WebP at quality 84."
+    },
+    "/images/mortgage/responsible-file-work-960.webp": {
+      "sha256": "dd2ce0567dbcb80c50149f1c18a2249c3c0f7b4541bf9dcb6d02bf65bbd01eaf",
+      "promptSummary": "Responsive 960-pixel derivative of the approved file-organization image.",
+      "derivedFrom": "/images/mortgage/services/loan-file-coordination.jpg",
+      "processing": "Resized to 960 by 640 and encoded as WebP at quality 84."
+    },
+    "/images/mortgage/responsible-file-work-480.webp": {
+      "sha256": "e14a2af73c98efcd1981b9146b13748428c4b1dcd2ce3263a37a3206f597edb2",
+      "promptSummary": "Responsive 480-pixel derivative of the approved file-organization image.",
+      "derivedFrom": "/images/mortgage/services/loan-file-coordination.jpg",
+      "processing": "Resized to 480 by 320 and encoded as WebP at quality 84."
+    },
     "/images/mortgage/services/borrower-follow-up.jpg": {
       "sha256": "bf30ddf7667d40eef137e450df746dafefc3f8b0a700d48cd75352323a3db664",
       "promptSummary": "Support professional preparing approved borrower follow-up from a communication log and calendar."
